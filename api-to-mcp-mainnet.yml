@@ -1,0 +1,348 @@
+server:
+  name: mainnet-blockscout
+  config:
+    bensUrl: "https://bens.services.blockscout.com"
+    bsUrl: "https://eth.blockscout.com"
+tools:
+  - name: ens-lookup
+    description: |
+      Get address by ENS name.
+    args:
+      - name: name
+        description: "ENS domain name to resolve"
+        type: string
+        required: true
+        position: path
+    requestTemplate:
+      url: "{{.config.bensUrl}}/api/v1/1/domains/{{.args.name}}"
+      method: GET
+    responseTemplate:
+      prependBody: |
+        # ENS Lookup Result
+        
+        Below is the result of resolving the ENS name "{{.args.name}}" on Ethereum Mainnet:
+        
+      appendBody: |
+        
+        This information can be used to determine the address associated with the ENS name.
+
+  - name: token-by-symbol
+    description: |
+      Get token address by symbol.
+    args:
+      - name: symbol
+        description: "Token symbol to search for"
+        type: string
+        required: true
+        position: path
+    requestTemplate:
+      url: "{{.config.bsUrl}}/api/v2/search?q={{.args.symbol}}"
+      method: GET
+    responseTemplate:
+      prependBody: |
+        # Token Search Result
+        
+        Below are the search results for the token symbol "{{.args.symbol}}":
+        
+      appendBody: |
+        
+        The search results may include multiple tokens with similar symbols. Review the data to find the specific token you're looking for.
+
+  - name: smart-contract-info
+    description: |
+      Get smart contract information.
+    args:
+      - name: address
+        description: "Smart contract address"
+        type: string
+        required: true
+        position: path
+    requestTemplate:
+      url: "{{.config.bsUrl}}/api/v2/smart-contracts/{{.args.address}}"
+      method: GET
+    responseTemplate:
+      prependBody: |
+        # Smart Contract Information
+        
+        Below is the detailed information for the smart contract at address "{{.args.address}}":
+        
+      appendBody: |
+        
+        This data includes the contract's verification status, implementation details, and other relevant information.
+
+  - name: native-token-balance
+    description: |
+      Get native token balance. Balance provided as is, without adjusting by decimals.
+    args:
+      - name: address
+        description: "Wallet address"
+        type: string
+        required: true
+        position: path
+    requestTemplate:
+      url: "{{.config.bsUrl}}/api/v2/addresses/{{.args.address}}"
+      method: GET
+    responseTemplate:
+      prependBody: |
+        # Native Token Balance
+        
+        Below is the balance information for the address "{{.args.address}}":
+        
+        Note: Balance is provided as is, without adjusting by decimals.
+        
+      appendBody: |
+        
+        To get the actual balance in ETH, you may need to divide the balance value by 10^18.
+
+  - name: wallet-erc20-tokens
+    description: |
+      Get ERC-20 tokens for a wallet. Note that there is no filter for spam tokens, tokens are not sorted by fiat value, and token balances are provided as is without adjusting by decimals.
+    args:
+      - name: address
+        description: "Wallet address"
+        type: string
+        required: true
+        position: path
+    requestTemplate:
+      url: "{{.config.bsUrl}}/api/v2/addresses/{{.args.address}}/tokens?tokens=ERC-20"
+      method: GET
+    responseTemplate:
+      prependBody: |
+        # ERC-20 Tokens in Wallet
+        
+        Below is the list of ERC-20 tokens held by address "{{.args.address}}":
+        
+        Important notes:
+        - There is no filter for spam tokens
+        - Tokens are not sorted by fiat value
+        - Token balances are provided as is, without adjusting by decimals
+        
+      appendBody: |
+        
+        To get the actual token balance, divide the balance value by 10^(decimals) where decimals is the token's decimal places.
+
+  - name: get-transactions
+    description: |
+      Get transactions for an address within a specific time range. Note that the query could be really long (>1m).
+    args:
+      - name: address
+        description: "Wallet address"
+        type: string
+        required: true
+        position: query
+      - name: age_from
+        description: "Start date and time for the transaction history (format: YYYY-MM-DD HH:MM:SS)"
+        type: string
+        required: false
+        position: query
+      - name: age_to
+        description: "End date and time for the transaction history (format: YYYY-MM-DD HH:MM:SS)"
+        type: string
+        required: false
+        position: query
+    requestTemplate:
+      url: "{{.config.bsUrl}}/api/v2/advanced-filters?to_address_hashes_to_include={{.args.address}}&from_address_hashes_to_include={{.args.address}}"
+      method: GET
+    responseTemplate:
+      prependBody: |
+        # Transaction History
+        
+        Below are the transactions for address "{{.args.address}}"{{if .args.age_from}} from "{{.args.age_from}}"{{end}}{{if .args.age_to}} to "{{.args.age_to}}"{{end}}:
+        
+        Note: The query response could be very large (>1m).
+        
+      appendBody: |
+        
+        This data includes both incoming and outgoing transactions for the specified address.
+
+  - name: token-info
+    description: |
+      Get token information. Note that 'total_supply' is not adjusted by decimals.
+    args:
+      - name: address
+        description: "Token contract address"
+        type: string
+        required: true
+        position: path
+    requestTemplate:
+      url: "{{.config.bsUrl}}/api/v2/tokens/{{.args.address}}"
+      method: GET
+    responseTemplate:
+      prependBody: |
+        # Token Information
+        
+        Below is the detailed information for the token at address "{{.args.address}}":
+        
+        Note: 'total_supply' is provided as is, without adjusting by decimals.
+        
+      appendBody: |
+        
+        To get the actual total supply, divide the total_supply value by 10^(decimals) where decimals is the token's decimal places.
+
+  - name: token-transfers
+    description: |
+      Get token transfers for an address within a specific time range. Note that the query could be really long (>1m).
+    args:
+      - name: address
+        description: "Wallet address"
+        type: string
+        required: true
+        position: query
+      - name: age_from
+        description: "Start date and time for the transfer history (format: YYYY-MM-DD HH:MM:SS)"
+        type: string
+        required: false
+        position: query
+      - name: age_to
+        description: "End date and time for the transfer history (format: YYYY-MM-DD HH:MM:SS)"
+        type: string
+        required: false
+        position: query
+    requestTemplate:
+      url: "{{.config.bsUrl}}/api/v2/advanced-filters?transaction_types=ERC-20&to_address_hashes_to_include={{.args.address}}&from_address_hashes_to_include={{.args.address}}"
+      method: GET
+    responseTemplate:
+      prependBody: |
+        # Token Transfer History
+        
+        Below are the ERC-20 token transfers for address "{{.args.address}}"{{if .args.age_from}} from "{{.args.age_from}}"{{end}}{{if .args.age_to}} to "{{.args.age_to}}"{{end}}:
+        
+        Note: The query response could be very large (>1m).
+        
+      appendBody: |
+        
+        This data includes both incoming and outgoing token transfers for the specified address.
+
+  - name: wallet-nft-collections
+    description: |
+      Get NFT tokens for a wallet. Note that there is no filter for spam tokens.
+    args:
+      - name: address
+        description: "Wallet address"
+        type: string
+        required: true
+        position: path
+    requestTemplate:
+      url: "{{.config.bsUrl}}/api/v2/addresses/{{.args.address}}/nft/collections?type=ERC-721,ERC-404,ERC-1155"
+      method: GET
+    responseTemplate:
+      prependBody: |
+        # NFT Collections in Wallet
+        
+        Below is the list of NFT collections (ERC-721, ERC-404, ERC-1155) held by address "{{.args.address}}":
+        
+        Note: There is no filter for spam tokens.
+        
+      appendBody: |
+        
+        This data includes all NFT collections associated with the specified address.
+
+  - name: transaction-summary
+    description: |
+      Get transaction summary.
+    args:
+      - name: hash
+        description: "Transaction hash"
+        type: string
+        required: true
+        position: path
+    requestTemplate:
+      url: "{{.config.bsUrl}}/api/v2/transactions/{{.args.hash}}/summary"
+      method: GET
+    responseTemplate:
+      prependBody: |
+        # Transaction Summary
+        
+        Below is the summary for transaction "{{.args.hash}}":
+        
+      appendBody: |
+        
+        This summary provides an overview of the transaction, including its status, value, gas used, and other key details.
+
+  - name: block-info
+    description: |
+      Get block information.
+    args:
+      - name: number_or_hash
+        description: "Block number or hash"
+        type: string
+        required: true
+        position: path
+    requestTemplate:
+      url: "{{.config.bsUrl}}/api/v2/blocks/{{.args.number_or_hash}}"
+      method: GET
+    responseTemplate:
+      prependBody: |
+        # Block Information
+        
+        Below is the detailed information for block "{{.args.number_or_hash}}":
+        
+      appendBody: |
+        
+        This data includes the block's timestamp, size, gas used, transaction count, and other relevant information.
+
+  - name: transaction-info
+    description: |
+      Get transaction information.
+    args:
+      - name: hash
+        description: "Transaction hash"
+        type: string
+        required: true
+        position: path
+    requestTemplate:
+      url: "{{.config.bsUrl}}/api/v2/transactions/{{.args.hash}}"
+      method: GET
+    responseTemplate:
+      prependBody: |
+        # Transaction Information
+        
+        Below is the detailed information for transaction "{{.args.hash}}":
+        
+      appendBody: |
+        
+        This data provides comprehensive details about the transaction, including its inputs, outputs, and execution results.
+
+  - name: transaction-logs
+    description: |
+      Get all logs in a transaction.
+    args:
+      - name: hash
+        description: "Transaction hash"
+        type: string
+        required: true
+        position: path
+    requestTemplate:
+      url: "{{.config.bsUrl}}/api/v2/transactions/{{.args.hash}}/logs"
+      method: GET
+    responseTemplate:
+      prependBody: |
+        # Transaction Logs
+        
+        Below are the event logs emitted during transaction "{{.args.hash}}":
+        
+      appendBody: |
+        
+        These logs contain the events emitted by smart contracts during the transaction execution, which can be useful for understanding what happened during the transaction.
+
+  - name: address-logs
+    description: |
+      Get all logs for an account.
+    args:
+      - name: address
+        description: "Account address"
+        type: string
+        required: true
+        position: path
+    requestTemplate:
+      url: "{{.config.bsUrl}}/api/v2/addresses/{{.args.address}}/logs"
+      method: GET
+    responseTemplate:
+      prependBody: |
+        # Account Logs
+        
+        Below are the event logs associated with address "{{.args.address}}":
+        
+      appendBody: |
+        
+        These logs represent events emitted by the account's smart contract or events where this address was involved as a parameter.
