@@ -1,0 +1,85 @@
+{
+	"items": [
+		{
+			"token": {
+				"address": "0x9cdf242Ef7975D8c68D5C1F5B6905801699b1940",
+				"address_hash": "0x9cdf242Ef7975D8c68D5C1F5B6905801699b1940",
+				"circulating_market_cap": "0.0",
+				"decimals": "18",
+				"exchange_rate": "0.00075878",
+				"holders": "18097",
+				"holders_count": "18097",
+				"icon_url": "https://assets.coingecko.com/coins/images/52513/small/logo_%2827%29.png?1733497755",
+				"name": "WhiteRock",
+				"symbol": "WHITE",
+				"total_supply": "1000000000000000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "3041519.2007675227"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "2808062603463755093232877"
+		},
+		{
+			"token": {
+				"address": "0xfAbA6f8e4a5E8Ab82F62fe7C39859FA577269BE3",
+				"address_hash": "0xfAbA6f8e4a5E8Ab82F62fe7C39859FA577269BE3",
+				"circulating_market_cap": "2718845964.3924313",
+				"decimals": "18",
+				"exchange_rate": "0.860991",
+				"holders": "138895",
+				"holders_count": "138895",
+				"icon_url": "https://assets.coingecko.com/coins/images/26580/small/ONDO.png?1696525656",
+				"name": "Ondo",
+				"symbol": "ONDO",
+				"total_supply": "10000000000000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "152583318.87407628"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "1313174886280000000000"
+		},
+		{
+			"token": {
+				"address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+				"address_hash": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+				"circulating_market_cap": "60895133683.36236",
+				"decimals": "6",
+				"exchange_rate": "0.999953",
+				"holders": "3686048",
+				"holders_count": "3686048",
+				"icon_url": "https://assets.coingecko.com/coins/images/6319/small/usdc.png?1696506694",
+				"name": "USDC",
+				"symbol": "USDC",
+				"total_supply": "39882902190344678",
+				"type": "ERC-20",
+				"volume_24h": "10900684178.633442"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "535755457"
+		},
+		{
+			"token": {
+				"address": "0x6A4402a535d74Bd0C9cDb5Ce2d51822Fc9F6620E",
+				"address_hash": "0x6A4402a535d74Bd0C9cDb5Ce2d51822Fc9F6620E",
+				"circulating_market_cap": "264909.5763578964",
+				"decimals": "18",
+				"exchange_rate": "0.00027827",
+				"holders": "13973",
+				"holders_count": "13973",
+				"icon_url": "https://assets.coingecko.com/coins/images/52285/small/Tomo_Cat.png?1732952454",
+				"name": "Tomo Cat",
+				"symbol": "TOMO",
+				"total_supply": "951999999999999999999999971",
+				"type": "ERC-20",
+				"volume_24h": "29292.993044031977"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "5593184340516291948461"
+		}
+	],
+	"next_page_params": null
+}

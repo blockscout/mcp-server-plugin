@@ -87,32 +87,62 @@ tools:
       body: |
         {{.}}
 
-  - name: wallet_erc20_tokens
+  - name: get_tokens_by_address
     description: |
-      Get ERC-20 tokens for a wallet. Note that there is no filter for spam tokens, tokens are not sorted by fiat value, and token balances are provided as is without adjusting by decimals.
+      Get ERC20 tokens owned by an address.
     args:
       - name: address
         description: "Wallet address"
         type: string
         required: true
         position: path
+      - name: fiat_value
+        description: "Part of the combined next cursor to get the next page of results"
+        type: string
+        required: false
+        position: query
+      - name: id
+        description: "Part of the combined next cursor to get the next page of results"
+        type: integer
+        required: false
+        position: query
+      - name: items_count
+        description: "Part of the combined next cursor to get the next page of results"
+        type: integer
+        required: false
+        position: query
+      - name: value
+        description: "Part of the combined next cursor to get the next page of results"
+        type: string
+        required: false
+        position: query
     requestTemplate:
-      url: "{{.config.bsUrl}}/api/v2/addresses/{{.args.address}}/tokens?tokens=ERC-20"
+      url: "{{.config.bsUrl}}/api/v2/addresses/{{.args.address}}/tokens?tokens=ERC-20&apikey={{.config.bsApiKey}}"
       method: GET
     responseTemplate:
-      prependBody: |
-        # ERC-20 Tokens in Wallet
-        
-        Below is the list of ERC-20 tokens held by address "{{.args.address}}":
-        
-        Important notes:
-        - There is no filter for spam tokens
-        - Tokens are not sorted by fiat value
-        - Token balances are provided as is, without adjusting by decimals
-        
-      appendBody: |
-        
-        To get the actual token balance, divide the balance value by 10^(decimals) where decimals is the token's decimal places.
+      body: |
+        [
+          {{- range $index, $item := .items }}
+          {{- if $index}},{{end}}
+          {
+            "address": "{{$item.token.address_hash}}",
+            "name": "{{$item.token.name}}",
+            "symbol": "{{$item.token.symbol}}",
+            "decimals": "{{$item.token.decimals}}",
+            "total_supply": "{{$item.token.total_supply}}",
+            "circulating_market_cap": "{{$item.token.circulating_market_cap}}",
+            "exchange_rate": "{{$item.token.exchange_rate}}",
+            "volume_24h": "{{$item.token.volume_24h}}",
+            "holders_count": "{{$item.token.holders_count}}",
+            "balance": "{{$item.value}}"
+          }
+          {{- end }}
+        ]
+        {{- if .next_page_params }}
+
+        ----
+        To get the next page call get_tokens_by_address(<same address>, "{{.next_page_params.fiat_value}}", {{.next_page_params.id}}, {{.next_page_params.items_count}}, "{{.next_page_params.value}}")
+        {{- end }}
 
   - name: get_transactions
     description: |

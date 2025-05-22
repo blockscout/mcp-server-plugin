@@ -1,0 +1,1011 @@
+{
+	"items": [
+		{
+			"token": {
+				"address": "0x9cdf242Ef7975D8c68D5C1F5B6905801699b1940",
+				"address_hash": "0x9cdf242Ef7975D8c68D5C1F5B6905801699b1940",
+				"circulating_market_cap": "0.0",
+				"decimals": "18",
+				"exchange_rate": "0.00075878",
+				"holders": "17953",
+				"holders_count": "17953",
+				"icon_url": "https://assets.coingecko.com/coins/images/52513/small/logo_%2827%29.png?1733497755",
+				"name": "WhiteRock",
+				"symbol": "WHITE",
+				"total_supply": "1000000000000000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "3041519.2007675227"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "10000000000000000000000000000"
+		},
+		{
+			"token": {
+				"address": "0x1f961BCEAEF8eDF6fb2797C0293FfBDe3E994614",
+				"address_hash": "0x1f961BCEAEF8eDF6fb2797C0293FfBDe3E994614",
+				"circulating_market_cap": "0.0",
+				"decimals": "9",
+				"exchange_rate": "6.974E-9",
+				"holders": "617",
+				"holders_count": "617",
+				"icon_url": "https://assets.coingecko.com/coins/images/16315/small/tzI4QPI7_400x400.png?1623733248",
+				"name": "Dingo Token",
+				"symbol": "DINGO",
+				"total_supply": "874795525736754285406610",
+				"type": "ERC-20",
+				"volume_24h": null
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "450066609000000000000000"
+		},
+		{
+			"token": {
+				"address": "0xc3761EB917CD790B30dAD99f6Cc5b4Ff93C4F9eA",
+				"address_hash": "0xc3761EB917CD790B30dAD99f6Cc5b4Ff93C4F9eA",
+				"circulating_market_cap": "0.0",
+				"decimals": "18",
+				"exchange_rate": "0.00994919",
+				"holders": "102389",
+				"holders_count": "102389",
+				"icon_url": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xc3761EB917CD790B30dAD99f6Cc5b4Ff93C4F9eA/logo.png",
+				"name": "ERC20",
+				"symbol": "ERC20",
+				"total_supply": "12998999988009999999999000000",
+				"type": "ERC-20",
+				"volume_24h": null
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "100000000000000000000000000"
+		},
+		{
+			"token": {
+				"address": "0x28561B8A2360F463011c16b6Cc0B0cbEF8dbBcad",
+				"address_hash": "0x28561B8A2360F463011c16b6Cc0B0cbEF8dbBcad",
+				"circulating_market_cap": "8837161.365313144",
+				"decimals": "9",
+				"exchange_rate": "0.00002101",
+				"holders": "44657",
+				"holders_count": "44657",
+				"icon_url": "https://assets.coingecko.com/coins/images/50348/small/1000000612.jpg?1727248974",
+				"name": "MOO DENG",
+				"symbol": "MOODENG",
+				"total_supply": "420690000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "5502361.385063148"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "30001118566546834506"
+		},
+		{
+			"token": {
+				"address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+				"address_hash": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+				"circulating_market_cap": "3212319808.8529344",
+				"decimals": "18",
+				"exchange_rate": "0.999963",
+				"holders": "588829",
+				"holders_count": "588829",
+				"icon_url": "https://assets.coingecko.com/coins/images/9956/small/Badge_Dai.png?1696509996",
+				"name": "Dai",
+				"symbol": "DAI",
+				"total_supply": "3723268111077068879403490767",
+				"type": "ERC-20",
+				"volume_24h": "124233738.74858743"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "317204932440674356221452"
+		},
+		{
+			"token": {
+				"address": "0xf05897CfE3CE9BBBfE0751CBE6B1B2c686848DCb",
+				"address_hash": "0xf05897CfE3CE9BBBfE0751CBE6B1B2c686848DCb",
+				"circulating_market_cap": "5772542.015970694",
+				"decimals": "9",
+				"exchange_rate": "1.68902E-7",
+				"holders": "528",
+				"holders_count": "528",
+				"icon_url": "https://assets.coingecko.com/coins/images/15364/small/logo.png?1696515013",
+				"name": "Catecoin",
+				"symbol": "CATE",
+				"total_supply": "100000000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "6003.759402110105"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "1669700921390711541777"
+		},
+		{
+			"token": {
+				"address": "0xdd974D5C2e2928deA5F71b9825b8b646686BD200",
+				"address_hash": "0xdd974D5C2e2928deA5F71b9825b8b646686BD200",
+				"circulating_market_cap": "4079828.6982392767",
+				"decimals": "18",
+				"exchange_rate": "0.343217",
+				"holders": "90940",
+				"holders_count": "90940",
+				"icon_url": "https://assets.coingecko.com/coins/images/947/small/logo-kncl.png?1696502063",
+				"name": "Kyber Network Crystal Legacy",
+				"symbol": "KNCL",
+				"total_supply": "12207209781400002603493582",
+				"type": "ERC-20",
+				"volume_24h": "10495.343470285825"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "700008531373791941118514"
+		},
+		{
+			"token": {
+				"address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+				"address_hash": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+				"circulating_market_cap": "60895133683.36236",
+				"decimals": "6",
+				"exchange_rate": "0.999953",
+				"holders": "3679753",
+				"holders_count": "3679753",
+				"icon_url": "https://assets.coingecko.com/coins/images/6319/small/usdc.png?1696506694",
+				"name": "USDC",
+				"symbol": "USDC",
+				"total_supply": "39933119820693252",
+				"type": "ERC-20",
+				"volume_24h": "10900684178.633442"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "119094756568"
+		},
+		{
+			"token": {
+				"address": "0xa93d86Af16fe83F064E3C0e2F3d129F7B7b002b0",
+				"address_hash": "0xa93d86Af16fe83F064E3C0e2F3d129F7B7b002b0",
+				"circulating_market_cap": "7744620.0468164375",
+				"decimals": "9",
+				"exchange_rate": "0.00001829",
+				"holders": "5547",
+				"holders_count": "5547",
+				"icon_url": "https://assets.coingecko.com/coins/images/54821/small/IMG_4606.jpeg?1746265020",
+				"name": "Cocoro",
+				"symbol": "COCORO",
+				"total_supply": "420690000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "493794.34891933505"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "1535456040175328680"
+		},
+		{
+			"token": {
+				"address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+				"address_hash": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+				"circulating_market_cap": "4505984052.43718",
+				"decimals": "18",
+				"exchange_rate": "1623.24",
+				"holders": "1234628",
+				"holders_count": "1234628",
+				"icon_url": "https://assets.coingecko.com/coins/images/2518/small/weth.png?1696503332",
+				"name": "WETH",
+				"symbol": "WETH",
+				"total_supply": "2699435437426608867988780",
+				"type": "ERC-20",
+				"volume_24h": "233812677.03558087"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "16395109787715287566"
+		},
+		{
+			"token": {
+				"address": "0xd26114cd6EE289AccF82350c8d8487fedB8A0C07",
+				"address_hash": "0xd26114cd6EE289AccF82350c8d8487fedB8A0C07",
+				"circulating_market_cap": "26758042.096429784",
+				"decimals": "18",
+				"exchange_rate": "0.190807",
+				"holders": "658740",
+				"holders_count": "658740",
+				"icon_url": "https://assets.coingecko.com/coins/images/776/small/OMG_Network.jpg?1696501928",
+				"name": "OMG Network",
+				"symbol": "OMG",
+				"total_supply": "140245398245132780789239631",
+				"type": "ERC-20",
+				"volume_24h": "2480085.617434109"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "123647030428532080615067"
+		},
+		{
+			"token": {
+				"address": "0x71297312753EA7A2570a5a3278eD70D9a75F4f44",
+				"address_hash": "0x71297312753EA7A2570a5a3278eD70D9a75F4f44",
+				"circulating_market_cap": "910175.2298342168",
+				"decimals": "9",
+				"exchange_rate": "0.00009129",
+				"holders": "5991",
+				"holders_count": "5991",
+				"icon_url": "https://assets.coingecko.com/coins/images/39868/small/ETHEREUM_IS_GOOD.png?1724485683",
+				"name": "ETHEREUM IS GOOD",
+				"symbol": "EBULL",
+				"total_supply": "10000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "58293.28018189852"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "250000000000000000"
+		},
+		{
+			"token": {
+				"address": "0x864cb5194722d5a1596F4BE8B899916d30daD8d8",
+				"address_hash": "0x864cb5194722d5a1596F4BE8B899916d30daD8d8",
+				"circulating_market_cap": "204074.9004661597",
+				"decimals": "18",
+				"exchange_rate": "9.718E-9",
+				"holders": "3156",
+				"holders_count": "3156",
+				"icon_url": "https://assets.coingecko.com/coins/images/50737/small/IMG_20241013_233001_983_resized_670c0f8a46266_%281%29.jpg?1728916666",
+				"name": "LEDOG  DOG",
+				"symbol": "DOG",
+				"total_supply": "21000000000000000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "1026.5647565373527"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "2000000000000000000000000000000"
+		},
+		{
+			"token": {
+				"address": "0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72",
+				"address_hash": "0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72",
+				"circulating_market_cap": "509205528.98523194",
+				"decimals": "18",
+				"exchange_rate": "15.35",
+				"holders": "74209",
+				"holders_count": "74209",
+				"icon_url": "https://assets.coingecko.com/coins/images/19785/small/ENS.jpg?1727872989",
+				"name": "Ethereum Name Service",
+				"symbol": "ENS",
+				"total_supply": "100000000000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "54943061.48155917"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "1144036076063671431479"
+		},
+		{
+			"token": {
+				"address": "0x70734a09b7A89f8eC3558D432Fcb518dCC3c0Fa0",
+				"address_hash": "0x70734a09b7A89f8eC3558D432Fcb518dCC3c0Fa0",
+				"circulating_market_cap": "339373.138095806",
+				"decimals": "18",
+				"exchange_rate": "0.01616063",
+				"holders": "537",
+				"holders_count": "537",
+				"icon_url": "https://assets.coingecko.com/coins/images/50239/small/Kabosu_on_ETH.png?1726675997",
+				"name": "Kabosu",
+				"symbol": "KABOSU",
+				"total_supply": "21000000000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "128.5240403349208"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "420000000000000000000000"
+		},
+		{
+			"token": {
+				"address": "0x6F49EE65d1F7953b8724c0C15E22AD189Fecd579",
+				"address_hash": "0x6F49EE65d1F7953b8724c0C15E22AD189Fecd579",
+				"circulating_market_cap": "251529.61283999227",
+				"decimals": "9",
+				"exchange_rate": "5.97898E-7",
+				"holders": "1275",
+				"holders_count": "1275",
+				"icon_url": "https://assets.coingecko.com/coins/images/55158/small/Q.jpeg?1744265800",
+				"name": "Mi Prami Le Kibro",
+				"symbol": "MIPRAMI",
+				"total_supply": "420690000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "87101.36370475372"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "11044500000000000000"
+		},
+		{
+			"token": {
+				"address": "0xCa530408C3e552b020a2300DebC7Bd18820fB42F",
+				"address_hash": "0xCa530408C3e552b020a2300DebC7Bd18820fB42F",
+				"circulating_market_cap": "5058171.419731921",
+				"decimals": "18",
+				"exchange_rate": "5.058E-9",
+				"holders": "10195",
+				"holders_count": "10195",
+				"icon_url": "https://assets.coingecko.com/coins/images/38350/small/RyuJinBLK.png?1717145616",
+				"name": "RyuJin",
+				"symbol": "RYU",
+				"total_supply": "1000000000000000000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "40870.74305075056"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "1001000000000000072734719988699"
+		},
+		{
+			"token": {
+				"address": "0xb8D6196D71cdd7D90A053a7769a077772aAac464",
+				"address_hash": "0xb8D6196D71cdd7D90A053a7769a077772aAac464",
+				"circulating_market_cap": "1308605.642662384",
+				"decimals": "9",
+				"exchange_rate": "0.00000311",
+				"holders": "5825",
+				"holders_count": "5825",
+				"icon_url": "https://assets.coingecko.com/coins/images/50353/small/1000000603.jpg?1727281973",
+				"name": "Mars",
+				"symbol": "MARS",
+				"total_supply": "420690000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "554451.2035463733"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "1608128451000000000"
+		},
+		{
+			"token": {
+				"address": "0x6230f552A1c825D02E1140Ccc0d3f5EEEC81ca84",
+				"address_hash": "0x6230f552A1c825D02E1140Ccc0d3f5EEEC81ca84",
+				"circulating_market_cap": "98563.24087367629",
+				"decimals": "9",
+				"exchange_rate": "0.098563",
+				"holders": "719",
+				"holders_count": "719",
+				"icon_url": "https://assets.coingecko.com/coins/images/31125/small/logo.png?1696529955",
+				"name": "FusionBot",
+				"symbol": "FUSION",
+				"total_supply": "999941500000000",
+				"type": "ERC-20",
+				"volume_24h": "30.11880365910926"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "50000000000000"
+		},
+		{
+			"token": {
+				"address": "0x8390a1DA07E376ef7aDd4Be859BA74Fb83aA02D5",
+				"address_hash": "0x8390a1DA07E376ef7aDd4Be859BA74Fb83aA02D5",
+				"circulating_market_cap": "12837936.013991164",
+				"decimals": "9",
+				"exchange_rate": "0.00203115",
+				"holders": "21441",
+				"holders_count": "21441",
+				"icon_url": "https://assets.coingecko.com/coins/images/32788/small/image-removebg-preview_-_2024-02-15T200920.804-removebg-preview.png?1734871091",
+				"name": "Grok",
+				"symbol": "GROK",
+				"total_supply": "6900000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "3814657.23978685"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "2425306645723442"
+		},
+		{
+			"token": {
+				"address": "0x85bEA4eE627B795A79583FcedE229E198aa57055",
+				"address_hash": "0x85bEA4eE627B795A79583FcedE229E198aa57055",
+				"circulating_market_cap": "403809.98571390536",
+				"decimals": "18",
+				"exchange_rate": "9.59875E-7",
+				"holders": "7701",
+				"holders_count": "7701",
+				"icon_url": "https://assets.coingecko.com/coins/images/50295/small/1000000558.jpg?1726932121",
+				"name": "Marvin Inu",
+				"symbol": "MARVIN",
+				"total_supply": "420690000000000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "4811.435258150246"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "5000000000000000000000000000"
+		},
+		{
+			"token": {
+				"address": "0x6d06426A477200C385843A9ac4d4Fd55346f2b7B",
+				"address_hash": "0x6d06426A477200C385843A9ac4d4Fd55346f2b7B",
+				"circulating_market_cap": "23261.74046644408",
+				"decimals": "9",
+				"exchange_rate": "2.3262E-11",
+				"holders": "206",
+				"holders_count": "206",
+				"icon_url": "https://assets.coingecko.com/coins/images/52346/small/GINNAN_200.jpg?1733149923",
+				"name": "Ginnan Neko",
+				"symbol": "GINNAN",
+				"total_supply": "1000000000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "13.205739338414892"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "204855860762516733212658"
+		},
+		{
+			"token": {
+				"address": "0x7AfD0d633e0A2b1db97506d97CAdc880C894EcA9",
+				"address_hash": "0x7AfD0d633e0A2b1db97506d97CAdc880C894EcA9",
+				"circulating_market_cap": "193548.5486657751",
+				"decimals": "9",
+				"exchange_rate": "0.00002137",
+				"holders": "657",
+				"holders_count": "657",
+				"icon_url": "https://assets.coingecko.com/coins/images/52530/small/2024-11-19_02.51.33.jpg?1733568194",
+				"name": "Marutaro",
+				"symbol": "MARU",
+				"total_supply": "10000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "481.4326116059063"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "200000000000000000"
+		},
+		{
+			"token": {
+				"address": "0x70c29e99cA32592C0E88bb571B87444Bb0e08e33",
+				"address_hash": "0x70c29e99cA32592C0E88bb571B87444Bb0e08e33",
+				"circulating_market_cap": "162269.51032743213",
+				"decimals": "9",
+				"exchange_rate": "3.85722E-7",
+				"holders": "2767",
+				"holders_count": "2767",
+				"icon_url": "https://assets.coingecko.com/coins/images/50409/small/fe0e5409-f6aa-408d-9061-98d265b71b58.jpeg?1727664291",
+				"name": "The Martian Dog",
+				"symbol": "MARVIN",
+				"total_supply": "420690000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "33198.00166383121"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "10311292047364452904"
+		},
+		{
+			"token": {
+				"address": "0xCF91b70017eABDE82c9671E30e5502D312eA6eb2",
+				"address_hash": "0xCF91b70017eABDE82c9671E30e5502D312eA6eb2",
+				"circulating_market_cap": "1110163.4627952161",
+				"decimals": "9",
+				"exchange_rate": "2.6389E-8",
+				"holders": "15269",
+				"holders_count": "15269",
+				"icon_url": "https://assets.coingecko.com/coins/images/35708/small/1000005823.jpg?1709624357",
+				"name": "I love puppies",
+				"symbol": "PUPPIES",
+				"total_supply": "42069000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "471861.4091554195"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "150000234624778434627"
+		},
+		{
+			"token": {
+				"address": "0x283D480dFD6921055E9C335FC177bF8Cb9C94184",
+				"address_hash": "0x283D480dFD6921055E9C335FC177bF8Cb9C94184",
+				"circulating_market_cap": "132590.1357539644",
+				"decimals": "8",
+				"exchange_rate": "0.00013259",
+				"holders": "693",
+				"holders_count": "693",
+				"icon_url": "https://assets.coingecko.com/coins/images/50688/small/VIX777.png?1731813455",
+				"name": "VIX777",
+				"symbol": "VIX",
+				"total_supply": "100000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "2647.770186620612"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "2700000000000000"
+		},
+		{
+			"token": {
+				"address": "0xda8263d8ce3F726233f8b5585bcb86a3120a58B6",
+				"address_hash": "0xda8263d8ce3F726233f8b5585bcb86a3120a58B6",
+				"circulating_market_cap": "0.0",
+				"decimals": "18",
+				"exchange_rate": "3.54907E-10",
+				"holders": "2063",
+				"holders_count": "2063",
+				"icon_url": "https://assets.coingecko.com/coins/images/30733/small/200*200.png?1696529603",
+				"name": "DogeClub",
+				"symbol": "DOGC",
+				"total_supply": "200511020000000000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "22.194084295462844"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "9000000000000000000000000000000"
+		},
+		{
+			"token": {
+				"address": "0xD89CC9D79aD3c49e2CD477A8bBc8E63dee53f82E",
+				"address_hash": "0xD89CC9D79aD3c49e2CD477A8bBc8E63dee53f82E",
+				"circulating_market_cap": "147883.43174702456",
+				"decimals": "18",
+				"exchange_rate": "0.00001592",
+				"holders": "808",
+				"holders_count": "808",
+				"icon_url": "https://assets.coingecko.com/coins/images/54484/small/kee200transp.png?1739989781",
+				"name": "Keeshond",
+				"symbol": "KEE",
+				"total_supply": "10000000000000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "30607.12524330778"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "200000000000000000000000000"
+		},
+		{
+			"token": {
+				"address": "0x1F3F677Ecc58F6A1F9e2CF410dF4776a8546b5DE",
+				"address_hash": "0x1F3F677Ecc58F6A1F9e2CF410dF4776a8546b5DE",
+				"circulating_market_cap": "0.0",
+				"decimals": "0",
+				"exchange_rate": "0.00003899",
+				"holders": "138872",
+				"holders_count": "138872",
+				"icon_url": "https://assets.coingecko.com/coins/images/9670/small/vndc-gold-coin.png?1696509740",
+				"name": "VNDC",
+				"symbol": "VNDC",
+				"total_supply": "83287085935",
+				"type": "ERC-20",
+				"volume_24h": "229.40070784358826"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "80000000"
+		},
+		{
+			"token": {
+				"address": "0x051fb509e4A775FABd257611eeA1efaed8F91359",
+				"address_hash": "0x051fb509e4A775FABd257611eeA1efaed8F91359",
+				"circulating_market_cap": "5341944.164938716",
+				"decimals": "9",
+				"exchange_rate": "9.2895E-8",
+				"holders": "615",
+				"holders_count": "615",
+				"icon_url": "https://assets.coingecko.com/coins/images/15364/small/logo.png?1696515013",
+				"name": "CateCoin",
+				"symbol": "CATE",
+				"total_supply": "1123226394768087550635",
+				"type": "ERC-20",
+				"volume_24h": "207913.01411343494"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "32500665303825930320"
+		},
+		{
+			"token": {
+				"address": "0x5200B34E6a519F289f5258dE4554eBd3dB12E822",
+				"address_hash": "0x5200B34E6a519F289f5258dE4554eBd3dB12E822",
+				"circulating_market_cap": "87804.67610850035",
+				"decimals": "9",
+				"exchange_rate": "8.78047E-7",
+				"holders": "3682",
+				"holders_count": "3682",
+				"icon_url": "https://assets.coingecko.com/coins/images/50775/small/1000023040.jpg?1731154675",
+				"name": "Goatseus Maximus",
+				"symbol": "GOAT",
+				"total_supply": "100000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "28183.814147459325"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "3321523519247282197"
+		},
+		{
+			"token": {
+				"address": "0x5408d3883EC28C2dE205064AE9690142B035fEd2",
+				"address_hash": "0x5408d3883EC28C2dE205064AE9690142B035fEd2",
+				"circulating_market_cap": "0.0",
+				"decimals": "9",
+				"exchange_rate": "0.00009335",
+				"holders": "1274",
+				"holders_count": "1274",
+				"icon_url": "https://assets.coingecko.com/coins/images/38967/small/Rastopyry.jpg?1719711675",
+				"name": "Rastopyry",
+				"symbol": "RASTO",
+				"total_supply": "1000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "341.7270355326021"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "31011994031011994"
+		},
+		{
+			"token": {
+				"address": "0xeBb66a88cEdd12bfE3a289df6DFEe377F2963F12",
+				"address_hash": "0xeBb66a88cEdd12bfE3a289df6DFEe377F2963F12",
+				"circulating_market_cap": "2323800.0599467363",
+				"decimals": "9",
+				"exchange_rate": "0.00258867",
+				"holders": "7593",
+				"holders_count": "7593",
+				"icon_url": "https://assets.coingecko.com/coins/images/50654/small/Oscar_Logo_200x200.jpg?1742639975",
+				"name": "OSCAR",
+				"symbol": "OSCAR",
+				"total_supply": "999966694000000000",
+				"type": "ERC-20",
+				"volume_24h": "343631.4076377812"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "1101169811616279"
+		},
+		{
+			"token": {
+				"address": "0x60215DB40B04Fe029C42c56fF2E02221c1F288ef",
+				"address_hash": "0x60215DB40B04Fe029C42c56fF2E02221c1F288ef",
+				"circulating_market_cap": "283077.2571056049",
+				"decimals": "9",
+				"exchange_rate": "0.00028308",
+				"holders": "2416",
+				"holders_count": "2416",
+				"icon_url": "https://assets.coingecko.com/coins/images/52317/small/chillguy_icon_200x200.jpg?1741426676",
+				"name": "Just a chill guy  ETH",
+				"symbol": "CHILLGUY",
+				"total_supply": "1000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "3441.792649776859"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "10000000976325592"
+		},
+		{
+			"token": {
+				"address": "0x46FDcDDfAD7C72A621E8298D231033Cc00e067c6",
+				"address_hash": "0x46FDcDDfAD7C72A621E8298D231033Cc00e067c6",
+				"circulating_market_cap": "79843.02047094882",
+				"decimals": "18",
+				"exchange_rate": "7.9843E-7",
+				"holders": "3455",
+				"holders_count": "3455",
+				"icon_url": "https://assets.coingecko.com/coins/images/50452/small/Department_Of_Government_Efficiency.png?1727773104",
+				"name": "Department Of Government Efficiency",
+				"symbol": "DOGE",
+				"total_supply": "100000000000000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "6.3799433611321055"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "3000000000000000000000000000"
+		},
+		{
+			"token": {
+				"address": "0xef3dAa5fDa8Ad7aabFF4658f1F78061fd626B8f0",
+				"address_hash": "0xef3dAa5fDa8Ad7aabFF4658f1F78061fd626B8f0",
+				"circulating_market_cap": "0.0",
+				"decimals": "18",
+				"exchange_rate": "0.00000209",
+				"holders": "662",
+				"holders_count": "662",
+				"icon_url": "https://assets.coingecko.com/coins/images/35527/small/muzz-token-200.png?1709024198",
+				"name": "MUZZLE",
+				"symbol": "MUZZ",
+				"total_supply": "21000000000000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "3.191221432641277"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "1050000000000000000000000000"
+		},
+		{
+			"token": {
+				"address": "0x17b51b1DA73A02DB9dC20A71684Dc3EA70A0Dded",
+				"address_hash": "0x17b51b1DA73A02DB9dC20A71684Dc3EA70A0Dded",
+				"circulating_market_cap": "69437.72995892192",
+				"decimals": "18",
+				"exchange_rate": "1.65057E-7",
+				"holders": "467",
+				"holders_count": "467",
+				"icon_url": "https://assets.coingecko.com/coins/images/50606/small/FOXXY.png?1728473078",
+				"name": "FOXXY",
+				"symbol": "FOXXY",
+				"total_supply": "420690000000000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "118.08500003097028"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "13146569100000000000000000000"
+		},
+		{
+			"token": {
+				"address": "0xF43F21384d03b5cBbddd58d2de64071e4Ce76AB0",
+				"address_hash": "0xF43F21384d03b5cBbddd58d2de64071e4Ce76AB0",
+				"circulating_market_cap": "0.0",
+				"decimals": "18",
+				"exchange_rate": "1.001E-9",
+				"holders": "3113",
+				"holders_count": "3113",
+				"icon_url": "https://assets.coingecko.com/coins/images/39095/small/GigaChad.jpg?1726771420",
+				"name": "GigaChad",
+				"symbol": "GIGACHAD",
+				"total_supply": "420690000000000000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "1373.379532241157"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "2154212677662000000000000000000"
+		},
+		{
+			"token": {
+				"address": "0xe69CcaAaEa33eBFe5B76E0dD373cD9a1A31fd410",
+				"address_hash": "0xe69CcaAaEa33eBFe5B76E0dD373cD9a1A31fd410",
+				"circulating_market_cap": "88968.0633402148",
+				"decimals": "9",
+				"exchange_rate": "0.00890292",
+				"holders": "4788",
+				"holders_count": "4788",
+				"icon_url": "https://assets.coingecko.com/coins/images/51323/small/pnutcg.png?1731309358",
+				"name": "Peanut",
+				"symbol": "PNUT",
+				"total_supply": "10000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "27536.54990862029"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "232055368449269"
+		},
+		{
+			"token": {
+				"address": "0x786f112c9A6Bc840cdc07CFD840105EfD6EF2d4B",
+				"address_hash": "0x786f112c9A6Bc840cdc07CFD840105EfD6EF2d4B",
+				"circulating_market_cap": "0.0",
+				"decimals": "9",
+				"exchange_rate": "0.0000483",
+				"holders": "2227",
+				"holders_count": "2227",
+				"icon_url": "https://assets.coingecko.com/coins/images/50340/small/5QPi_WR0_400x400.jpg?1727203850",
+				"name": "Ethereum Doge",
+				"symbol": "EDOGE",
+				"total_supply": "1000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "19.126601999366056"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "40000000000000000"
+		},
+		{
+			"token": {
+				"address": "0x0DceE5F694E492F0DD842a7FBE5BEd4C6E4665a6",
+				"address_hash": "0x0DceE5F694E492F0DD842a7FBE5BEd4C6E4665a6",
+				"circulating_market_cap": "2920826.598099572",
+				"decimals": "18",
+				"exchange_rate": "0.01878865",
+				"holders": "2057",
+				"holders_count": "2057",
+				"icon_url": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0DceE5F694E492F0DD842a7FBE5BEd4C6E4665a6/logo.png",
+				"name": "Catboy",
+				"symbol": "CATBOY",
+				"total_supply": "100000000000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "252540.19305182755"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "102010000000000000000000"
+		},
+		{
+			"token": {
+				"address": "0x6969f3A3754AB674B48B7829A8572360E98132Ba",
+				"address_hash": "0x6969f3A3754AB674B48B7829A8572360E98132Ba",
+				"circulating_market_cap": "56991.90224293175",
+				"decimals": "9",
+				"exchange_rate": "1.35472E-7",
+				"holders": "2247",
+				"holders_count": "2247",
+				"icon_url": "https://assets.coingecko.com/coins/images/50493/small/izzy200.jpg?1727941931",
+				"name": "Izzy",
+				"symbol": "IZZY",
+				"total_supply": "420690000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "29152.035653723084"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "13628026603638372326"
+		},
+		{
+			"token": {
+				"address": "0xa5c45d48d36607741E90c0CCa29545A46f5eE121",
+				"address_hash": "0xa5c45d48d36607741E90c0CCa29545A46f5eE121",
+				"circulating_market_cap": "91925.68691534968",
+				"decimals": "9",
+				"exchange_rate": "4.59628E-7",
+				"holders": "1974",
+				"holders_count": "1974",
+				"icon_url": "https://assets.coingecko.com/coins/images/50894/small/face.png?1729505202",
+				"name": "Chiba Wan",
+				"symbol": "CHIB",
+				"total_supply": "200000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "18282.017898245198"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "4000010450074794185"
+		},
+		{
+			"token": {
+				"address": "0x846E57aF29FD21391919318a044191B8725822C2",
+				"address_hash": "0x846E57aF29FD21391919318a044191B8725822C2",
+				"circulating_market_cap": "18094.93066326081",
+				"decimals": "9",
+				"exchange_rate": "0.00001809",
+				"holders": "1216",
+				"holders_count": "1216",
+				"icon_url": "https://assets.coingecko.com/coins/images/50740/small/IMG_4782.jpeg?1728917572",
+				"name": "ETHARDIO",
+				"symbol": "ETHARDIO",
+				"total_supply": "1000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "69.01004359728712"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "100000000000000000"
+		},
+		{
+			"token": {
+				"address": "0xE34ba9cbdF45c9d5Dcc80E96424337365b6Fe889",
+				"address_hash": "0xE34ba9cbdF45c9d5Dcc80E96424337365b6Fe889",
+				"circulating_market_cap": "94098.45792331998",
+				"decimals": "9",
+				"exchange_rate": "0.00047049",
+				"holders": "717",
+				"holders_count": "717",
+				"icon_url": "https://assets.coingecko.com/coins/images/51533/small/madusa.png?1731498818",
+				"name": "Medusa",
+				"symbol": "MEDUSA",
+				"total_supply": "1000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "779.3569680469293"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "3698888123456780"
+		},
+		{
+			"token": {
+				"address": "0x77777FeDdddFfC19Ff86DB637967013e6C6A116C",
+				"address_hash": "0x77777FeDdddFfC19Ff86DB637967013e6C6A116C",
+				"circulating_market_cap": "27221219.24356924",
+				"decimals": "18",
+				"exchange_rate": "7.15",
+				"holders": "11949",
+				"holders_count": "11949",
+				"icon_url": "https://assets.coingecko.com/coins/images/13496/small/ZINt8NSB_400x400.jpg?1696513257",
+				"name": "Tornado Cash",
+				"symbol": "TORN",
+				"total_supply": "9999997526814999108992673",
+				"type": "ERC-20",
+				"volume_24h": "1504409.931931825"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "242560692231277695785"
+		},
+		{
+			"token": {
+				"address": "0x0000003CeeDe5c40E5187784d3E8Dd5b43dC85f6",
+				"address_hash": "0x0000003CeeDe5c40E5187784d3E8Dd5b43dC85f6",
+				"circulating_market_cap": "19401.12984646541",
+				"decimals": "9",
+				"exchange_rate": "1.94011E-7",
+				"holders": "161",
+				"holders_count": "161",
+				"icon_url": "https://assets.coingecko.com/coins/images/52593/small/cultel_200.jpg?1733727679",
+				"name": "Cultel",
+				"symbol": "CULTEL",
+				"total_supply": "100000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "191.65317625569963"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "8898135489179102683"
+		},
+		{
+			"token": {
+				"address": "0x1f38d22F4eC3479C8268C85476b9418716bdB115",
+				"address_hash": "0x1f38d22F4eC3479C8268C85476b9418716bdB115",
+				"circulating_market_cap": "10224.20803528152",
+				"decimals": "9",
+				"exchange_rate": "0.00001022",
+				"holders": "501",
+				"holders_count": "501",
+				"icon_url": "https://assets.coingecko.com/coins/images/51393/small/IMG_3247.jpeg?1731010993",
+				"name": "Meh",
+				"symbol": "MEH",
+				"total_supply": "1000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "15.314036475346787"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "167146371000000000"
+		},
+		{
+			"token": {
+				"address": "0xbe8EFF45293598919c99D1cBE5297F2A6935BC64",
+				"address_hash": "0xbe8EFF45293598919c99D1cBE5297F2A6935BC64",
+				"circulating_market_cap": "56580.09192845738",
+				"decimals": "18",
+				"exchange_rate": "0.00005658",
+				"holders": "1067",
+				"holders_count": "1067",
+				"icon_url": "https://assets.coingecko.com/coins/images/36271/small/tr1.jpg?1711003565",
+				"name": "Tigra",
+				"symbol": "TIGRA",
+				"total_supply": "1000000000000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "159.81398070711376"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "30000000000000000000000000"
+		},
+		{
+			"token": {
+				"address": "0x357c915D7c12dc506d13332Bb06C932aF13e99a0",
+				"address_hash": "0x357c915D7c12dc506d13332Bb06C932aF13e99a0",
+				"circulating_market_cap": "62055.49497689667",
+				"decimals": "18",
+				"exchange_rate": "1.02624E-7",
+				"holders": "529",
+				"holders_count": "529",
+				"icon_url": "https://assets.coingecko.com/coins/images/32303/small/Luckys_Leprecoin_New_Logo_200x200.png?1697187844",
+				"name": "LuckysLeprecoin",
+				"symbol": "LUCKYSLP",
+				"total_supply": "711000000000000000000000000000",
+				"type": "ERC-20",
+				"volume_24h": "11091.085558391242"
+			},
+			"token_id": null,
+			"token_instance": null,
+			"value": "16381031081347596769811611178"
+		}
+	],
+	"next_page_params": {
+		"fiat_value": "1681.0869336922157709",
+		"id": 8825509194,
+		"items_count": 50,
+		"tokens": "ERC-20",
+		"value": "16381031081347596769811611178"
+	}
+}
