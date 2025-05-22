@@ -183,30 +183,6 @@ tools:
         
         This data includes both incoming and outgoing transactions for the specified address.
 
-  - name: token_info
-    description: |
-      Get token information. Note that 'total_supply' is not adjusted by decimals.
-    args:
-      - name: address
-        description: "Token contract address"
-        type: string
-        required: true
-        position: path
-    requestTemplate:
-      url: "{{.config.bsUrl}}/api/v2/tokens/{{.args.address}}"
-      method: GET
-    responseTemplate:
-      prependBody: |
-        # Token Information
-        
-        Below is the detailed information for the token at address "{{.args.address}}":
-        
-        Note: 'total_supply' is provided as is, without adjusting by decimals.
-        
-      appendBody: |
-        
-        To get the actual total supply, divide the total_supply value by 10^(decimals) where decimals is the token's decimal places.
-
   - name: token_transfers
     description: |
       Get token transfers for an address within a specific time range. Note that the query could be really long (>1m).
