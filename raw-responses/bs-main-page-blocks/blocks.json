@@ -1,0 +1,257 @@
+[
+	{
+		"base_fee_per_gas": "1648210592",
+		"blob_gas_used": "0",
+		"blob_transaction_count": 0,
+		"blob_transactions_count": 0,
+		"burnt_fees": "34547324706458368",
+		"burnt_fees_percentage": 67.5696701566175,
+		"difficulty": "0",
+		"excess_blob_gas": "0",
+		"gas_limit": "36000000",
+		"gas_target_percentage": 16.447244444444443,
+		"gas_used": "20960504",
+		"gas_used_percentage": 58.223622222222225,
+		"hash": "0x91f7ef230eabdf00f4572d9bcb966ca8f6f31cedbc755bc2b9d628dac156207e",
+		"height": 22541285,
+		"miner": {
+			"ens_domain_name": "titanbuilder.eth",
+			"hash": "0x4838B106FCe9647Bdf1E7877BF73cE8B0BAD5f97",
+			"implementations": [],
+			"is_contract": false,
+			"is_scam": false,
+			"is_verified": false,
+			"metadata": {
+				"tags": [
+					{
+						"meta": {},
+						"name": "MEV Builder",
+						"ordinal": 0,
+						"slug": "mev-builder",
+						"tagType": "generic"
+					},
+					{
+						"meta": {
+							"tooltipUrl": "https://www.titanbuilder.xyz/"
+						},
+						"name": "Titan Builder",
+						"ordinal": 10,
+						"slug": "titan-builder",
+						"tagType": "name"
+					}
+				]
+			},
+			"name": null,
+			"private_tags": [],
+			"proxy_type": "unknown",
+			"public_tags": [],
+			"watchlist_names": []
+		},
+		"nonce": "0x0000000000000000",
+		"parent_hash": "0x3196f5263355367798df98c0bff1bf7b80927c3b1c27dcaa1e414269aedb9825",
+		"priority_fee": "16581124827751680",
+		"rewards": [
+			{
+				"reward": "16581124827751680",
+				"type": "validator"
+			}
+		],
+		"size": 107935,
+		"timestamp": "2025-05-22T22:05:47.000000Z",
+		"total_difficulty": "58750003716598352816469",
+		"transaction_count": 266,
+		"transaction_fees": "51128449534210048",
+		"transactions_count": 266,
+		"type": "block",
+		"uncles_hashes": [],
+		"withdrawals_count": null
+	},
+	{
+		"base_fee_per_gas": "1633401179",
+		"blob_gas_used": "524288",
+		"blob_transaction_count": 2,
+		"blob_transactions_count": 2,
+		"burnt_fees": "31533776734092968",
+		"burnt_fees_percentage": 57.00938774131511,
+		"difficulty": "0",
+		"excess_blob_gas": "0",
+		"gas_limit": "36000000",
+		"gas_target_percentage": 7.253288888888889,
+		"gas_used": "19305592",
+		"gas_used_percentage": 53.626644444444445,
+		"hash": "0x3196f5263355367798df98c0bff1bf7b80927c3b1c27dcaa1e414269aedb9825",
+		"height": 22541284,
+		"miner": {
+			"ens_domain_name": null,
+			"hash": "0x95222290DD7278Aa3Ddd389Cc1E1d165CC4BAfe5",
+			"implementations": [],
+			"is_contract": false,
+			"is_scam": false,
+			"is_verified": false,
+			"metadata": {
+				"tags": [
+					{
+						"meta": {},
+						"name": "MEV Builder",
+						"ordinal": 0,
+						"slug": "mev-builder",
+						"tagType": "generic"
+					},
+					{
+						"meta": {
+							"tooltipUrl": "https://beaverbuild.org/"
+						},
+						"name": "beaverbuild",
+						"ordinal": 10,
+						"slug": "beaverbuild",
+						"tagType": "name"
+					}
+				]
+			},
+			"name": null,
+			"private_tags": [],
+			"proxy_type": null,
+			"public_tags": [],
+			"watchlist_names": []
+		},
+		"nonce": "0x0000000000000000",
+		"parent_hash": "0x8a995f541cee75b92667c3c40d00b4f1cbb971c9001dd144ccaf97ff0e958878",
+		"priority_fee": "23779528641471022",
+		"rewards": [
+			{
+				"reward": "23779528641471022",
+				"type": "validator"
+			}
+		],
+		"size": 93067,
+		"timestamp": "2025-05-22T22:05:35.000000Z",
+		"total_difficulty": "58750003716598352816469",
+		"transaction_count": 167,
+		"transaction_fees": "55313305375563990",
+		"transactions_count": 167,
+		"type": "block",
+		"uncles_hashes": [],
+		"withdrawals_count": null
+	},
+	{
+		"base_fee_per_gas": "1798577049",
+		"blob_gas_used": "786432",
+		"blob_transaction_count": 1,
+		"blob_transactions_count": 1,
+		"burnt_fees": "8589061531650324",
+		"burnt_fees_percentage": 65.15244485058906,
+		"difficulty": "0",
+		"excess_blob_gas": "0",
+		"gas_limit": "36000000",
+		"gas_target_percentage": -73.46957777777777,
+		"gas_used": "4775476",
+		"gas_used_percentage": 13.26521111111111,
+		"hash": "0x8a995f541cee75b92667c3c40d00b4f1cbb971c9001dd144ccaf97ff0e958878",
+		"height": 22541283,
+		"miner": {
+			"ens_domain_name": null,
+			"hash": "0x22eEC85ba6a5cD97eAd4728eA1c69e1D9c6fa778",
+			"implementations": [
+				{
+					"address": "0xd463FEe2e54f420ED8c717a7349973B11A148601",
+					"address_hash": "0xd463FEe2e54f420ED8c717a7349973B11A148601",
+					"name": null
+				}
+			],
+			"is_contract": true,
+			"is_scam": false,
+			"is_verified": true,
+			"metadata": null,
+			"name": "TransparentUpgradeableProxy",
+			"private_tags": [],
+			"proxy_type": "eip1967",
+			"public_tags": [],
+			"watchlist_names": []
+		},
+		"nonce": "0x0000000000000000",
+		"parent_hash": "0xb55e04fc663acbadf885edf3e37b57e35ce8304a6aafd875a2634ef6ad9e945b",
+		"priority_fee": "4593961072255334",
+		"rewards": [
+			{
+				"reward": "4593961072255334",
+				"type": "validator"
+			}
+		],
+		"size": 26028,
+		"timestamp": "2025-05-22T22:05:23.000000Z",
+		"total_difficulty": "58750003716598352816469",
+		"transaction_count": 79,
+		"transaction_fees": "13183022603905658",
+		"transactions_count": 79,
+		"type": "block",
+		"uncles_hashes": [],
+		"withdrawals_count": null
+	},
+	{
+		"base_fee_per_gas": "1841948489",
+		"blob_gas_used": "131072",
+		"blob_transaction_count": 1,
+		"blob_transactions_count": 1,
+		"burnt_fees": "26909585428141656",
+		"burnt_fees_percentage": 51.70218012312418,
+		"difficulty": "0",
+		"excess_blob_gas": "0",
+		"gas_limit": "36000000",
+		"gas_target_percentage": -18.8372,
+		"gas_used": "14609304",
+		"gas_used_percentage": 40.5814,
+		"hash": "0xb55e04fc663acbadf885edf3e37b57e35ce8304a6aafd875a2634ef6ad9e945b",
+		"height": 22541282,
+		"miner": {
+			"ens_domain_name": null,
+			"hash": "0x95222290DD7278Aa3Ddd389Cc1E1d165CC4BAfe5",
+			"implementations": [],
+			"is_contract": false,
+			"is_scam": false,
+			"is_verified": false,
+			"metadata": {
+				"tags": [
+					{
+						"meta": {},
+						"name": "MEV Builder",
+						"ordinal": 0,
+						"slug": "mev-builder",
+						"tagType": "generic"
+					},
+					{
+						"meta": {
+							"tooltipUrl": "https://beaverbuild.org/"
+						},
+						"name": "beaverbuild",
+						"ordinal": 10,
+						"slug": "beaverbuild",
+						"tagType": "name"
+					}
+				]
+			},
+			"name": null,
+			"private_tags": [],
+			"proxy_type": null,
+			"public_tags": [],
+			"watchlist_names": []
+		},
+		"nonce": "0x0000000000000000",
+		"parent_hash": "0x9e42d126352ad07659460b677410ab6c4f27c889665ed316d0fcd2e835a5dafb",
+		"priority_fee": "25137708059403462",
+		"rewards": [
+			{
+				"reward": "25137708059403462",
+				"type": "validator"
+			}
+		],
+		"size": 73338,
+		"timestamp": "2025-05-22T22:05:11.000000Z",
+		"total_difficulty": "58750003716598352816469",
+		"transaction_count": 148,
+		"transaction_fees": "52047293487545118",
+		"transactions_count": 148,
+		"type": "block",
+		"uncles_hashes": [],
+		"withdrawals_count": null
+	}
+]
