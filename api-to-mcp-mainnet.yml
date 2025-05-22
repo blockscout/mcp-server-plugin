@@ -64,39 +64,18 @@ tools:
       body: |
         {"abi": "{{.abi}}"}
 
-  - name: is_proxy_contract
+  - name: get_address_info
     description: |
-      Check if a smart contract is a proxy contract (which forwards calls to implementation contracts). Returns proxy type and implementation addresses if found.
+      Get comprehensive information about an address, including:
+      - Address existence check
+      - Native token (ETH) balance (provided as is, without adjusting by decimals)
+      - ENS name association (if any)
+      - Contract status (whether the address is a contract)
+      - Proxy contract information (if applicable): determines if a smart contract is a proxy contract (which forwards calls to implementation contracts), including proxy type and implementation addresses
+      - Token details (if the contract is a token): name, symbol, decimals, total supply, etc.
     args:
       - name: address
-        description: "Smart contract address"
-        type: string
-        required: true
-        position: path
-    requestTemplate:
-      url: "{{.config.bsUrl}}/api/v2/smart-contracts/{{.args.address}}"
-      method: GET
-    responseTemplate:
-      body: |
-        {
-          "is_proxy": {{if .proxy_type}}true{{else}}false{{end}},
-          "proxy_type": {{if .proxy_type}}"{{.proxy_type}}"{{else}}null{{end}}
-          {{if .proxy_type}},
-          "implementations": [
-            {{- range $index, $impl := .implementations }}
-            {{- if $index}},{{end}}
-            "{{$impl.address_hash}}"
-            {{- end }}
-          ]
-          {{end}}
-        }
-
-  - name: native_token_balance
-    description: |
-      Get native token balance. Balance provided as is, without adjusting by decimals.
-    args:
-      - name: address
-        description: "Wallet address"
+        description: "Address to get information about"
         type: string
         required: true
         position: path
@@ -104,16 +83,8 @@ tools:
       url: "{{.config.bsUrl}}/api/v2/addresses/{{.args.address}}"
       method: GET
     responseTemplate:
-      prependBody: |
-        # Native Token Balance
-        
-        Below is the balance information for the address "{{.args.address}}":
-        
-        Note: Balance is provided as is, without adjusting by decimals.
-        
-      appendBody: |
-        
-        To get the actual balance in ETH, you may need to divide the balance value by 10^18.
+      body: |
+        {{.}}
 
   - name: wallet_erc20_tokens
     description: |
