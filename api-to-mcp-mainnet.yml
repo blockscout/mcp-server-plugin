@@ -46,9 +46,11 @@ tools:
           {{- end }}
         }
 
-  - name: smart_contract_info
+  - name: get_contract_abi
     description: |
-      Get smart contract information.
+      Get smart contract ABI (Application Binary Interface). An ABI defines all functions,
+      events, their parameters, and return types. The ABI is required to format function
+      calls or interpret contract data.
     args:
       - name: address
         description: "Smart contract address"
@@ -59,14 +61,35 @@ tools:
       url: "{{.config.bsUrl}}/api/v2/smart-contracts/{{.args.address}}"
       method: GET
     responseTemplate:
-      prependBody: |
-        # Smart Contract Information
-        
-        Below is the detailed information for the smart contract at address "{{.args.address}}":
-        
-      appendBody: |
-        
-        This data includes the contract's verification status, implementation details, and other relevant information.
+      body: |
+        {"abi": "{{.abi}}"}
+
+  - name: is_proxy_contract
+    description: |
+      Check if a smart contract is a proxy contract (which forwards calls to implementation contracts). Returns proxy type and implementation addresses if found.
+    args:
+      - name: address
+        description: "Smart contract address"
+        type: string
+        required: true
+        position: path
+    requestTemplate:
+      url: "{{.config.bsUrl}}/api/v2/smart-contracts/{{.args.address}}"
+      method: GET
+    responseTemplate:
+      body: |
+        {
+          "is_proxy": {{if .proxy_type}}true{{else}}false{{end}},
+          "proxy_type": {{if .proxy_type}}"{{.proxy_type}}"{{else}}null{{end}}
+          {{if .proxy_type}},
+          "implementations": [
+            {{- range $index, $impl := .implementations }}
+            {{- if $index}},{{end}}
+            "{{$impl.address_hash}}"
+            {{- end }}
+          ]
+          {{end}}
+        }
 
   - name: native_token_balance
     description: |
