@@ -1,0 +1,43 @@
+{
+    "id": "0xb8c4241bad9f3124d6f0fada0706792458a20f2a426d309e1c5f030d463a2aac",
+    "name": "blockscout.eth",
+    "tokens": [
+        {
+            "id": "112224509493293442377834590887513244693687336221580356676587679903050517180457",
+            "contract_hash": "0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85",
+            "type": "NATIVE_DOMAIN_TOKEN"
+        }
+    ],
+    "owner": {
+        "hash": "0xBa260488aD6CEBB4339B0D8cdf64D10d52f32820"
+    },
+    "resolved_address": {
+        "hash": "0x441e1e47a6Fa2DBfD3cd9b54291E9AB3a58D7975"
+    },
+    "registrant": {
+        "hash": "0xBa260488aD6CEBB4339B0D8cdf64D10d52f32820"
+    },
+    "wrapped_owner": null,
+    "registration_date": "2018-10-21T00:11:41.000Z",
+    "expiry_date": null,
+    "other_addresses": {
+        "ETH": "0x441e1e47a6Fa2DBfD3cd9b54291E9AB3a58D7975"
+    },
+    "protocol": {
+        "id": "ens",
+        "short_name": "ENS",
+        "title": "Ethereum Name Service",
+        "description": "The Ethereum Name Service (ENS) is a distributed, open, and extensible naming system based on the Ethereum blockchain.",
+        "deployment_blockscout_base_url": "https://eth.blockscout.com/",
+        "tld_list": [
+            "eth"
+        ],
+        "icon_url": "https://i.imgur.com/GOfUwCb.jpeg",
+        "docs_url": "https://docs.ens.domains/"
+    },
+    "stored_offchain": false,
+    "resolved_with_wildcard": false,
+    "resolver_address": {
+        "hash": "0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41"
+    }
+}

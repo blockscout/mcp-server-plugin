@@ -4,9 +4,9 @@ server:
     bensUrl: "https://bens.services.blockscout.com"
     bsUrl: "https://eth.blockscout.com"
 tools:
-  - name: ens-lookup
+  - name: get_address_by_ens_name
     description: |
-      Get address by ENS name.
+      Useful for when you need to convert an ENS domain name (e.g. "blockscout.eth") to its corresponding Ethereum address.
     args:
       - name: name
         description: "ENS domain name to resolve"
@@ -17,21 +17,15 @@ tools:
       url: "{{.config.bensUrl}}/api/v1/1/domains/{{.args.name}}"
       method: GET
     responseTemplate:
-      prependBody: |
-        # ENS Lookup Result
-        
-        Below is the result of resolving the ENS name "{{.args.name}}" on Ethereum Mainnet:
-        
-      appendBody: |
-        
-        This information can be used to determine the address associated with the ENS name.
+      body: |
+        {"resolved_address": "{{.resolved_address.hash}}"}
 
-  - name: token-by-symbol
+  - name: lookup_token_by_symbol
     description: |
-      Get token address by symbol.
+      Search for token addresses by symbol or name. Returns multiple potential matches based on symbol or token name similarity.
     args:
       - name: symbol
-        description: "Token symbol to search for"
+        description: "Token symbol or name to search for"
         type: string
         required: true
         position: path
@@ -39,16 +33,20 @@ tools:
       url: "{{.config.bsUrl}}/api/v2/search?q={{.args.symbol}}"
       method: GET
     responseTemplate:
-      prependBody: |
-        # Token Search Result
-        
-        Below are the search results for the token symbol "{{.args.symbol}}":
-        
-      appendBody: |
-        
-        The search results may include multiple tokens with similar symbols. Review the data to find the specific token you're looking for.
+      body: |
+        {
+          {{- range $index, $item := .items }}
+          {{- if $index}},{{end}}
+          {
+            "address": "{{$item.address_hash}}",
+            "name": "{{$item.name}}",
+            "symbol": "{{$item.symbol}}",
+            "token_type": "{{$item.token_type}}"
+          }
+          {{- end }}
+        }
 
-  - name: smart-contract-info
+  - name: smart_contract_info
     description: |
       Get smart contract information.
     args:
@@ -70,7 +68,7 @@ tools:
         
         This data includes the contract's verification status, implementation details, and other relevant information.
 
-  - name: native-token-balance
+  - name: native_token_balance
     description: |
       Get native token balance. Balance provided as is, without adjusting by decimals.
     args:
@@ -94,7 +92,7 @@ tools:
         
         To get the actual balance in ETH, you may need to divide the balance value by 10^18.
 
-  - name: wallet-erc20-tokens
+  - name: wallet_erc20_tokens
     description: |
       Get ERC-20 tokens for a wallet. Note that there is no filter for spam tokens, tokens are not sorted by fiat value, and token balances are provided as is without adjusting by decimals.
     args:
@@ -121,7 +119,7 @@ tools:
         
         To get the actual token balance, divide the balance value by 10^(decimals) where decimals is the token's decimal places.
 
-  - name: get-transactions
+  - name: get_transactions
     description: |
       Get transactions for an address within a specific time range. Note that the query could be really long (>1m).
     args:
@@ -155,7 +153,7 @@ tools:
         
         This data includes both incoming and outgoing transactions for the specified address.
 
-  - name: token-info
+  - name: token_info
     description: |
       Get token information. Note that 'total_supply' is not adjusted by decimals.
     args:
@@ -179,7 +177,7 @@ tools:
         
         To get the actual total supply, divide the total_supply value by 10^(decimals) where decimals is the token's decimal places.
 
-  - name: token-transfers
+  - name: token_transfers
     description: |
       Get token transfers for an address within a specific time range. Note that the query could be really long (>1m).
     args:
@@ -213,7 +211,7 @@ tools:
         
         This data includes both incoming and outgoing token transfers for the specified address.
 
-  - name: wallet-nft-collections
+  - name: wallet_nft_collections
     description: |
       Get NFT tokens for a wallet. Note that there is no filter for spam tokens.
     args:
@@ -237,7 +235,7 @@ tools:
         
         This data includes all NFT collections associated with the specified address.
 
-  - name: transaction-summary
+  - name: transaction_summary
     description: |
       Get transaction summary.
     args:
@@ -259,7 +257,7 @@ tools:
         
         This summary provides an overview of the transaction, including its status, value, gas used, and other key details.
 
-  - name: block-info
+  - name: block_info
     description: |
       Get block information.
     args:
@@ -281,7 +279,7 @@ tools:
         
         This data includes the block's timestamp, size, gas used, transaction count, and other relevant information.
 
-  - name: transaction-info
+  - name: transaction_info
     description: |
       Get transaction information.
     args:
@@ -303,7 +301,7 @@ tools:
         
         This data provides comprehensive details about the transaction, including its inputs, outputs, and execution results.
 
-  - name: transaction-logs
+  - name: transaction_logs
     description: |
       Get all logs in a transaction.
     args:
@@ -325,7 +323,7 @@ tools:
         
         These logs contain the events emitted by smart contracts during the transaction execution, which can be useful for understanding what happened during the transaction.
 
-  - name: address-logs
+  - name: address_logs
     description: |
       Get all logs for an account.
     args:
