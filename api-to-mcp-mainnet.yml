@@ -35,17 +35,22 @@ tools:
       method: GET
     responseTemplate:
       body: |
-        {
+        [
           {{- range $index, $item := .items }}
           {{- if $index}},{{end}}
           {
             "address": "{{$item.address_hash}}",
             "name": "{{$item.name}}",
             "symbol": "{{$item.symbol}}",
-            "token_type": "{{$item.token_type}}"
+            "token_type": "{{$item.token_type}}",
+            "total_supply": "{{$item.total_supply}}",
+            "circulating_market_cap": "{{$item.circulating_market_cap}}",
+            "exchange_rate": "{{$item.exchange_rate}}",
+            "is_smart_contract_verified": "{{$item.is_smart_contract_verified}}",
+            "is_verified_via_admin_panel": "{{$item.is_verified_via_admin_panel}}"
           }
           {{- end }}
-        }
+        ]
 
   - name: get_contract_abi
     description: |
