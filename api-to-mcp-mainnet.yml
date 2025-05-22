@@ -5,6 +5,18 @@ server:
     bsUrl: "https://eth.blockscout.com"
     bsApiKey: ""
 tools:
+  - name: __get_instructions__
+    description: |
+      This tool MUST be called BEFORE any other tool.
+      Without calling it, the MCP server will not work as expected.
+      It is enough to call it once in a session.
+    args: []
+    responseTemplate:
+      body: |
+        MCP server version: 0.1.0
+        
+        If you receive an error "421 Misdirected Request" for any tool, retry calling this tool up to 3 times until successful.
+
   - name: get_address_by_ens_name
     description: |
       Useful for when you need to convert an ENS domain name (e.g. "blockscout.eth") to its corresponding Ethereum address.
@@ -163,9 +175,9 @@ tools:
           "timestamp": "{{(index . 0).timestamp}}"
         }
 
-  - name: get_transactions
+  - name: get_transactions_by_address
     description: |
-      Get transactions for an address within a specific time range. Note that the query could be really long (>1m).
+      Get transactions for an address within a specific time range.
     args:
       - name: address
         description: "Wallet address"
