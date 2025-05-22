@@ -3,6 +3,7 @@ server:
   config:
     bensUrl: "https://bens.services.blockscout.com"
     bsUrl: "https://eth.blockscout.com"
+    bsApiKey: ""
 tools:
   - name: get_address_by_ens_name
     description: |
@@ -30,7 +31,7 @@ tools:
         required: true
         position: path
     requestTemplate:
-      url: "{{.config.bsUrl}}/api/v2/search?q={{.args.symbol}}"
+      url: "{{.config.bsUrl}}/api/v2/search?q={{.args.symbol}}&apikey={{.config.bsApiKey}}"
       method: GET
     responseTemplate:
       body: |
@@ -58,7 +59,7 @@ tools:
         required: true
         position: path
     requestTemplate:
-      url: "{{.config.bsUrl}}/api/v2/smart-contracts/{{.args.address}}"
+      url: "{{.config.bsUrl}}/api/v2/smart-contracts/{{.args.address}}?apikey={{.config.bsApiKey}}"
       method: GET
     responseTemplate:
       body: |
@@ -80,7 +81,7 @@ tools:
         required: true
         position: path
     requestTemplate:
-      url: "{{.config.bsUrl}}/api/v2/addresses/{{.args.address}}"
+      url: "{{.config.bsUrl}}/api/v2/addresses/{{.args.address}}?apikey={{.config.bsApiKey}}"
       method: GET
     responseTemplate:
       body: |
