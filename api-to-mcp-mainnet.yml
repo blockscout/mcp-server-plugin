@@ -253,7 +253,7 @@ tools:
     description: |
       Useful to get initial summary of the transaction before its deep analysis.
       It is not guaranteed that the summary is 100% accurate.
-      Blockscout Transaction Interpreter which is used to generate the summary has its own limitations and may not be able to interpret all transactions.
+      Not all transactions can be summarized.
     args:
       - name: hash
         description: "Transaction hash"
@@ -267,9 +267,6 @@ tools:
       body: |
         # Transaction Summary from Blockscout Transaction Interpreter
         {{.data.summaries}}
-
-        # Transaction Interpreter Raw Data
-        {{.data.debug_data}}
 
   - name: wallet_nft_collections
     description: |
