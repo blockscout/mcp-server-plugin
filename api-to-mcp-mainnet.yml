@@ -13,7 +13,7 @@ tools:
     args: []
     responseTemplate:
       body: |
-        MCP server version: 0.1.0
+        Blockscout MCP server version: 0.1.0
         
         If you receive an error "421 Misdirected Request" for any tool, retry calling this tool up to 3 times until successful.
 
@@ -178,70 +178,76 @@ tools:
   - name: get_transactions_by_address
     description: |
       Get transactions for an address within a specific time range.
+      Use cases:
+        - `get_transactions_by_address(address, age_from)` - get all transactions to/from the address since the given date up to the current time
+        - `get_transactions_by_address(address, age_from, age_to)` - get all transactions to/from the address between the given dates
+        - `get_transactions_by_address(address, age_from, age_to, methods)` - get all transactions to/from the address between the given dates and invoking the given method signature
+      Manipulating `age_from` and `age_to` allows you to paginate through results by time ranges. For example, after getting transactions up to a certain timestamp, you can use that timestamp as `age_to` in the next query to get the next page of older transactions.
     args:
+      # TODO: next_page_params are not used so far to paginate through results
       - name: address
-        description: "Wallet address"
+        description: "Address which either sender or receiver of the transaction"
         type: string
         required: true
         position: query
       - name: age_from
-        description: "Start date and time for the transaction history (format: YYYY-MM-DD HH:MM:SS)"
+        description: "Start date and time (e.g 2025-05-22T23:00:00.00Z). This parameter should be provided in most cases to limit transactions and avoid heavy database queries. Omit only if you absolutely need the full history."
         type: string
         required: false
         position: query
       - name: age_to
-        description: "End date and time for the transaction history (format: YYYY-MM-DD HH:MM:SS)"
+        description: "End date and time (e.g 2025-05-22T22:30:00.00Z). Can be omitted to get all transactions up to the current time."
+        type: string
+        required: false
+        position: query
+      - name: methods
+        description: "A method signature to filter transactions by (e.g 0x304e6ade)"
         type: string
         required: false
         position: query
     requestTemplate:
-      url: "{{.config.bsUrl}}/api/v2/advanced-filters?to_address_hashes_to_include={{.args.address}}&from_address_hashes_to_include={{.args.address}}"
+      url: "{{.config.bsUrl}}/api/v2/advanced-filters?to_address_hashes_to_include={{.args.address}}&from_address_hashes_to_include={{.args.address}}&apikey={{.config.bsApiKey}}"
       method: GET
     responseTemplate:
-      prependBody: |
-        # Transaction History
-        
-        Below are the transactions for address "{{.args.address}}"{{if .args.age_from}} from "{{.args.age_from}}"{{end}}{{if .args.age_to}} to "{{.args.age_to}}"{{end}}:
-        
-        Note: The query response could be very large (>1m).
-        
-      appendBody: |
-        
-        This data includes both incoming and outgoing transactions for the specified address.
+      body: |
+        {{.}}
 
-  - name: token_transfers
+  - name: get_token_transfers_by_address
     description: |
-      Get token transfers for an address within a specific time range. Note that the query could be really long (>1m).
+      Get ERC-20 token transfers for an address within a specific time range.
+      Use cases:
+        - `get_token_transfers_by_address(address, age_from)` - get all transfers of any ERC-20 token to/from the address since the given date up to the current time
+        - `get_token_transfers_by_address(address, age_from, age_to)` - get all transfers of any ERC-20 token to/from the address between the given dates
+        - `get_token_transfers_by_address(address, age_from, age_to, token)` - get all transfers of the given ERC-20 token to/from the address between the given dates
+      Manipulating `age_from` and `age_to` allows you to paginate through results by time ranges. For example, after getting transfers up to a certain timestamp, you can use that timestamp as `age_to` in the next query to get the next page of older transfers.
     args:
+      # TODO: next_page_params are not used so far to paginate through results
       - name: address
-        description: "Wallet address"
+        description: "Address which either transfer initiator or transfer receiver"
         type: string
         required: true
         position: query
       - name: age_from
-        description: "Start date and time for the transfer history (format: YYYY-MM-DD HH:MM:SS)"
+        description: "Start date and time (e.g 2025-05-22T23:00:00.00Z). This parameter should be provided in most cases to limit transfers and avoid heavy database queries. Omit only if you absolutely need the full history."
         type: string
         required: false
         position: query
       - name: age_to
-        description: "End date and time for the transfer history (format: YYYY-MM-DD HH:MM:SS)"
+        description: "End date and time (e.g 2025-05-22T22:30:00.00Z). Can be omitted to get all transfers up to the current time."
         type: string
         required: false
         position: query
+      - name: token
+        description: "An ERC-20 token contract address to filter transfers by a specific token. If omitted, returns transfers of all tokens."
+        type: string
+        default: ""
+        position: query
     requestTemplate:
-      url: "{{.config.bsUrl}}/api/v2/advanced-filters?transaction_types=ERC-20&to_address_hashes_to_include={{.args.address}}&from_address_hashes_to_include={{.args.address}}"
+      url: "{{.config.bsUrl}}/api/v2/advanced-filters?transaction_types=ERC-20&to_address_hashes_to_include={{.args.address}}&from_address_hashes_to_include={{.args.address}}&token_contract_address_hashes_to_include={{.args.token}}&apikey={{.config.bsApiKey}}"
       method: GET
     responseTemplate:
-      prependBody: |
-        # Token Transfer History
-        
-        Below are the ERC-20 token transfers for address "{{.args.address}}"{{if .args.age_from}} from "{{.args.age_from}}"{{end}}{{if .args.age_to}} to "{{.args.age_to}}"{{end}}:
-        
-        Note: The query response could be very large (>1m).
-        
-      appendBody: |
-        
-        This data includes both incoming and outgoing token transfers for the specified address.
+      body: |
+        {{.}}
 
   - name: wallet_nft_collections
     description: |
