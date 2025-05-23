@@ -1,0 +1,68 @@
+{
+	"data": {
+		"debug_data": {
+			"model_classification_type": "userOperations",
+			"summary_template": {
+				"userOperations": {
+					"template_name": "Generic-UserOps",
+					"template_vars": {
+						"bundlerHash": {
+							"ens_domain_name": null,
+							"hash": "0x620d7E459cfFcdC56a874536dC19147De801a4A1",
+							"implementations": [],
+							"is_contract": false,
+							"is_scam": false,
+							"is_verified": false,
+							"metadata": null,
+							"name": null,
+							"private_tags": [],
+							"proxy_type": null,
+							"public_tags": [],
+							"watchlist_names": []
+						},
+						"methodCall": "handleOps",
+						"userOpsCount": 1
+					}
+				}
+			},
+			"transaction_hash": "0xe49ace840d6b84232d562c3d8c539e5ee379e5ed891df4aa3392f5dc1a3e6c14"
+		},
+		"summaries": [
+			{
+				"summary_template": "Bundler {bundler_hash} submitted {user_ops_count} user operations.",
+				"summary_template_variables": {
+					"bundler_hash": {
+						"type": "address",
+						"value": {
+							"ens_domain_name": null,
+							"hash": "0x620d7E459cfFcdC56a874536dC19147De801a4A1",
+							"implementations": [],
+							"is_contract": false,
+							"is_scam": false,
+							"is_verified": false,
+							"metadata": null,
+							"name": null,
+							"private_tags": [],
+							"proxy_type": null,
+							"public_tags": [],
+							"watchlist_names": []
+						}
+					},
+					"interaction_type": {
+						"type": "string",
+						"value": "EntryPoint"
+					},
+					"method_call": {
+						"type": "string",
+						"value": "handleOps"
+					},
+					"user_ops_count": {
+						"type": "string",
+						"value": 1
+					}
+				}
+			}
+		]
+	},
+	"success": true
+}

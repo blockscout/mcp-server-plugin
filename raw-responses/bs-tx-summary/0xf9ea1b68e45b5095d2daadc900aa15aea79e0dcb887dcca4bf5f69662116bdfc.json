@@ -1,0 +1,1337 @@
+{
+	"data": {
+		"debug_data": {
+			"is_prompt_truncated": false,
+			"model_classification_type": "swap",
+			"post_llm_classification_type": "swap",
+			"summary_template": {
+				"swap": {
+					"template_name": "Generic-Swap",
+					"template_vars": {
+						"current_iterator_data": {
+							"fromToken": {
+								"block_hash": "0xc04de4f8326ad0f1a1fd38d6675380e38a2b6e1e76ea61f38502732c23007026",
+								"block_number": 22485914,
+								"from": {
+									"ens_domain_name": null,
+									"hash": "0xc7bBeC68d12a0d1830360F8Ec58fA599bA1b0e9b",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": {
+										"tags": [
+											{
+												"meta": {},
+												"name": "Uniswap V3: USDT 9",
+												"ordinal": 10,
+												"slug": "uniswap-v3-usdt-9",
+												"tagType": "name"
+											}
+										]
+									},
+									"name": "UniswapV3Pool",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"log_index": 542,
+								"method": null,
+								"timestamp": null,
+								"to": {
+									"ens_domain_name": null,
+									"hash": "0x2FF45e654929b8eB049E52B55F1178e76528F45f",
+									"implementations": [
+										{
+											"address": "0x62597017AC31967B259e07be2a06f07d2e7009Db",
+											"address_hash": "0x62597017AC31967B259e07be2a06f07d2e7009Db",
+											"name": null
+										}
+									],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "TransparentUpgradeableProxy",
+									"private_tags": [],
+									"proxy_type": "eip1967",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"token": {
+									"address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+									"address_hash": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+									"circulating_market_cap": "144725429702.2782",
+									"decimals": "6",
+									"exchange_rate": "1.0",
+									"holders": "9203918",
+									"holders_count": "9203918",
+									"icon_url": "https://assets.coingecko.com/coins/images/325/small/Tether.png?1696501661",
+									"name": "Tether",
+									"symbol": "USDT",
+									"total_supply": "74547271788062596",
+									"type": "ERC-20",
+									"volume_24h": "36793138228.23033"
+								},
+								"total": {
+									"decimals": "6",
+									"value": "71432309"
+								},
+								"transaction_hash": "0xf9ea1b68e45b5095d2daadc900aa15aea79e0dcb887dcca4bf5f69662116bdfc",
+								"type": "token_transfer"
+							},
+							"incomingAmount": "-71432309",
+							"outgoingAmount": "27615582385977493",
+							"swapContractAddress": "0xc7bBeC68d12a0d1830360F8Ec58fA599bA1b0e9b",
+							"toToken": {
+								"block_hash": "0xc04de4f8326ad0f1a1fd38d6675380e38a2b6e1e76ea61f38502732c23007026",
+								"block_number": 22485914,
+								"from": {
+									"ens_domain_name": null,
+									"hash": "0x1111111254EEB25477B68fb85Ed929f73A960582",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": {
+										"tags": [
+											{
+												"meta": {},
+												"name": "1inch v5: Aggregation Router",
+												"ordinal": 10,
+												"slug": "1inch-v5-aggregation-router",
+												"tagType": "name"
+											}
+										]
+									},
+									"name": "AggregationRouterV5",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"log_index": 543,
+								"method": null,
+								"timestamp": null,
+								"to": {
+									"ens_domain_name": null,
+									"hash": "0xc7bBeC68d12a0d1830360F8Ec58fA599bA1b0e9b",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": {
+										"tags": [
+											{
+												"meta": {},
+												"name": "Uniswap V3: USDT 9",
+												"ordinal": 10,
+												"slug": "uniswap-v3-usdt-9",
+												"tagType": "name"
+											}
+										]
+									},
+									"name": "UniswapV3Pool",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"token": {
+									"address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+									"address_hash": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+									"circulating_market_cap": "4505984052.43718",
+									"decimals": "18",
+									"exchange_rate": "1623.24",
+									"holders": "1227981",
+									"holders_count": "1227981",
+									"icon_url": "https://assets.coingecko.com/coins/images/2518/small/weth.png?1696503332",
+									"name": "WETH",
+									"symbol": "WETH",
+									"total_supply": "2687220684104505913140749",
+									"type": "ERC-20",
+									"volume_24h": "233812677.03558087"
+								},
+								"total": {
+									"decimals": "18",
+									"value": "27615582385977493"
+								},
+								"transaction_hash": "0xf9ea1b68e45b5095d2daadc900aa15aea79e0dcb887dcca4bf5f69662116bdfc",
+								"type": "token_transfer"
+							}
+						},
+						"current_iterator_index": 1,
+						"current_iterator_var": {
+							"incoming_amount": "71.432309",
+							"incoming_decimal": "6",
+							"incoming_token": {
+								"address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+								"address_hash": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+								"circulating_market_cap": "144725429702.2782",
+								"decimals": "6",
+								"exchange_rate": "1.0",
+								"holders": "9203918",
+								"holders_count": "9203918",
+								"icon_url": "https://assets.coingecko.com/coins/images/325/small/Tether.png?1696501661",
+								"name": "Tether",
+								"symbol": "USDT",
+								"total_supply": "74547271788062596",
+								"type": "ERC-20",
+								"volume_24h": "36793138228.23033"
+							}
+						},
+						"decimalOfFirstOutgoingToken": "18",
+						"decimalsOfSecondOutgoingToken": "18",
+						"dexPublicTag": {},
+						"firstAmountOfOutgoingToken": "201.197070710175709654",
+						"firstAmountOfOutgoingTokenWNdecimals": "201197070710175709654",
+						"firstSwapEventHash": "0x283E2E83b7f3e297C4B7c02114Ab0196B001a109",
+						"firstValueOfOutgoingToken": {
+							"address": "0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
+							"address_hash": "0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
+							"circulating_market_cap": "53301677.99058201",
+							"decimals": "18",
+							"exchange_rate": "0.258674",
+							"holders": "39816",
+							"holders_count": "39816",
+							"icon_url": "https://assets.coingecko.com/coins/images/3687/small/ocean-protocol-logo.jpg?1696504363",
+							"name": "Ocean Protocol",
+							"symbol": "OCEAN",
+							"total_supply": "1410000000000000000000000000",
+							"type": "ERC-20",
+							"volume_24h": "775607.6804262066"
+						},
+						"formattedSwapDetails": [
+							{
+								"incomingAmount": "-27615582385977493",
+								"index": 541,
+								"outgoingAmount": "201197070710175709654",
+								"swapContractAddress": "0x283E2E83b7f3e297C4B7c02114Ab0196B001a109"
+							},
+							{
+								"incomingAmount": "-71432309",
+								"index": 544,
+								"outgoingAmount": "27615582385977493",
+								"swapContractAddress": "0xc7bBeC68d12a0d1830360F8Ec58fA599bA1b0e9b"
+							}
+						],
+						"formattedSwapEvents": [
+							{
+								"index": 541,
+								"methodId": "c42079f9",
+								"paramsNameToValueMap": {
+									"amount0": "201197070710175709654",
+									"amount1": "-27615582385977493",
+									"liquidity": "981387360044093336655",
+									"recipient": "0x1111111254EEB25477B68fb85Ed929f73A960582",
+									"sender": "0x1111111254EEB25477B68fb85Ed929f73A960582",
+									"sqrtPriceX96": "928490591147469218072757762",
+									"tick": "-88935"
+								},
+								"swapContractAddress": "0x283E2E83b7f3e297C4B7c02114Ab0196B001a109"
+							},
+							{
+								"index": 544,
+								"methodId": "c42079f9",
+								"paramsNameToValueMap": {
+									"amount0": "27615582385977493",
+									"amount1": "-71432309",
+									"liquidity": "262584254742634043",
+									"recipient": "0x2FF45e654929b8eB049E52B55F1178e76528F45f",
+									"sender": "0x1111111254EEB25477B68fb85Ed929f73A960582",
+									"sqrtPriceX96": "4029678340387306486404757",
+									"tick": "-197738"
+								},
+								"swapContractAddress": "0xc7bBeC68d12a0d1830360F8Ec58fA599bA1b0e9b"
+							}
+						],
+						"iteratorLength": 2,
+						"lastAmount": 71.432309,
+						"lastToken": {
+							"address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+							"address_hash": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+							"circulating_market_cap": "144725429702.2782",
+							"decimals": "6",
+							"exchange_rate": "1.0",
+							"holders": "9203918",
+							"holders_count": "9203918",
+							"icon_url": "https://assets.coingecko.com/coins/images/325/small/Tether.png?1696501661",
+							"name": "Tether",
+							"symbol": "USDT",
+							"total_supply": "74547271788062596",
+							"type": "ERC-20",
+							"volume_24h": "36793138228.23033"
+						},
+						"lastTransfer": {
+							"block_hash": "0xc04de4f8326ad0f1a1fd38d6675380e38a2b6e1e76ea61f38502732c23007026",
+							"block_number": 22485914,
+							"from": {
+								"ens_domain_name": null,
+								"hash": "0x2FF45e654929b8eB049E52B55F1178e76528F45f",
+								"implementations": [
+									{
+										"address": "0x62597017AC31967B259e07be2a06f07d2e7009Db",
+										"address_hash": "0x62597017AC31967B259e07be2a06f07d2e7009Db",
+										"name": null
+									}
+								],
+								"is_contract": true,
+								"is_scam": false,
+								"is_verified": true,
+								"metadata": null,
+								"name": "TransparentUpgradeableProxy",
+								"private_tags": [],
+								"proxy_type": "eip1967",
+								"public_tags": [],
+								"watchlist_names": []
+							},
+							"log_index": 545,
+							"method": null,
+							"timestamp": null,
+							"to": {
+								"ens_domain_name": null,
+								"hash": "0x22ab8735c63f9C644DfcF4e8E437FeECA4a18128",
+								"implementations": [],
+								"is_contract": false,
+								"is_scam": false,
+								"is_verified": false,
+								"metadata": null,
+								"name": null,
+								"private_tags": [],
+								"proxy_type": null,
+								"public_tags": [],
+								"watchlist_names": []
+							},
+							"token": {
+								"address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+								"address_hash": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+								"circulating_market_cap": "144725429702.2782",
+								"decimals": "6",
+								"exchange_rate": "1.0",
+								"holders": "9203918",
+								"holders_count": "9203918",
+								"icon_url": "https://assets.coingecko.com/coins/images/325/small/Tether.png?1696501661",
+								"name": "Tether",
+								"symbol": "USDT",
+								"total_supply": "74547271788062596",
+								"type": "ERC-20",
+								"volume_24h": "36793138228.23033"
+							},
+							"total": {
+								"decimals": "6",
+								"value": "71432309"
+							},
+							"transaction_hash": "0xf9ea1b68e45b5095d2daadc900aa15aea79e0dcb887dcca4bf5f69662116bdfc",
+							"type": "token_transfer"
+						},
+						"methodCalled": "0xc219d41d",
+						"secondAmountOfOutgoingToken": "0.027615582385977493",
+						"secondAmountOfOutgoingTokenWNdecimals": "27615582385977493",
+						"secondSwapEventHash": "0xc7bBeC68d12a0d1830360F8Ec58fA599bA1b0e9b",
+						"secondValueOfOutgoingToken": {
+							"address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+							"address_hash": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+							"circulating_market_cap": "4505984052.43718",
+							"decimals": "18",
+							"exchange_rate": "1623.24",
+							"holders": "1227981",
+							"holders_count": "1227981",
+							"icon_url": "https://assets.coingecko.com/coins/images/2518/small/weth.png?1696503332",
+							"name": "WETH",
+							"symbol": "WETH",
+							"total_supply": "2687220684104505913140749",
+							"type": "ERC-20",
+							"volume_24h": "233812677.03558087"
+						},
+						"swapContractAddressMap": {
+							"0x283E2E83b7f3e297C4B7c02114Ab0196B001a109": {
+								"fromToken": {
+									"block_hash": "0xc04de4f8326ad0f1a1fd38d6675380e38a2b6e1e76ea61f38502732c23007026",
+									"block_number": 22485914,
+									"from": {
+										"ens_domain_name": null,
+										"hash": "0x283E2E83b7f3e297C4B7c02114Ab0196B001a109",
+										"implementations": [],
+										"is_contract": true,
+										"is_scam": false,
+										"is_verified": true,
+										"metadata": null,
+										"name": "UniswapV3Pool",
+										"private_tags": [],
+										"proxy_type": "unknown",
+										"public_tags": [],
+										"watchlist_names": []
+									},
+									"log_index": 538,
+									"method": null,
+									"timestamp": null,
+									"to": {
+										"ens_domain_name": null,
+										"hash": "0x1111111254EEB25477B68fb85Ed929f73A960582",
+										"implementations": [],
+										"is_contract": true,
+										"is_scam": false,
+										"is_verified": true,
+										"metadata": {
+											"tags": [
+												{
+													"meta": {},
+													"name": "1inch v5: Aggregation Router",
+													"ordinal": 10,
+													"slug": "1inch-v5-aggregation-router",
+													"tagType": "name"
+												}
+											]
+										},
+										"name": "AggregationRouterV5",
+										"private_tags": [],
+										"proxy_type": "unknown",
+										"public_tags": [],
+										"watchlist_names": []
+									},
+									"token": {
+										"address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+										"address_hash": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+										"circulating_market_cap": "4505984052.43718",
+										"decimals": "18",
+										"exchange_rate": "1623.24",
+										"holders": "1227981",
+										"holders_count": "1227981",
+										"icon_url": "https://assets.coingecko.com/coins/images/2518/small/weth.png?1696503332",
+										"name": "WETH",
+										"symbol": "WETH",
+										"total_supply": "2687220684104505913140749",
+										"type": "ERC-20",
+										"volume_24h": "233812677.03558087"
+									},
+									"total": {
+										"decimals": "18",
+										"value": "27615582385977493"
+									},
+									"transaction_hash": "0xf9ea1b68e45b5095d2daadc900aa15aea79e0dcb887dcca4bf5f69662116bdfc",
+									"type": "token_transfer"
+								},
+								"toToken": {
+									"block_hash": "0xc04de4f8326ad0f1a1fd38d6675380e38a2b6e1e76ea61f38502732c23007026",
+									"block_number": 22485914,
+									"from": {
+										"ens_domain_name": null,
+										"hash": "0x2FF45e654929b8eB049E52B55F1178e76528F45f",
+										"implementations": [
+											{
+												"address": "0x62597017AC31967B259e07be2a06f07d2e7009Db",
+												"address_hash": "0x62597017AC31967B259e07be2a06f07d2e7009Db",
+												"name": null
+											}
+										],
+										"is_contract": true,
+										"is_scam": false,
+										"is_verified": true,
+										"metadata": null,
+										"name": "TransparentUpgradeableProxy",
+										"private_tags": [],
+										"proxy_type": "eip1967",
+										"public_tags": [],
+										"watchlist_names": []
+									},
+									"log_index": 539,
+									"method": null,
+									"timestamp": null,
+									"to": {
+										"ens_domain_name": null,
+										"hash": "0x283E2E83b7f3e297C4B7c02114Ab0196B001a109",
+										"implementations": [],
+										"is_contract": true,
+										"is_scam": false,
+										"is_verified": true,
+										"metadata": null,
+										"name": "UniswapV3Pool",
+										"private_tags": [],
+										"proxy_type": "unknown",
+										"public_tags": [],
+										"watchlist_names": []
+									},
+									"token": {
+										"address": "0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
+										"address_hash": "0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
+										"circulating_market_cap": "53301677.99058201",
+										"decimals": "18",
+										"exchange_rate": "0.258674",
+										"holders": "39816",
+										"holders_count": "39816",
+										"icon_url": "https://assets.coingecko.com/coins/images/3687/small/ocean-protocol-logo.jpg?1696504363",
+										"name": "Ocean Protocol",
+										"symbol": "OCEAN",
+										"total_supply": "1410000000000000000000000000",
+										"type": "ERC-20",
+										"volume_24h": "775607.6804262066"
+									},
+									"total": {
+										"decimals": "18",
+										"value": "201197070710175709654"
+									},
+									"transaction_hash": "0xf9ea1b68e45b5095d2daadc900aa15aea79e0dcb887dcca4bf5f69662116bdfc",
+									"type": "token_transfer"
+								}
+							},
+							"0xc7bBeC68d12a0d1830360F8Ec58fA599bA1b0e9b": {
+								"fromToken": {
+									"block_hash": "0xc04de4f8326ad0f1a1fd38d6675380e38a2b6e1e76ea61f38502732c23007026",
+									"block_number": 22485914,
+									"from": {
+										"ens_domain_name": null,
+										"hash": "0xc7bBeC68d12a0d1830360F8Ec58fA599bA1b0e9b",
+										"implementations": [],
+										"is_contract": true,
+										"is_scam": false,
+										"is_verified": true,
+										"metadata": {
+											"tags": [
+												{
+													"meta": {},
+													"name": "Uniswap V3: USDT 9",
+													"ordinal": 10,
+													"slug": "uniswap-v3-usdt-9",
+													"tagType": "name"
+												}
+											]
+										},
+										"name": "UniswapV3Pool",
+										"private_tags": [],
+										"proxy_type": "unknown",
+										"public_tags": [],
+										"watchlist_names": []
+									},
+									"log_index": 542,
+									"method": null,
+									"timestamp": null,
+									"to": {
+										"ens_domain_name": null,
+										"hash": "0x2FF45e654929b8eB049E52B55F1178e76528F45f",
+										"implementations": [
+											{
+												"address": "0x62597017AC31967B259e07be2a06f07d2e7009Db",
+												"address_hash": "0x62597017AC31967B259e07be2a06f07d2e7009Db",
+												"name": null
+											}
+										],
+										"is_contract": true,
+										"is_scam": false,
+										"is_verified": true,
+										"metadata": null,
+										"name": "TransparentUpgradeableProxy",
+										"private_tags": [],
+										"proxy_type": "eip1967",
+										"public_tags": [],
+										"watchlist_names": []
+									},
+									"token": {
+										"address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+										"address_hash": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+										"circulating_market_cap": "144725429702.2782",
+										"decimals": "6",
+										"exchange_rate": "1.0",
+										"holders": "9203918",
+										"holders_count": "9203918",
+										"icon_url": "https://assets.coingecko.com/coins/images/325/small/Tether.png?1696501661",
+										"name": "Tether",
+										"symbol": "USDT",
+										"total_supply": "74547271788062596",
+										"type": "ERC-20",
+										"volume_24h": "36793138228.23033"
+									},
+									"total": {
+										"decimals": "6",
+										"value": "71432309"
+									},
+									"transaction_hash": "0xf9ea1b68e45b5095d2daadc900aa15aea79e0dcb887dcca4bf5f69662116bdfc",
+									"type": "token_transfer"
+								},
+								"toToken": {
+									"block_hash": "0xc04de4f8326ad0f1a1fd38d6675380e38a2b6e1e76ea61f38502732c23007026",
+									"block_number": 22485914,
+									"from": {
+										"ens_domain_name": null,
+										"hash": "0x1111111254EEB25477B68fb85Ed929f73A960582",
+										"implementations": [],
+										"is_contract": true,
+										"is_scam": false,
+										"is_verified": true,
+										"metadata": {
+											"tags": [
+												{
+													"meta": {},
+													"name": "1inch v5: Aggregation Router",
+													"ordinal": 10,
+													"slug": "1inch-v5-aggregation-router",
+													"tagType": "name"
+												}
+											]
+										},
+										"name": "AggregationRouterV5",
+										"private_tags": [],
+										"proxy_type": "unknown",
+										"public_tags": [],
+										"watchlist_names": []
+									},
+									"log_index": 543,
+									"method": null,
+									"timestamp": null,
+									"to": {
+										"ens_domain_name": null,
+										"hash": "0xc7bBeC68d12a0d1830360F8Ec58fA599bA1b0e9b",
+										"implementations": [],
+										"is_contract": true,
+										"is_scam": false,
+										"is_verified": true,
+										"metadata": {
+											"tags": [
+												{
+													"meta": {},
+													"name": "Uniswap V3: USDT 9",
+													"ordinal": 10,
+													"slug": "uniswap-v3-usdt-9",
+													"tagType": "name"
+												}
+											]
+										},
+										"name": "UniswapV3Pool",
+										"private_tags": [],
+										"proxy_type": "unknown",
+										"public_tags": [],
+										"watchlist_names": []
+									},
+									"token": {
+										"address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+										"address_hash": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+										"circulating_market_cap": "4505984052.43718",
+										"decimals": "18",
+										"exchange_rate": "1623.24",
+										"holders": "1227981",
+										"holders_count": "1227981",
+										"icon_url": "https://assets.coingecko.com/coins/images/2518/small/weth.png?1696503332",
+										"name": "WETH",
+										"symbol": "WETH",
+										"total_supply": "2687220684104505913140749",
+										"type": "ERC-20",
+										"volume_24h": "233812677.03558087"
+									},
+									"total": {
+										"decimals": "18",
+										"value": "27615582385977493"
+									},
+									"transaction_hash": "0xf9ea1b68e45b5095d2daadc900aa15aea79e0dcb887dcca4bf5f69662116bdfc",
+									"type": "token_transfer"
+								}
+							}
+						},
+						"swapDetails": [
+							{
+								"incomingAmount": "-27615582385977493",
+								"index": 541,
+								"outgoingAmount": "201197070710175709654",
+								"swapContractAddress": "0x283E2E83b7f3e297C4B7c02114Ab0196B001a109"
+							},
+							{
+								"incomingAmount": "-71432309",
+								"index": 544,
+								"outgoingAmount": "27615582385977493",
+								"swapContractAddress": "0xc7bBeC68d12a0d1830360F8Ec58fA599bA1b0e9b"
+							}
+						],
+						"swapEvents": [
+							{
+								"address": {
+									"ens_domain_name": null,
+									"hash": "0x283E2E83b7f3e297C4B7c02114Ab0196B001a109",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "UniswapV3Pool",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"block_hash": "0xc04de4f8326ad0f1a1fd38d6675380e38a2b6e1e76ea61f38502732c23007026",
+								"block_number": 22485914,
+								"data": "0x00000000000000000000000000000000000000000000000ae82b95d2b92c39d6ffffffffffffffffffffffffffffffffffffffffffffffffff9de3c62d9e476b000000000000000000000000000000000000000003000787cd7f2d5c24a40602000000000000000000000000000000000000000000000035337c4c58d690ec4ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffea499",
+								"decoded": {
+									"method_call": "Swap(address indexed sender, address indexed recipient, int256 amount0, int256 amount1, uint160 sqrtPriceX96, uint128 liquidity, int24 tick)",
+									"method_id": "c42079f9",
+									"parameters": [
+										{
+											"indexed": true,
+											"name": "sender",
+											"type": "address",
+											"value": "0x1111111254EEB25477B68fb85Ed929f73A960582"
+										},
+										{
+											"indexed": true,
+											"name": "recipient",
+											"type": "address",
+											"value": "0x1111111254EEB25477B68fb85Ed929f73A960582"
+										},
+										{
+											"indexed": false,
+											"name": "amount0",
+											"type": "int256",
+											"value": "201197070710175709654"
+										},
+										{
+											"indexed": false,
+											"name": "amount1",
+											"type": "int256",
+											"value": "-27615582385977493"
+										},
+										{
+											"indexed": false,
+											"name": "sqrtPriceX96",
+											"type": "uint160",
+											"value": "928490591147469218072757762"
+										},
+										{
+											"indexed": false,
+											"name": "liquidity",
+											"type": "uint128",
+											"value": "981387360044093336655"
+										},
+										{
+											"indexed": false,
+											"name": "tick",
+											"type": "int24",
+											"value": "-88935"
+										}
+									]
+								},
+								"index": 541,
+								"smart_contract": null,
+								"topics": [
+									"0xc42079f94a6350d7e6235f29174924f928cc2ac818eb64fed8004e115fbcca67",
+									"0x0000000000000000000000001111111254eeb25477b68fb85ed929f73a960582",
+									"0x0000000000000000000000001111111254eeb25477b68fb85ed929f73a960582",
+									null
+								],
+								"transaction_hash": "0xf9ea1b68e45b5095d2daadc900aa15aea79e0dcb887dcca4bf5f69662116bdfc"
+							},
+							{
+								"address": {
+									"ens_domain_name": null,
+									"hash": "0xc7bBeC68d12a0d1830360F8Ec58fA599bA1b0e9b",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": {
+										"tags": [
+											{
+												"meta": {},
+												"name": "Uniswap V3: USDT 9",
+												"ordinal": 10,
+												"slug": "uniswap-v3-usdt-9",
+												"tagType": "name"
+											}
+										]
+									},
+									"name": "UniswapV3Pool",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"block_hash": "0xc04de4f8326ad0f1a1fd38d6675380e38a2b6e1e76ea61f38502732c23007026",
+								"block_number": 22485914,
+								"data": "0x00000000000000000000000000000000000000000000000000621c39d261b895fffffffffffffffffffffffffffffffffffffffffffffffffffffffffbbe078b0000000000000000000000000000000000000000000355514cf10f61b824969500000000000000000000000000000000000000000000000003a4e2fd0b8b9e3bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffcfb96",
+								"decoded": {
+									"method_call": "Swap(address indexed sender, address indexed recipient, int256 amount0, int256 amount1, uint160 sqrtPriceX96, uint128 liquidity, int24 tick)",
+									"method_id": "c42079f9",
+									"parameters": [
+										{
+											"indexed": true,
+											"name": "sender",
+											"type": "address",
+											"value": "0x1111111254EEB25477B68fb85Ed929f73A960582"
+										},
+										{
+											"indexed": true,
+											"name": "recipient",
+											"type": "address",
+											"value": "0x2FF45e654929b8eB049E52B55F1178e76528F45f"
+										},
+										{
+											"indexed": false,
+											"name": "amount0",
+											"type": "int256",
+											"value": "27615582385977493"
+										},
+										{
+											"indexed": false,
+											"name": "amount1",
+											"type": "int256",
+											"value": "-71432309"
+										},
+										{
+											"indexed": false,
+											"name": "sqrtPriceX96",
+											"type": "uint160",
+											"value": "4029678340387306486404757"
+										},
+										{
+											"indexed": false,
+											"name": "liquidity",
+											"type": "uint128",
+											"value": "262584254742634043"
+										},
+										{
+											"indexed": false,
+											"name": "tick",
+											"type": "int24",
+											"value": "-197738"
+										}
+									]
+								},
+								"index": 544,
+								"smart_contract": null,
+								"topics": [
+									"0xc42079f94a6350d7e6235f29174924f928cc2ac818eb64fed8004e115fbcca67",
+									"0x0000000000000000000000001111111254eeb25477b68fb85ed929f73a960582",
+									"0x0000000000000000000000002ff45e654929b8eb049e52b55f1178e76528f45f",
+									null
+								],
+								"transaction_hash": "0xf9ea1b68e45b5095d2daadc900aa15aea79e0dcb887dcca4bf5f69662116bdfc"
+							}
+						],
+						"tokenTransfers": [
+							{
+								"block_hash": "0xc04de4f8326ad0f1a1fd38d6675380e38a2b6e1e76ea61f38502732c23007026",
+								"block_number": 22485914,
+								"from": {
+									"ens_domain_name": null,
+									"hash": "0x22ab8735c63f9C644DfcF4e8E437FeECA4a18128",
+									"implementations": [],
+									"is_contract": false,
+									"is_scam": false,
+									"is_verified": false,
+									"metadata": null,
+									"name": null,
+									"private_tags": [],
+									"proxy_type": null,
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"log_index": 535,
+								"method": null,
+								"timestamp": null,
+								"to": {
+									"ens_domain_name": null,
+									"hash": "0x2FF45e654929b8eB049E52B55F1178e76528F45f",
+									"implementations": [
+										{
+											"address": "0x62597017AC31967B259e07be2a06f07d2e7009Db",
+											"address_hash": "0x62597017AC31967B259e07be2a06f07d2e7009Db",
+											"name": null
+										}
+									],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "TransparentUpgradeableProxy",
+									"private_tags": [],
+									"proxy_type": "eip1967",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"token": {
+									"address": "0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
+									"address_hash": "0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
+									"circulating_market_cap": "53301677.99058201",
+									"decimals": "18",
+									"exchange_rate": "0.258674",
+									"holders": "39816",
+									"holders_count": "39816",
+									"icon_url": "https://assets.coingecko.com/coins/images/3687/small/ocean-protocol-logo.jpg?1696504363",
+									"name": "Ocean Protocol",
+									"symbol": "OCEAN",
+									"total_supply": "1410000000000000000000000000",
+									"type": "ERC-20",
+									"volume_24h": "775607.6804262066"
+								},
+								"total": {
+									"decimals": "18",
+									"value": "201398469179355064718"
+								},
+								"transaction_hash": "0xf9ea1b68e45b5095d2daadc900aa15aea79e0dcb887dcca4bf5f69662116bdfc",
+								"type": "token_transfer"
+							},
+							{
+								"block_hash": "0xc04de4f8326ad0f1a1fd38d6675380e38a2b6e1e76ea61f38502732c23007026",
+								"block_number": 22485914,
+								"from": {
+									"ens_domain_name": null,
+									"hash": "0x2FF45e654929b8eB049E52B55F1178e76528F45f",
+									"implementations": [
+										{
+											"address": "0x62597017AC31967B259e07be2a06f07d2e7009Db",
+											"address_hash": "0x62597017AC31967B259e07be2a06f07d2e7009Db",
+											"name": null
+										}
+									],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "TransparentUpgradeableProxy",
+									"private_tags": [],
+									"proxy_type": "eip1967",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"log_index": 537,
+								"method": null,
+								"timestamp": null,
+								"to": {
+									"ens_domain_name": null,
+									"hash": "0x4Ce053dFe58541E08F149C1050EB3dF09d7A40bc",
+									"implementations": [],
+									"is_contract": false,
+									"is_scam": false,
+									"is_verified": false,
+									"metadata": null,
+									"name": null,
+									"private_tags": [],
+									"proxy_type": null,
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"token": {
+									"address": "0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
+									"address_hash": "0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
+									"circulating_market_cap": "53301677.99058201",
+									"decimals": "18",
+									"exchange_rate": "0.258674",
+									"holders": "39816",
+									"holders_count": "39816",
+									"icon_url": "https://assets.coingecko.com/coins/images/3687/small/ocean-protocol-logo.jpg?1696504363",
+									"name": "Ocean Protocol",
+									"symbol": "OCEAN",
+									"total_supply": "1410000000000000000000000000",
+									"type": "ERC-20",
+									"volume_24h": "775607.6804262066"
+								},
+								"total": {
+									"decimals": "18",
+									"value": "201398469179355064"
+								},
+								"transaction_hash": "0xf9ea1b68e45b5095d2daadc900aa15aea79e0dcb887dcca4bf5f69662116bdfc",
+								"type": "token_transfer"
+							},
+							{
+								"block_hash": "0xc04de4f8326ad0f1a1fd38d6675380e38a2b6e1e76ea61f38502732c23007026",
+								"block_number": 22485914,
+								"from": {
+									"ens_domain_name": null,
+									"hash": "0x283E2E83b7f3e297C4B7c02114Ab0196B001a109",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "UniswapV3Pool",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"log_index": 538,
+								"method": null,
+								"timestamp": null,
+								"to": {
+									"ens_domain_name": null,
+									"hash": "0x1111111254EEB25477B68fb85Ed929f73A960582",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": {
+										"tags": [
+											{
+												"meta": {},
+												"name": "1inch v5: Aggregation Router",
+												"ordinal": 10,
+												"slug": "1inch-v5-aggregation-router",
+												"tagType": "name"
+											}
+										]
+									},
+									"name": "AggregationRouterV5",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"token": {
+									"address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+									"address_hash": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+									"circulating_market_cap": "4505984052.43718",
+									"decimals": "18",
+									"exchange_rate": "1623.24",
+									"holders": "1227981",
+									"holders_count": "1227981",
+									"icon_url": "https://assets.coingecko.com/coins/images/2518/small/weth.png?1696503332",
+									"name": "WETH",
+									"symbol": "WETH",
+									"total_supply": "2687220684104505913140749",
+									"type": "ERC-20",
+									"volume_24h": "233812677.03558087"
+								},
+								"total": {
+									"decimals": "18",
+									"value": "27615582385977493"
+								},
+								"transaction_hash": "0xf9ea1b68e45b5095d2daadc900aa15aea79e0dcb887dcca4bf5f69662116bdfc",
+								"type": "token_transfer"
+							},
+							{
+								"block_hash": "0xc04de4f8326ad0f1a1fd38d6675380e38a2b6e1e76ea61f38502732c23007026",
+								"block_number": 22485914,
+								"from": {
+									"ens_domain_name": null,
+									"hash": "0x2FF45e654929b8eB049E52B55F1178e76528F45f",
+									"implementations": [
+										{
+											"address": "0x62597017AC31967B259e07be2a06f07d2e7009Db",
+											"address_hash": "0x62597017AC31967B259e07be2a06f07d2e7009Db",
+											"name": null
+										}
+									],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "TransparentUpgradeableProxy",
+									"private_tags": [],
+									"proxy_type": "eip1967",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"log_index": 539,
+								"method": null,
+								"timestamp": null,
+								"to": {
+									"ens_domain_name": null,
+									"hash": "0x283E2E83b7f3e297C4B7c02114Ab0196B001a109",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "UniswapV3Pool",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"token": {
+									"address": "0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
+									"address_hash": "0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
+									"circulating_market_cap": "53301677.99058201",
+									"decimals": "18",
+									"exchange_rate": "0.258674",
+									"holders": "39816",
+									"holders_count": "39816",
+									"icon_url": "https://assets.coingecko.com/coins/images/3687/small/ocean-protocol-logo.jpg?1696504363",
+									"name": "Ocean Protocol",
+									"symbol": "OCEAN",
+									"total_supply": "1410000000000000000000000000",
+									"type": "ERC-20",
+									"volume_24h": "775607.6804262066"
+								},
+								"total": {
+									"decimals": "18",
+									"value": "201197070710175709654"
+								},
+								"transaction_hash": "0xf9ea1b68e45b5095d2daadc900aa15aea79e0dcb887dcca4bf5f69662116bdfc",
+								"type": "token_transfer"
+							},
+							{
+								"block_hash": "0xc04de4f8326ad0f1a1fd38d6675380e38a2b6e1e76ea61f38502732c23007026",
+								"block_number": 22485914,
+								"from": {
+									"ens_domain_name": null,
+									"hash": "0xc7bBeC68d12a0d1830360F8Ec58fA599bA1b0e9b",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": {
+										"tags": [
+											{
+												"meta": {},
+												"name": "Uniswap V3: USDT 9",
+												"ordinal": 10,
+												"slug": "uniswap-v3-usdt-9",
+												"tagType": "name"
+											}
+										]
+									},
+									"name": "UniswapV3Pool",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"log_index": 542,
+								"method": null,
+								"timestamp": null,
+								"to": {
+									"ens_domain_name": null,
+									"hash": "0x2FF45e654929b8eB049E52B55F1178e76528F45f",
+									"implementations": [
+										{
+											"address": "0x62597017AC31967B259e07be2a06f07d2e7009Db",
+											"address_hash": "0x62597017AC31967B259e07be2a06f07d2e7009Db",
+											"name": null
+										}
+									],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "TransparentUpgradeableProxy",
+									"private_tags": [],
+									"proxy_type": "eip1967",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"token": {
+									"address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+									"address_hash": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+									"circulating_market_cap": "144725429702.2782",
+									"decimals": "6",
+									"exchange_rate": "1.0",
+									"holders": "9203918",
+									"holders_count": "9203918",
+									"icon_url": "https://assets.coingecko.com/coins/images/325/small/Tether.png?1696501661",
+									"name": "Tether",
+									"symbol": "USDT",
+									"total_supply": "74547271788062596",
+									"type": "ERC-20",
+									"volume_24h": "36793138228.23033"
+								},
+								"total": {
+									"decimals": "6",
+									"value": "71432309"
+								},
+								"transaction_hash": "0xf9ea1b68e45b5095d2daadc900aa15aea79e0dcb887dcca4bf5f69662116bdfc",
+								"type": "token_transfer"
+							},
+							{
+								"block_hash": "0xc04de4f8326ad0f1a1fd38d6675380e38a2b6e1e76ea61f38502732c23007026",
+								"block_number": 22485914,
+								"from": {
+									"ens_domain_name": null,
+									"hash": "0x1111111254EEB25477B68fb85Ed929f73A960582",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": {
+										"tags": [
+											{
+												"meta": {},
+												"name": "1inch v5: Aggregation Router",
+												"ordinal": 10,
+												"slug": "1inch-v5-aggregation-router",
+												"tagType": "name"
+											}
+										]
+									},
+									"name": "AggregationRouterV5",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"log_index": 543,
+								"method": null,
+								"timestamp": null,
+								"to": {
+									"ens_domain_name": null,
+									"hash": "0xc7bBeC68d12a0d1830360F8Ec58fA599bA1b0e9b",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": {
+										"tags": [
+											{
+												"meta": {},
+												"name": "Uniswap V3: USDT 9",
+												"ordinal": 10,
+												"slug": "uniswap-v3-usdt-9",
+												"tagType": "name"
+											}
+										]
+									},
+									"name": "UniswapV3Pool",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"token": {
+									"address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+									"address_hash": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+									"circulating_market_cap": "4505984052.43718",
+									"decimals": "18",
+									"exchange_rate": "1623.24",
+									"holders": "1227981",
+									"holders_count": "1227981",
+									"icon_url": "https://assets.coingecko.com/coins/images/2518/small/weth.png?1696503332",
+									"name": "WETH",
+									"symbol": "WETH",
+									"total_supply": "2687220684104505913140749",
+									"type": "ERC-20",
+									"volume_24h": "233812677.03558087"
+								},
+								"total": {
+									"decimals": "18",
+									"value": "27615582385977493"
+								},
+								"transaction_hash": "0xf9ea1b68e45b5095d2daadc900aa15aea79e0dcb887dcca4bf5f69662116bdfc",
+								"type": "token_transfer"
+							},
+							{
+								"block_hash": "0xc04de4f8326ad0f1a1fd38d6675380e38a2b6e1e76ea61f38502732c23007026",
+								"block_number": 22485914,
+								"from": {
+									"ens_domain_name": null,
+									"hash": "0x2FF45e654929b8eB049E52B55F1178e76528F45f",
+									"implementations": [
+										{
+											"address": "0x62597017AC31967B259e07be2a06f07d2e7009Db",
+											"address_hash": "0x62597017AC31967B259e07be2a06f07d2e7009Db",
+											"name": null
+										}
+									],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "TransparentUpgradeableProxy",
+									"private_tags": [],
+									"proxy_type": "eip1967",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"log_index": 545,
+								"method": null,
+								"timestamp": null,
+								"to": {
+									"ens_domain_name": null,
+									"hash": "0x22ab8735c63f9C644DfcF4e8E437FeECA4a18128",
+									"implementations": [],
+									"is_contract": false,
+									"is_scam": false,
+									"is_verified": false,
+									"metadata": null,
+									"name": null,
+									"private_tags": [],
+									"proxy_type": null,
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"token": {
+									"address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+									"address_hash": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+									"circulating_market_cap": "144725429702.2782",
+									"decimals": "6",
+									"exchange_rate": "1.0",
+									"holders": "9203918",
+									"holders_count": "9203918",
+									"icon_url": "https://assets.coingecko.com/coins/images/325/small/Tether.png?1696501661",
+									"name": "Tether",
+									"symbol": "USDT",
+									"total_supply": "74547271788062596",
+									"type": "ERC-20",
+									"volume_24h": "36793138228.23033"
+								},
+								"total": {
+									"decimals": "6",
+									"value": "71432309"
+								},
+								"transaction_hash": "0xf9ea1b68e45b5095d2daadc900aa15aea79e0dcb887dcca4bf5f69662116bdfc",
+								"type": "token_transfer"
+							}
+						],
+						"tokenTransfersLength": 7,
+						"totalAmountOfIncomingTokensForNative": 100.61234314628085,
+						"totalAmountOfOutgoingTokens": 100.61234314628085,
+						"transfersLength": 6
+					}
+				}
+			},
+			"transaction_hash": "0xf9ea1b68e45b5095d2daadc900aa15aea79e0dcb887dcca4bf5f69662116bdfc"
+		},
+		"summaries": [
+			{
+				"summary_template": "{action_type} {outgoing_amount} {outgoing_token} for {incoming_amount} {incoming_token}",
+				"summary_template_variables": {
+					"action_type": {
+						"type": "string",
+						"value": "Swap"
+					},
+					"incoming_amount": {
+						"type": "currency",
+						"value": "71.432309"
+					},
+					"incoming_token": {
+						"type": "token",
+						"value": {
+							"address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+							"address_hash": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+							"circulating_market_cap": "144725429702.2782",
+							"decimals": "6",
+							"exchange_rate": "1.0",
+							"holders": "9203918",
+							"holders_count": "9203918",
+							"icon_url": "https://assets.coingecko.com/coins/images/325/small/Tether.png?1696501661",
+							"name": "Tether",
+							"symbol": "USDT",
+							"total_supply": "74547271788062596",
+							"type": "ERC-20",
+							"volume_24h": "36793138228.23033"
+						}
+					},
+					"outgoing_amount": {
+						"type": "currency",
+						"value": "201.197070710175709654"
+					},
+					"outgoing_token": {
+						"type": "token",
+						"value": {
+							"address": "0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
+							"address_hash": "0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
+							"circulating_market_cap": "53301677.99058201",
+							"decimals": "18",
+							"exchange_rate": "0.258674",
+							"holders": "39816",
+							"holders_count": "39816",
+							"icon_url": "https://assets.coingecko.com/coins/images/3687/small/ocean-protocol-logo.jpg?1696504363",
+							"name": "Ocean Protocol",
+							"symbol": "OCEAN",
+							"total_supply": "1410000000000000000000000000",
+							"type": "ERC-20",
+							"volume_24h": "775607.6804262066"
+						}
+					}
+				}
+			}
+		]
+	},
+	"success": true
+}

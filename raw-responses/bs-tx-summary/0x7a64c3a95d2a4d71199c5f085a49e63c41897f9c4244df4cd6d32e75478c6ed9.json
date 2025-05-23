@@ -1,0 +1,1128 @@
+{
+	"data": {
+		"debug_data": {
+			"is_prompt_truncated": true,
+			"model_classification_type": "transfer",
+			"post_llm_classification_type": "transfer",
+			"summary_template": {
+				"transfer": {
+					"template_name": "Generic-Transfer",
+					"template_vars": {
+						"decodedInput": ". . .",
+						"erc20Amount": "537939.362127",
+						"isErc20Transfer": true,
+						"isNftTransfer": false,
+						"isUserOpsTransfer": false,
+						"nftAmount": null,
+						"strippedInput": "6a76120200000000000000000000000038869bf66a61cf6bdb996a6ae40d5853fd43b52600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000140000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000036000000000000000000000000000000000000000000000000000000000000001e48d80ff0a0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000018b00f8dff673b555a225e149218c5005fc88f4a13870000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000447891c043000000000000000000000000377c3bd93f2a2984e1e7be6a5c22c525ed4a48150000000000000000000000000000000000000000000000000000007d415d2bee00f8dff673b555a225e149218c5005fc88f4a1387000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000024115c48d50000000000000000000000000000000000000000000000000000007d415d2bee00f8dff673b555a225e149218c5005fc88f4a138700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002496122b620000000000000000000000000000000000000000000071eb4753ed343b24e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004108b3f758ba6239b820b7e6ca028c970511b30d4f532b45be58326e351f63042b7ceb1f9704d38bf8bcb7e0bf8526bedbe76ffa87965a32ece3fef51c06532d271b00000000000000000000000000000000000000000000000000000000000000",
+						"toAddress": {
+							"ens_domain_name": null,
+							"hash": "0x0000000000000000000000000000000000000000",
+							"implementations": [],
+							"is_contract": false,
+							"is_scam": false,
+							"is_verified": false,
+							"metadata": {
+								"tags": [
+									{
+										"meta": {
+											"alertStatus": "info",
+											"data": "This address is not owned by any user, is often associated with token burn &amp; mint/genesis events and used as a generic null address"
+										},
+										"name": "note_0",
+										"ordinal": 0,
+										"slug": "note0",
+										"tagType": "note"
+									},
+									{
+										"meta": {},
+										"name": "Null Address",
+										"ordinal": 10,
+										"slug": "null-address",
+										"tagType": "name"
+									},
+									{
+										"meta": {},
+										"name": "Null: 0x000...000",
+										"ordinal": 10,
+										"slug": "null-0x000000",
+										"tagType": "name"
+									},
+									{
+										"meta": {},
+										"name": "Null",
+										"ordinal": 0,
+										"slug": "null",
+										"tagType": "protocol"
+									},
+									{
+										"meta": {},
+										"name": "Imtoken User",
+										"ordinal": 0,
+										"slug": "imtoken-user",
+										"tagType": "generic"
+									},
+									{
+										"meta": {},
+										"name": "Genesis",
+										"ordinal": 0,
+										"slug": "genesis",
+										"tagType": "generic"
+									},
+									{
+										"meta": {},
+										"name": "BLOCKED",
+										"ordinal": 0,
+										"slug": "blocked",
+										"tagType": "generic"
+									},
+									{
+										"meta": {},
+										"name": "Burn",
+										"ordinal": 0,
+										"slug": "burn",
+										"tagType": "generic"
+									},
+									{
+										"meta": {},
+										"name": "Metamask User",
+										"ordinal": 0,
+										"slug": "metamask-user",
+										"tagType": "generic"
+									},
+									{
+										"meta": {},
+										"name": "Miner",
+										"ordinal": 0,
+										"slug": "miner",
+										"tagType": "generic"
+									}
+								]
+							},
+							"name": null,
+							"private_tags": [],
+							"proxy_type": "unknown",
+							"public_tags": [],
+							"watchlist_names": []
+						},
+						"token": {
+							"address": "0x377C3bd93f2a2984E1E7bE6A5C22c525eD4A4815",
+							"address_hash": "0x377C3bd93f2a2984E1E7bE6A5C22c525eD4A4815",
+							"circulating_market_cap": null,
+							"decimals": "6",
+							"exchange_rate": null,
+							"holders": "103",
+							"holders_count": "103",
+							"icon_url": null,
+							"name": "Spark USDC",
+							"symbol": "spUSDC",
+							"total_supply": "1231628376392",
+							"type": "ERC-20",
+							"volume_24h": null
+						},
+						"tokenTransfers": [
+							{
+								"block_hash": "0x42b594c39c5e526d9a0a0f4bc1a5cf639b11c24b12989e7b45a3015e5765b698",
+								"block_number": 22543317,
+								"from": {
+									"ens_domain_name": null,
+									"hash": "0x1601843c5E9bC251A3272907010AFa41Fa18347E",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "ALMProxy",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"log_index": 410,
+								"method": "execTransaction",
+								"timestamp": null,
+								"to": {
+									"ens_domain_name": null,
+									"hash": "0x0000000000000000000000000000000000000000",
+									"implementations": [],
+									"is_contract": false,
+									"is_scam": false,
+									"is_verified": false,
+									"metadata": {
+										"tags": [
+											{
+												"meta": {
+													"alertStatus": "info",
+													"data": "This address is not owned by any user, is often associated with token burn &amp; mint/genesis events and used as a generic null address"
+												},
+												"name": "note_0",
+												"ordinal": 0,
+												"slug": "note0",
+												"tagType": "note"
+											},
+											{
+												"meta": {},
+												"name": "Null Address",
+												"ordinal": 10,
+												"slug": "null-address",
+												"tagType": "name"
+											},
+											{
+												"meta": {},
+												"name": "Null: 0x000...000",
+												"ordinal": 10,
+												"slug": "null-0x000000",
+												"tagType": "name"
+											},
+											{
+												"meta": {},
+												"name": "Null",
+												"ordinal": 0,
+												"slug": "null",
+												"tagType": "protocol"
+											},
+											{
+												"meta": {},
+												"name": "Imtoken User",
+												"ordinal": 0,
+												"slug": "imtoken-user",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Genesis",
+												"ordinal": 0,
+												"slug": "genesis",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "BLOCKED",
+												"ordinal": 0,
+												"slug": "blocked",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Burn",
+												"ordinal": 0,
+												"slug": "burn",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Metamask User",
+												"ordinal": 0,
+												"slug": "metamask-user",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Miner",
+												"ordinal": 0,
+												"slug": "miner",
+												"tagType": "generic"
+											}
+										]
+									},
+									"name": null,
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"token": {
+									"address": "0x377C3bd93f2a2984E1E7bE6A5C22c525eD4A4815",
+									"address_hash": "0x377C3bd93f2a2984E1E7bE6A5C22c525eD4A4815",
+									"circulating_market_cap": null,
+									"decimals": "6",
+									"exchange_rate": null,
+									"holders": "103",
+									"holders_count": "103",
+									"icon_url": null,
+									"name": "Spark USDC",
+									"symbol": "spUSDC",
+									"total_supply": "1231628376392",
+									"type": "ERC-20",
+									"volume_24h": null
+								},
+								"total": {
+									"decimals": "6",
+									"value": "537939362127"
+								},
+								"transaction_hash": "0x7a64c3a95d2a4d71199c5f085a49e63c41897f9c4244df4cd6d32e75478c6ed9",
+								"type": "token_burning"
+							},
+							{
+								"block_hash": "0x42b594c39c5e526d9a0a0f4bc1a5cf639b11c24b12989e7b45a3015e5765b698",
+								"block_number": 22543317,
+								"from": {
+									"ens_domain_name": null,
+									"hash": "0x377C3bd93f2a2984E1E7bE6A5C22c525eD4A4815",
+									"implementations": [
+										{
+											"address": "0x6175ddEc3B9b38c88157C10A01ed4A3fa8639cC6",
+											"address_hash": "0x6175ddEc3B9b38c88157C10A01ed4A3fa8639cC6",
+											"name": "AToken"
+										}
+									],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "InitializableImmutableAdminUpgradeabilityProxy",
+									"private_tags": [],
+									"proxy_type": "eip1967",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"log_index": 412,
+								"method": "execTransaction",
+								"timestamp": null,
+								"to": {
+									"ens_domain_name": null,
+									"hash": "0x1601843c5E9bC251A3272907010AFa41Fa18347E",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "ALMProxy",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"token": {
+									"address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+									"address_hash": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+									"circulating_market_cap": "60895133683.36236",
+									"decimals": "6",
+									"exchange_rate": "0.999953",
+									"holders": "3688476",
+									"holders_count": "3688476",
+									"icon_url": "https://assets.coingecko.com/coins/images/6319/small/usdc.png?1696506694",
+									"name": "USDC",
+									"symbol": "USDC",
+									"total_supply": "39914829755595064",
+									"type": "ERC-20",
+									"volume_24h": "10900684178.633442"
+								},
+								"total": {
+									"decimals": "6",
+									"value": "537967537134"
+								},
+								"transaction_hash": "0x7a64c3a95d2a4d71199c5f085a49e63c41897f9c4244df4cd6d32e75478c6ed9",
+								"type": "token_transfer"
+							},
+							{
+								"block_hash": "0x42b594c39c5e526d9a0a0f4bc1a5cf639b11c24b12989e7b45a3015e5765b698",
+								"block_number": 22543317,
+								"from": {
+									"ens_domain_name": null,
+									"hash": "0x1601843c5E9bC251A3272907010AFa41Fa18347E",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "ALMProxy",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"log_index": 416,
+								"method": "execTransaction",
+								"timestamp": null,
+								"to": {
+									"ens_domain_name": null,
+									"hash": "0x37305B1cD40574E4C5Ce33f8e8306Be057fD7341",
+									"implementations": [],
+									"is_contract": false,
+									"is_scam": false,
+									"is_verified": false,
+									"metadata": null,
+									"name": null,
+									"private_tags": [],
+									"proxy_type": null,
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"token": {
+									"address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+									"address_hash": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+									"circulating_market_cap": "60895133683.36236",
+									"decimals": "6",
+									"exchange_rate": "0.999953",
+									"holders": "3688476",
+									"holders_count": "3688476",
+									"icon_url": "https://assets.coingecko.com/coins/images/6319/small/usdc.png?1696506694",
+									"name": "USDC",
+									"symbol": "USDC",
+									"total_supply": "39914829755595064",
+									"type": "ERC-20",
+									"volume_24h": "10900684178.633442"
+								},
+								"total": {
+									"decimals": "6",
+									"value": "537967537134"
+								},
+								"transaction_hash": "0x7a64c3a95d2a4d71199c5f085a49e63c41897f9c4244df4cd6d32e75478c6ed9",
+								"type": "token_transfer"
+							},
+							{
+								"block_hash": "0x42b594c39c5e526d9a0a0f4bc1a5cf639b11c24b12989e7b45a3015e5765b698",
+								"block_number": 22543317,
+								"from": {
+									"ens_domain_name": null,
+									"hash": "0xf6e72Db5454dd049d0788e411b06CfAF16853042",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "DssLitePsm",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"log_index": 417,
+								"method": "execTransaction",
+								"timestamp": null,
+								"to": {
+									"ens_domain_name": null,
+									"hash": "0x1601843c5E9bC251A3272907010AFa41Fa18347E",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "ALMProxy",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"token": {
+									"address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+									"address_hash": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+									"circulating_market_cap": "3212319808.8529344",
+									"decimals": "18",
+									"exchange_rate": "0.999963",
+									"holders": "588989",
+									"holders_count": "588989",
+									"icon_url": "https://assets.coingecko.com/coins/images/9956/small/Badge_Dai.png?1696509996",
+									"name": "Dai",
+									"symbol": "DAI",
+									"total_supply": "3725503855259234428470499648",
+									"type": "ERC-20",
+									"volume_24h": "124233738.74858743"
+								},
+								"total": {
+									"decimals": "18",
+									"value": "537967537134000000000000"
+								},
+								"transaction_hash": "0x7a64c3a95d2a4d71199c5f085a49e63c41897f9c4244df4cd6d32e75478c6ed9",
+								"type": "token_transfer"
+							},
+							{
+								"block_hash": "0x42b594c39c5e526d9a0a0f4bc1a5cf639b11c24b12989e7b45a3015e5765b698",
+								"block_number": 22543317,
+								"from": {
+									"ens_domain_name": null,
+									"hash": "0x1601843c5E9bC251A3272907010AFa41Fa18347E",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "ALMProxy",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"log_index": 420,
+								"method": "execTransaction",
+								"timestamp": null,
+								"to": {
+									"ens_domain_name": null,
+									"hash": "0x3225737a9Bbb6473CB4a45b7244ACa2BeFdB276A",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "DaiUsds",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"token": {
+									"address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+									"address_hash": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+									"circulating_market_cap": "3212319808.8529344",
+									"decimals": "18",
+									"exchange_rate": "0.999963",
+									"holders": "588989",
+									"holders_count": "588989",
+									"icon_url": "https://assets.coingecko.com/coins/images/9956/small/Badge_Dai.png?1696509996",
+									"name": "Dai",
+									"symbol": "DAI",
+									"total_supply": "3725503855259234428470499648",
+									"type": "ERC-20",
+									"volume_24h": "124233738.74858743"
+								},
+								"total": {
+									"decimals": "18",
+									"value": "537967537134000000000000"
+								},
+								"transaction_hash": "0x7a64c3a95d2a4d71199c5f085a49e63c41897f9c4244df4cd6d32e75478c6ed9",
+								"type": "token_transfer"
+							},
+							{
+								"block_hash": "0x42b594c39c5e526d9a0a0f4bc1a5cf639b11c24b12989e7b45a3015e5765b698",
+								"block_number": 22543317,
+								"from": {
+									"ens_domain_name": null,
+									"hash": "0x3225737a9Bbb6473CB4a45b7244ACa2BeFdB276A",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "DaiUsds",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"log_index": 422,
+								"method": "execTransaction",
+								"timestamp": null,
+								"to": {
+									"ens_domain_name": null,
+									"hash": "0x0000000000000000000000000000000000000000",
+									"implementations": [],
+									"is_contract": false,
+									"is_scam": false,
+									"is_verified": false,
+									"metadata": {
+										"tags": [
+											{
+												"meta": {
+													"alertStatus": "info",
+													"data": "This address is not owned by any user, is often associated with token burn &amp; mint/genesis events and used as a generic null address"
+												},
+												"name": "note_0",
+												"ordinal": 0,
+												"slug": "note0",
+												"tagType": "note"
+											},
+											{
+												"meta": {},
+												"name": "Null Address",
+												"ordinal": 10,
+												"slug": "null-address",
+												"tagType": "name"
+											},
+											{
+												"meta": {},
+												"name": "Null: 0x000...000",
+												"ordinal": 10,
+												"slug": "null-0x000000",
+												"tagType": "name"
+											},
+											{
+												"meta": {},
+												"name": "Null",
+												"ordinal": 0,
+												"slug": "null",
+												"tagType": "protocol"
+											},
+											{
+												"meta": {},
+												"name": "Imtoken User",
+												"ordinal": 0,
+												"slug": "imtoken-user",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Genesis",
+												"ordinal": 0,
+												"slug": "genesis",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "BLOCKED",
+												"ordinal": 0,
+												"slug": "blocked",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Burn",
+												"ordinal": 0,
+												"slug": "burn",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Metamask User",
+												"ordinal": 0,
+												"slug": "metamask-user",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Miner",
+												"ordinal": 0,
+												"slug": "miner",
+												"tagType": "generic"
+											}
+										]
+									},
+									"name": null,
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"token": {
+									"address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+									"address_hash": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+									"circulating_market_cap": "3212319808.8529344",
+									"decimals": "18",
+									"exchange_rate": "0.999963",
+									"holders": "588989",
+									"holders_count": "588989",
+									"icon_url": "https://assets.coingecko.com/coins/images/9956/small/Badge_Dai.png?1696509996",
+									"name": "Dai",
+									"symbol": "DAI",
+									"total_supply": "3725503855259234428470499648",
+									"type": "ERC-20",
+									"volume_24h": "124233738.74858743"
+								},
+								"total": {
+									"decimals": "18",
+									"value": "537967537134000000000000"
+								},
+								"transaction_hash": "0x7a64c3a95d2a4d71199c5f085a49e63c41897f9c4244df4cd6d32e75478c6ed9",
+								"type": "token_burning"
+							},
+							{
+								"block_hash": "0x42b594c39c5e526d9a0a0f4bc1a5cf639b11c24b12989e7b45a3015e5765b698",
+								"block_number": 22543317,
+								"from": {
+									"ens_domain_name": null,
+									"hash": "0x0000000000000000000000000000000000000000",
+									"implementations": [],
+									"is_contract": false,
+									"is_scam": false,
+									"is_verified": false,
+									"metadata": {
+										"tags": [
+											{
+												"meta": {
+													"alertStatus": "info",
+													"data": "This address is not owned by any user, is often associated with token burn &amp; mint/genesis events and used as a generic null address"
+												},
+												"name": "note_0",
+												"ordinal": 0,
+												"slug": "note0",
+												"tagType": "note"
+											},
+											{
+												"meta": {},
+												"name": "Null Address",
+												"ordinal": 10,
+												"slug": "null-address",
+												"tagType": "name"
+											},
+											{
+												"meta": {},
+												"name": "Null: 0x000...000",
+												"ordinal": 10,
+												"slug": "null-0x000000",
+												"tagType": "name"
+											},
+											{
+												"meta": {},
+												"name": "Null",
+												"ordinal": 0,
+												"slug": "null",
+												"tagType": "protocol"
+											},
+											{
+												"meta": {},
+												"name": "Imtoken User",
+												"ordinal": 0,
+												"slug": "imtoken-user",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Genesis",
+												"ordinal": 0,
+												"slug": "genesis",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "BLOCKED",
+												"ordinal": 0,
+												"slug": "blocked",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Burn",
+												"ordinal": 0,
+												"slug": "burn",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Metamask User",
+												"ordinal": 0,
+												"slug": "metamask-user",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Miner",
+												"ordinal": 0,
+												"slug": "miner",
+												"tagType": "generic"
+											}
+										]
+									},
+									"name": null,
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"log_index": 425,
+								"method": "execTransaction",
+								"timestamp": null,
+								"to": {
+									"ens_domain_name": null,
+									"hash": "0x1601843c5E9bC251A3272907010AFa41Fa18347E",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "ALMProxy",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"token": {
+									"address": "0xdC035D45d973E3EC169d2276DDab16f1e407384F",
+									"address_hash": "0xdC035D45d973E3EC169d2276DDab16f1e407384F",
+									"circulating_market_cap": "7239427831.878026",
+									"decimals": "18",
+									"exchange_rate": "0.999884",
+									"holders": "2424",
+									"holders_count": "2424",
+									"icon_url": "https://assets.coingecko.com/coins/images/39926/small/usds.webp?1726666683",
+									"name": "USDS",
+									"symbol": "USDS",
+									"total_supply": "3567852430032821260606794433",
+									"type": "ERC-20",
+									"volume_24h": "8352661.065631657"
+								},
+								"total": {
+									"decimals": "18",
+									"value": "537967537134000000000000"
+								},
+								"transaction_hash": "0x7a64c3a95d2a4d71199c5f085a49e63c41897f9c4244df4cd6d32e75478c6ed9",
+								"type": "token_minting"
+							},
+							{
+								"block_hash": "0x42b594c39c5e526d9a0a0f4bc1a5cf639b11c24b12989e7b45a3015e5765b698",
+								"block_number": 22543317,
+								"from": {
+									"ens_domain_name": null,
+									"hash": "0x1601843c5E9bC251A3272907010AFa41Fa18347E",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "ALMProxy",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"log_index": 429,
+								"method": "execTransaction",
+								"timestamp": null,
+								"to": {
+									"ens_domain_name": null,
+									"hash": "0xc395D150e71378B47A1b8E9de0c1a83b75a08324",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "AllocatorBuffer",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"token": {
+									"address": "0xdC035D45d973E3EC169d2276DDab16f1e407384F",
+									"address_hash": "0xdC035D45d973E3EC169d2276DDab16f1e407384F",
+									"circulating_market_cap": "7239427831.878026",
+									"decimals": "18",
+									"exchange_rate": "0.999884",
+									"holders": "2424",
+									"holders_count": "2424",
+									"icon_url": "https://assets.coingecko.com/coins/images/39926/small/usds.webp?1726666683",
+									"name": "USDS",
+									"symbol": "USDS",
+									"total_supply": "3567852430032821260606794433",
+									"type": "ERC-20",
+									"volume_24h": "8352661.065631657"
+								},
+								"total": {
+									"decimals": "18",
+									"value": "537967537134000000000000"
+								},
+								"transaction_hash": "0x7a64c3a95d2a4d71199c5f085a49e63c41897f9c4244df4cd6d32e75478c6ed9",
+								"type": "token_transfer"
+							},
+							{
+								"block_hash": "0x42b594c39c5e526d9a0a0f4bc1a5cf639b11c24b12989e7b45a3015e5765b698",
+								"block_number": 22543317,
+								"from": {
+									"ens_domain_name": null,
+									"hash": "0xc395D150e71378B47A1b8E9de0c1a83b75a08324",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "AllocatorBuffer",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"log_index": 430,
+								"method": "execTransaction",
+								"timestamp": null,
+								"to": {
+									"ens_domain_name": null,
+									"hash": "0x691a6c29e9e96dd897718305427Ad5D534db16BA",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "AllocatorVault",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"token": {
+									"address": "0xdC035D45d973E3EC169d2276DDab16f1e407384F",
+									"address_hash": "0xdC035D45d973E3EC169d2276DDab16f1e407384F",
+									"circulating_market_cap": "7239427831.878026",
+									"decimals": "18",
+									"exchange_rate": "0.999884",
+									"holders": "2424",
+									"holders_count": "2424",
+									"icon_url": "https://assets.coingecko.com/coins/images/39926/small/usds.webp?1726666683",
+									"name": "USDS",
+									"symbol": "USDS",
+									"total_supply": "3567852430032821260606794433",
+									"type": "ERC-20",
+									"volume_24h": "8352661.065631657"
+								},
+								"total": {
+									"decimals": "18",
+									"value": "537967537134000000000000"
+								},
+								"transaction_hash": "0x7a64c3a95d2a4d71199c5f085a49e63c41897f9c4244df4cd6d32e75478c6ed9",
+								"type": "token_transfer"
+							},
+							{
+								"block_hash": "0x42b594c39c5e526d9a0a0f4bc1a5cf639b11c24b12989e7b45a3015e5765b698",
+								"block_number": 22543317,
+								"from": {
+									"ens_domain_name": null,
+									"hash": "0x691a6c29e9e96dd897718305427Ad5D534db16BA",
+									"implementations": [],
+									"is_contract": true,
+									"is_scam": false,
+									"is_verified": true,
+									"metadata": null,
+									"name": "AllocatorVault",
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"log_index": 432,
+								"method": "execTransaction",
+								"timestamp": null,
+								"to": {
+									"ens_domain_name": null,
+									"hash": "0x0000000000000000000000000000000000000000",
+									"implementations": [],
+									"is_contract": false,
+									"is_scam": false,
+									"is_verified": false,
+									"metadata": {
+										"tags": [
+											{
+												"meta": {
+													"alertStatus": "info",
+													"data": "This address is not owned by any user, is often associated with token burn &amp; mint/genesis events and used as a generic null address"
+												},
+												"name": "note_0",
+												"ordinal": 0,
+												"slug": "note0",
+												"tagType": "note"
+											},
+											{
+												"meta": {},
+												"name": "Null Address",
+												"ordinal": 10,
+												"slug": "null-address",
+												"tagType": "name"
+											},
+											{
+												"meta": {},
+												"name": "Null: 0x000...000",
+												"ordinal": 10,
+												"slug": "null-0x000000",
+												"tagType": "name"
+											},
+											{
+												"meta": {},
+												"name": "Null",
+												"ordinal": 0,
+												"slug": "null",
+												"tagType": "protocol"
+											},
+											{
+												"meta": {},
+												"name": "Imtoken User",
+												"ordinal": 0,
+												"slug": "imtoken-user",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Genesis",
+												"ordinal": 0,
+												"slug": "genesis",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "BLOCKED",
+												"ordinal": 0,
+												"slug": "blocked",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Burn",
+												"ordinal": 0,
+												"slug": "burn",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Metamask User",
+												"ordinal": 0,
+												"slug": "metamask-user",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Miner",
+												"ordinal": 0,
+												"slug": "miner",
+												"tagType": "generic"
+											}
+										]
+									},
+									"name": null,
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"token": {
+									"address": "0xdC035D45d973E3EC169d2276DDab16f1e407384F",
+									"address_hash": "0xdC035D45d973E3EC169d2276DDab16f1e407384F",
+									"circulating_market_cap": "7239427831.878026",
+									"decimals": "18",
+									"exchange_rate": "0.999884",
+									"holders": "2424",
+									"holders_count": "2424",
+									"icon_url": "https://assets.coingecko.com/coins/images/39926/small/usds.webp?1726666683",
+									"name": "USDS",
+									"symbol": "USDS",
+									"total_supply": "3567852430032821260606794433",
+									"type": "ERC-20",
+									"volume_24h": "8352661.065631657"
+								},
+								"total": {
+									"decimals": "18",
+									"value": "537967537134000000000000"
+								},
+								"transaction_hash": "0x7a64c3a95d2a4d71199c5f085a49e63c41897f9c4244df4cd6d32e75478c6ed9",
+								"type": "token_burning"
+							}
+						]
+					}
+				}
+			},
+			"transaction_hash": "0x7a64c3a95d2a4d71199c5f085a49e63c41897f9c4244df4cd6d32e75478c6ed9"
+		},
+		"summaries": [
+			{
+				"summary_template": "{action_type} {amount} {token} to {to_address}",
+				"summary_template_variables": {
+					"action_type": {
+						"type": "string",
+						"value": "Transfer"
+					},
+					"amount": {
+						"type": "currency",
+						"value": "537939.362127"
+					},
+					"to_address": {
+						"type": "address",
+						"value": {
+							"ens_domain_name": null,
+							"hash": "0x0000000000000000000000000000000000000000",
+							"implementations": [],
+							"is_contract": false,
+							"is_scam": false,
+							"is_verified": false,
+							"metadata": {
+								"tags": [
+									{
+										"meta": {
+											"alertStatus": "info",
+											"data": "This address is not owned by any user, is often associated with token burn &amp; mint/genesis events and used as a generic null address"
+										},
+										"name": "note_0",
+										"ordinal": 0,
+										"slug": "note0",
+										"tagType": "note"
+									},
+									{
+										"meta": {},
+										"name": "Null Address",
+										"ordinal": 10,
+										"slug": "null-address",
+										"tagType": "name"
+									},
+									{
+										"meta": {},
+										"name": "Null: 0x000...000",
+										"ordinal": 10,
+										"slug": "null-0x000000",
+										"tagType": "name"
+									},
+									{
+										"meta": {},
+										"name": "Null",
+										"ordinal": 0,
+										"slug": "null",
+										"tagType": "protocol"
+									},
+									{
+										"meta": {},
+										"name": "Imtoken User",
+										"ordinal": 0,
+										"slug": "imtoken-user",
+										"tagType": "generic"
+									},
+									{
+										"meta": {},
+										"name": "Genesis",
+										"ordinal": 0,
+										"slug": "genesis",
+										"tagType": "generic"
+									},
+									{
+										"meta": {},
+										"name": "BLOCKED",
+										"ordinal": 0,
+										"slug": "blocked",
+										"tagType": "generic"
+									},
+									{
+										"meta": {},
+										"name": "Burn",
+										"ordinal": 0,
+										"slug": "burn",
+										"tagType": "generic"
+									},
+									{
+										"meta": {},
+										"name": "Metamask User",
+										"ordinal": 0,
+										"slug": "metamask-user",
+										"tagType": "generic"
+									},
+									{
+										"meta": {},
+										"name": "Miner",
+										"ordinal": 0,
+										"slug": "miner",
+										"tagType": "generic"
+									}
+								]
+							},
+							"name": null,
+							"private_tags": [],
+							"proxy_type": "unknown",
+							"public_tags": [],
+							"watchlist_names": []
+						}
+					},
+					"token": {
+						"type": "token",
+						"value": {
+							"address": "0x377C3bd93f2a2984E1E7bE6A5C22c525eD4A4815",
+							"address_hash": "0x377C3bd93f2a2984E1E7bE6A5C22c525eD4A4815",
+							"circulating_market_cap": null,
+							"decimals": "6",
+							"exchange_rate": null,
+							"holders": "103",
+							"holders_count": "103",
+							"icon_url": null,
+							"name": "Spark USDC",
+							"symbol": "spUSDC",
+							"total_supply": "1231628376392",
+							"type": "ERC-20",
+							"volume_24h": null
+						}
+					}
+				}
+			}
+		]
+	},
+	"success": true
+}

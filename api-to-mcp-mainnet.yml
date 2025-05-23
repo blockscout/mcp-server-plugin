@@ -9,7 +9,7 @@ tools:
     description: |
       This tool MUST be called BEFORE any other tool.
       Without calling it, the MCP server will not work as expected.
-      It is enough to call it once in a session.
+      It MUST be called once in a session.
     args: []
     responseTemplate:
       body: |
@@ -249,6 +249,28 @@ tools:
       body: |
         {{.}}
 
+  - name: transaction_summary
+    description: |
+      Useful to get initial summary of the transaction before its deep analysis.
+      It is not guaranteed that the summary is 100% accurate.
+      Blockscout Transaction Interpreter which is used to generate the summary has its own limitations and may not be able to interpret all transactions.
+    args:
+      - name: hash
+        description: "Transaction hash"
+        type: string
+        required: true
+        position: path
+    requestTemplate:
+      url: "{{.config.bsUrl}}/api/v2/transactions/{{.args.hash}}/summary"
+      method: GET
+    responseTemplate:
+      body: |
+        # Transaction Summary from Blockscout Transaction Interpreter
+        {{.data.summaries}}
+
+        # Transaction Interpreter Raw Data
+        {{.data.debug_data}}
+
   - name: wallet_nft_collections
     description: |
       Get NFT tokens for a wallet. Note that there is no filter for spam tokens.
@@ -272,28 +294,6 @@ tools:
       appendBody: |
         
         This data includes all NFT collections associated with the specified address.
-
-  - name: transaction_summary
-    description: |
-      Get transaction summary.
-    args:
-      - name: hash
-        description: "Transaction hash"
-        type: string
-        required: true
-        position: path
-    requestTemplate:
-      url: "{{.config.bsUrl}}/api/v2/transactions/{{.args.hash}}/summary"
-      method: GET
-    responseTemplate:
-      prependBody: |
-        # Transaction Summary
-        
-        Below is the summary for transaction "{{.args.hash}}":
-        
-      appendBody: |
-        
-        This summary provides an overview of the transaction, including its status, value, gas used, and other key details.
 
   - name: block_info
     description: |

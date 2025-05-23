@@ -1,0 +1,93 @@
+{
+	"data": {
+		"debug_data": {
+			"is_prompt_truncated": false,
+			"model_classification_type": "withdraw",
+			"post_llm_classification_type": "withdraw",
+			"summary_template": {
+				"withdraw": {
+					"stopped_processing_for_var": "token",
+					"template_name": "Generic-Withdraw",
+					"template_vars": {
+						"decodedData": "",
+						"initiator": {
+							"ens_domain_name": null,
+							"hash": "0x3fBBA2b0e07895ae8638D17fd83d72338954D272",
+							"implementations": [],
+							"is_contract": false,
+							"is_scam": false,
+							"is_verified": false,
+							"metadata": null,
+							"name": null,
+							"private_tags": [],
+							"proxy_type": null,
+							"public_tags": [],
+							"watchlist_names": []
+						},
+						"isWithdrawEventPresent": false,
+						"methodCalled": "withdrawPendingBalance",
+						"receiver": {
+							"ens_domain_name": null,
+							"hash": "0x3B4D794a66304F130a4Db8F2551B0070dfCf5ca7",
+							"implementations": [
+								{
+									"address": "0x727A1b1dc3DDB929Dd53CF810E973B5D0A1cDa5a",
+									"address_hash": "0x727A1b1dc3DDB929Dd53CF810E973B5D0A1cDa5a",
+									"name": "ZkLighter"
+								}
+							],
+							"is_contract": true,
+							"is_scam": false,
+							"is_verified": true,
+							"metadata": null,
+							"name": "Proxy",
+							"private_tags": [],
+							"proxy_type": "eip1967",
+							"public_tags": [],
+							"watchlist_names": []
+						},
+						"receiverObj": {
+							"ens_domain_name": null,
+							"hash": {
+								"ens_domain_name": null,
+								"hash": "0x3B4D794a66304F130a4Db8F2551B0070dfCf5ca7",
+								"implementations": [
+									{
+										"address": "0x727A1b1dc3DDB929Dd53CF810E973B5D0A1cDa5a",
+										"address_hash": "0x727A1b1dc3DDB929Dd53CF810E973B5D0A1cDa5a",
+										"name": "ZkLighter"
+									}
+								],
+								"is_contract": true,
+								"is_scam": false,
+								"is_verified": true,
+								"metadata": null,
+								"name": "Proxy",
+								"private_tags": [],
+								"proxy_type": "eip1967",
+								"public_tags": [],
+								"watchlist_names": []
+							},
+							"implementations": [],
+							"is_contract": false,
+							"is_scam": false,
+							"is_verified": false,
+							"metadata": null,
+							"name": null,
+							"private_tags": [],
+							"proxy_type": null,
+							"public_tags": [],
+							"watchlist_names": []
+						},
+						"tokenTransfersLength": 1,
+						"transferWithToken": [],
+						"withdrawEvent": null
+					}
+				}
+			},
+			"transaction_hash": "0xfe398648d763495eceab510f56e99d4bd940b5fa60b3db46792f7fd68ea57866"
+		},
+		"summaries": []
+	},
+	"success": true
+}
