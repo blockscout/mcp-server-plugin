@@ -1,0 +1,7 @@
+---
+description: 
+globs: api-to-mcp-mainnet.yml,api-to-mcp.yml
+alwaysApply: false
+---
+1. Read [README.md](mdc:README.md) to understand the project idea
+2. Read [MCP-plugin-configuration-manual.md](mdc:references/MCP-plugin-configuration-manual.md) to undersrand the MCP server plugin configuration

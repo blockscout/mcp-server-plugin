@@ -1,0 +1,7 @@
+---
+description: functions and syntax to be used in responseTemplate of MCP server plugin configuration
+globs: 
+alwaysApply: false
+---
+1. Read [gjson-path-syntax.md](mdc:references/gjson-path-syntax.md) to get maximum details of GJSON Path Syntax
+2. Read [template-function-list.md](mdc:references/template-function-list.md) to get more details of Template Functions that can be used in `responseTemplate`
