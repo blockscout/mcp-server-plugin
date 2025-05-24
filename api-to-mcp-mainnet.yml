@@ -268,12 +268,13 @@ tools:
         # Transaction Summary from Blockscout Transaction Interpreter
         {{.data.summaries}}
 
-  - name: wallet_nft_collections
+  - name: nft_tokens_by_address
     description: |
-      Get NFT tokens for a wallet. Note that there is no filter for spam tokens.
+      Get NFT tokens owned by an address grouped by NFT collections (ERC-721, ERC-404, ERC-1155).
     args:
+      # TODO: next_page_params are not used so far to paginate through results
       - name: address
-        description: "Wallet address"
+        description: "NFT owner address"
         type: string
         required: true
         position: path
@@ -281,16 +282,42 @@ tools:
       url: "{{.config.bsUrl}}/api/v2/addresses/{{.args.address}}/nft/collections?type=ERC-721,ERC-404,ERC-1155"
       method: GET
     responseTemplate:
-      prependBody: |
-        # NFT Collections in Wallet
-        
-        Below is the list of NFT collections (ERC-721, ERC-404, ERC-1155) held by address "{{.args.address}}":
-        
-        Note: There is no filter for spam tokens.
-        
-      appendBody: |
-        
-        This data includes all NFT collections associated with the specified address.
+      body: |
+        [
+          {{- range $index, $item := .items }}
+          {{- if $index}},{{end}}
+          {
+            "collection": {
+              "type": "{{$item.token.type}}",
+              "address": "{{$item.token.address_hash}}",
+              "name": "{{$item.token.name}}",
+              "symbol": "{{$item.token.symbol}}",
+              "holders_count": {{$item.token.holders_count}},
+              "total_supply": {{$item.token.total_supply}}
+            },
+            "amount": "{{$item.amount}}",
+            "token_instances": [
+              {{- range $instIndex, $instance := $item.token_instances }}
+              {{- if $instIndex}},{{end}}
+              {
+                "id": "{{$instance.id}}"
+                {{- if $instance.metadata}}
+                {{- if $instance.metadata.name}},
+                "name": "{{$instance.metadata.name}}"
+                {{- end}}
+                {{- if $instance.metadata.description}},
+                "description": "{{$instance.metadata.description}}"
+                {{- end}}
+                {{- if $instance.metadata.external_url}},
+                "external_app_url": "{{$instance.metadata.external_url}}"
+                {{- end}}
+                {{- end}}
+              }
+              {{- end }}
+            ]
+          }
+          {{- end }}
+        ]
 
   - name: block_info
     description: |
