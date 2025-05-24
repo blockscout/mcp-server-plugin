@@ -1,5 +1,7 @@
 # Template Function List
 
+Copied from [https://helm.sh/docs/chart_template_guide/function_list/](https://helm.sh/docs/chart_template_guide/function_list/)
+
 Helm includes many template functions you can take advantage of in templates. They are listed here and broken down by the following categories:
 
 * [Cryptographic and Security](#cryptographic-and-security-functions)
