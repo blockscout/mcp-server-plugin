@@ -347,7 +347,7 @@ tools:
         required: true
         position: path
     requestTemplate:
-      url: "{{.config.bsUrl}}/api/v2/transactions/{{.args.hash}}"
+      url: "{{.config.bsUrl}}/api/v2/transactions/{{.args.hash}}?apikey={{.config.bsApiKey}}"
       method: GET
     responseTemplate:
       body: |
