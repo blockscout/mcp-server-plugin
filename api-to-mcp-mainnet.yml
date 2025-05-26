@@ -270,7 +270,9 @@ tools:
 
   - name: nft_tokens_by_address
     description: |
-      Get NFT tokens owned by an address grouped by NFT collections (ERC-721, ERC-404, ERC-1155).
+      Retrieve NFT tokens (ERC-721, ERC-404, ERC-1155) owned by an address, grouped by collection.
+      Provides collection details (type, address, name, symbol, total supply, holder count) and individual token instance data (ID, name, description, external URL, metadata attributes).
+      Essential for a detailed overview of an address's digital collectibles and their associated collection data.
     args:
       # TODO: next_page_params are not used so far to paginate through results
       - name: address
@@ -310,6 +312,9 @@ tools:
                 {{- end}}
                 {{- if $instance.metadata.external_url}},
                 "external_app_url": "{{$instance.metadata.external_url}}"
+                {{- end}}
+                {{- if $instance.metadata.attributes}},
+                "metadata_attributes": {{$instance.metadata.attributes}}
                 {{- end}}
                 {{- end}}
               }
