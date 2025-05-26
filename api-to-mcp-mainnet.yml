@@ -66,9 +66,8 @@ tools:
 
   - name: get_contract_abi
     description: |
-      Get smart contract ABI (Application Binary Interface). An ABI defines all functions,
-      events, their parameters, and return types. The ABI is required to format function
-      calls or interpret contract data.
+      Get smart contract ABI (Application Binary Interface).
+      An ABI defines all functions, events, their parameters, and return types. The ABI is required to format function calls or interpret contract data.
     args:
       - name: address
         description: "Smart contract address"
@@ -88,9 +87,10 @@ tools:
       - Address existence check
       - Native token (ETH) balance (provided as is, without adjusting by decimals)
       - ENS name association (if any)
-      - Contract status (whether the address is a contract)
+      - Contract status (whether the address is a contract, whether it is verified)
       - Proxy contract information (if applicable): determines if a smart contract is a proxy contract (which forwards calls to implementation contracts), including proxy type and implementation addresses
       - Token details (if the contract is a token): name, symbol, decimals, total supply, etc.
+      Essential for address analysis, contract investigation, token research, and DeFi protocol analysis.
     args:
       - name: address
         description: "Address to get information about"
@@ -107,7 +107,7 @@ tools:
   - name: get_tokens_by_address
     description: |
       Get comprehensive ERC20 token holdings for an address with enriched metadata and market data.
-      Returns detailed token information including contract details (name, symbol, decimals), market metrics (exchange rate, market cap, volume), holders count, and actual balance.
+      Returns detailed token information including contract details (name, symbol, decimals), market metrics (exchange rate, market cap, volume), holders count, and actual balance (provided as is, without adjusting by decimals).
       Supports pagination.
       Essential for portfolio analysis, wallet auditing, and DeFi position tracking.
     args:
