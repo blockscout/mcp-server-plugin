@@ -1,0 +1,81 @@
+{
+	"items": [
+		{
+			"address": {
+				"ens_domain_name": null,
+				"hash": "0x388C818CA8B9251b393131C08a736A67ccB19297",
+				"implementations": [],
+				"is_contract": true,
+				"is_scam": false,
+				"is_verified": true,
+				"metadata": {
+					"tags": [
+						{
+							"meta": {},
+							"name": "Proposer Fee Recipient",
+							"ordinal": 0,
+							"slug": "proposer-fee-recipient",
+							"tagType": "generic"
+						},
+						{
+							"meta": {},
+							"name": "Lido",
+							"ordinal": 0,
+							"slug": "lido",
+							"tagType": "protocol"
+						},
+						{
+							"meta": {
+								"alertStatus": "info",
+								"data": "Lido asks node operators and builders working with them to send priority fees and MEV rewards to this address."
+							},
+							"name": "note_0",
+							"ordinal": 0,
+							"slug": "note0",
+							"tagType": "note"
+						},
+						{
+							"meta": {
+								"tooltipUrl": "https://lido.fi/"
+							},
+							"name": "Lido: Execution Layer Rewards Vault",
+							"ordinal": 10,
+							"slug": "lido-execution-layer-rewards-vault",
+							"tagType": "name"
+						}
+					]
+				},
+				"name": "LidoExecutionLayerRewardsVault",
+				"private_tags": [],
+				"proxy_type": "unknown",
+				"public_tags": [],
+				"watchlist_names": []
+			},
+			"block_hash": "0x808651a1c8d980a02321b3d2931001e813685696947b3bafc03d423708c2cdcb",
+			"block_number": 22563557,
+			"data": "0x0000000000000000000000000000000000000000000000000067401afd949d30",
+			"decoded": {
+				"method_call": "ETHReceived(uint256 amount)",
+				"method_id": "27f12abf",
+				"parameters": [
+					{
+						"indexed": false,
+						"name": "amount",
+						"type": "uint256",
+						"value": "29062407268900144"
+					}
+				]
+			},
+			"index": 533,
+			"smart_contract": null,
+			"topics": [
+				"0x27f12abfe35860a9a927b465bb3d4a9c23c8428174b83f278fe45ed7b4da2662",
+				null,
+				null,
+				null
+			],
+			"transaction_hash": "0x7efd8d81b170d9195217c0380c2ffa7b451dcc0dd83ccdc142579e78ca65b0b2"
+		}
+	],
+	"next_page_params": null
+}

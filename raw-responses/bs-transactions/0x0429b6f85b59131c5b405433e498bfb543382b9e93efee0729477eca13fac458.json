@@ -1,0 +1,125 @@
+{
+	"priority_fee": "720300000",
+	"raw_input": "0x",
+	"result": "success",
+	"hash": "0x0429b6f85b59131c5b405433e498bfb543382b9e93efee0729477eca13fac458",
+	"max_fee_per_gas": "1049480944",
+	"revert_reason": null,
+	"confirmation_duration": [
+		0,
+		12242
+	],
+	"transaction_burnt_fee": "10734781827000",
+	"type": 2,
+	"token_transfers_overflow": false,
+	"confirmations": 4,
+	"position": 121,
+	"max_priority_fee_per_gas": "34300",
+	"transaction_tag": null,
+	"created_contract": null,
+	"value": "11729104600154800",
+	"from": {
+		"ens_domain_name": null,
+		"hash": "0xd5FBDa4C79F38920159fE5f22DF9655FDe292d47",
+		"implementations": [],
+		"is_contract": false,
+		"is_scam": false,
+		"is_verified": false,
+		"metadata": {
+			"tags": [
+				{
+					"meta": {
+						"tooltipDescription": "Gamdom's Ethereum hot wallet.",
+						"tooltipUrl": "https://gamdom.com/"
+					},
+					"name": "Gamdom: Hot Wallet",
+					"ordinal": 10,
+					"slug": "gamdom-hot-wallet",
+					"tagType": "name"
+				},
+				{
+					"meta": {},
+					"name": "Exchange",
+					"ordinal": 0,
+					"slug": "exchange",
+					"tagType": "generic"
+				},
+				{
+					"meta": {},
+					"name": "Gamdom",
+					"ordinal": 0,
+					"slug": "gamdom",
+					"tagType": "protocol"
+				}
+			]
+		},
+		"name": null,
+		"private_tags": [],
+		"proxy_type": null,
+		"public_tags": [],
+		"watchlist_names": []
+	},
+	"gas_used": "21000",
+	"status": "ok",
+	"to": {
+		"ens_domain_name": null,
+		"hash": "0x2A5430f0ee7dbB566495Df81e3E7f391f1650c21",
+		"implementations": [],
+		"is_contract": false,
+		"is_scam": false,
+		"is_verified": false,
+		"metadata": {
+			"tags": [
+				{
+					"meta": {
+						"main_entity": "CoinSpot"
+					},
+					"name": "CoinSpot: Deposit Address",
+					"ordinal": 0,
+					"slug": "coinspot-deposit-address",
+					"tagType": "name"
+				},
+				{
+					"meta": {},
+					"name": "CoinSpot",
+					"ordinal": 0,
+					"slug": "coinspot",
+					"tagType": "protocol"
+				},
+				{
+					"meta": {},
+					"name": "DEPOSIT ADDRESS",
+					"ordinal": 0,
+					"slug": "deposit-address",
+					"tagType": "generic"
+				}
+			]
+		},
+		"name": null,
+		"private_tags": [],
+		"proxy_type": null,
+		"public_tags": [],
+		"watchlist_names": []
+	},
+	"authorization_list": [],
+	"method": null,
+	"fee": {
+		"type": "actual",
+		"value": "10735502127000"
+	},
+	"actions": [],
+	"gas_limit": "63000",
+	"gas_price": "511214387",
+	"decoded_input": null,
+	"token_transfers": [],
+	"base_fee_per_gas": "511180087",
+	"timestamp": "2025-05-26T01:01:59.000000Z",
+	"nonce": 663275,
+	"historic_exchange_rate": "2556.59",
+	"transaction_types": [
+		"coin_transfer"
+	],
+	"exchange_rate": "2554.65",
+	"block_number": 22563572,
+	"has_error_in_internal_transactions": false
+}

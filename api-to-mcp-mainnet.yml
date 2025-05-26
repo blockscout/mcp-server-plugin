@@ -279,7 +279,7 @@ tools:
         required: true
         position: path
     requestTemplate:
-      url: "{{.config.bsUrl}}/api/v2/addresses/{{.args.address}}/nft/collections?type=ERC-721,ERC-404,ERC-1155"
+      url: "{{.config.bsUrl}}/api/v2/addresses/{{.args.address}}/nft/collections?type=ERC-721,ERC-404,ERC-1155&apikey={{.config.bsApiKey}}"
       method: GET
     responseTemplate:
       body: |
@@ -319,9 +319,9 @@ tools:
           {{- end }}
         ]
 
-  - name: block_info
+  - name: get_block_info
     description: |
-      Get block information.
+      Get block information like timestamp, gas used, burnt fees, transaction count etc.
     args:
       - name: number_or_hash
         description: "Block number or hash"
@@ -329,21 +329,17 @@ tools:
         required: true
         position: path
     requestTemplate:
-      url: "{{.config.bsUrl}}/api/v2/blocks/{{.args.number_or_hash}}"
+      url: "{{.config.bsUrl}}/api/v2/blocks/{{.args.number_or_hash}}?apikey={{.config.bsApiKey}}"
       method: GET
     responseTemplate:
-      prependBody: |
-        # Block Information
-        
-        Below is the detailed information for block "{{.args.number_or_hash}}":
-        
-      appendBody: |
-        
-        This data includes the block's timestamp, size, gas used, transaction count, and other relevant information.
+      body: |
+        {{.}}
 
-  - name: transaction_info
+  - name: get_transaction_info
     description: |
-      Get transaction information.
+      Get comprehensive transaction information. 
+      Unlike standard eth_getTransactionByHash, this tool returns enriched data including decoded input parameters, detailed token transfers with token metadata, address information (ENS names, contract verification status, public tags, proxy details), transaction fee breakdown (priority fees, burnt fees) and categorized transaction types. 
+      Essential for transaction analysis, debugging smart contract interactions, tracking DeFi operations.
     args:
       - name: hash
         description: "Transaction hash"
@@ -354,18 +350,15 @@ tools:
       url: "{{.config.bsUrl}}/api/v2/transactions/{{.args.hash}}"
       method: GET
     responseTemplate:
-      prependBody: |
-        # Transaction Information
-        
-        Below is the detailed information for transaction "{{.args.hash}}":
-        
-      appendBody: |
-        
-        This data provides comprehensive details about the transaction, including its inputs, outputs, and execution results.
+      body: |
+        {{.}}
 
-  - name: transaction_logs
+  - name: get_transaction_logs
     description: |
-      Get all logs in a transaction.
+      Get comprehensive transaction logs with decoded event data.
+      Unlike standard eth_getLogs, this tool returns enriched logs including decoded event parameters with types and values, detailed contract information (ENS names, verification status, public tags, proxy details, token metadata), block context, and categorized event signatures.
+      Each log entry includes raw data, decoded method calls, parameter extraction, and contract classifications.
+      Essential for analyzing smart contract events, tracking token transfers, monitoring DeFi protocol interactions, debugging event emissions, and understanding complex multi-contract transaction flows.
     args:
       - name: hash
         description: "Transaction hash"
@@ -373,36 +366,75 @@ tools:
         required: true
         position: path
     requestTemplate:
-      url: "{{.config.bsUrl}}/api/v2/transactions/{{.args.hash}}/logs"
+      url: "{{.config.bsUrl}}/api/v2/transactions/{{.args.hash}}/logs?apikey={{.config.bsApiKey}}"
       method: GET
     responseTemplate:
-      prependBody: |
-        # Transaction Logs
-        
-        Below are the event logs emitted during transaction "{{.args.hash}}":
-        
-      appendBody: |
-        
-        These logs contain the events emitted by smart contracts during the transaction execution, which can be useful for understanding what happened during the transaction.
+      body: |
+        **Items Structure:**
+        - `address`: The queried address that emitted these logs (constant across all items)
+        - `block_hash/block_number`: Block where the event was emitted
+        - `index`: Log position within the block
+        - `topics`: Raw indexed event parameters (first topic is event signature hash)
+        - `data`: Raw non-indexed event parameters (hex encoded)
 
-  - name: address_logs
+        **Event Decoding (misleadingly named fields):**
+        - `method_call`: **Actually the event signature** (e.g., "Transfer(address indexed from, address indexed to, uint256 value)")
+        - `method_id`: **Actually the event signature hash** (first 4 bytes of keccak256 hash)
+        - `parameters`: Decoded event parameters with names, types, values, and indexing status
+
+        **Transaction logs JSON:**
+        {{.}}
+
+  - name: get_address_logs
     description: |
-      Get all logs for an account.
+      Get comprehensive logs emitted by a specific address with decoded event data.
+      Returns enriched log entries including decoded event parameters with types and values, detailed contract information (ENS names, verification status, public tags, proxy details, token metadata), block context, transaction hashes, and event signatures.
+      Each log entry includes raw data, decoded event names, parameter extraction with indexed/non-indexed classification, and contract classifications.
+      Essential for analyzing smart contract events emitted by specific addresses, monitoring token contract activities, tracking DeFi protocol state changes, debugging contract event emissions, and understanding address-specific event history flows.
     args:
       - name: address
         description: "Account address"
         type: string
         required: true
         position: path
+      - name: block_number
+        description: "Part of the combined next cursor to get the next page of results"
+        type: integer
+        required: false
+        position: query
+      - name: index
+        description: "Part of the combined next cursor to get the next page of results"
+        type: integer
+        required: false
+        position: query
+      - name: items_count
+        description: "Part of the combined next cursor to get the next page of results"
+        type: integer
+        required: false
+        position: query
     requestTemplate:
-      url: "{{.config.bsUrl}}/api/v2/addresses/{{.args.address}}/logs"
+      url: "{{.config.bsUrl}}/api/v2/addresses/{{.args.address}}/logs?apikey={{.config.bsApiKey}}"
       method: GET
     responseTemplate:
-      prependBody: |
-        # Account Logs
-        
-        Below are the event logs associated with address "{{.args.address}}":
-        
-      appendBody: |
-        
-        These logs represent events emitted by the account's smart contract or events where this address was involved as a parameter.
+      body: |
+        **Items Structure:**
+        - `address`: The queried address that emitted these logs (constant across all items)
+        - `smart_contract`: The actual contract that generated the specific log event (varies per item)
+        - `block_hash/block_number`: Block where the event was emitted
+        - `transaction_hash`: Transaction that triggered the event
+        - `index`: Log position within the block
+        - `topics`: Raw indexed event parameters (first topic is event signature hash)
+        - `data`: Raw non-indexed event parameters (hex encoded)
+
+        **Event Decoding (misleadingly named fields):**
+        - `method_call`: **Actually the event signature** (e.g., "Transfer(address indexed from, address indexed to, uint256 value)")
+        - `method_id`: **Actually the event signature hash** (first 4 bytes of keccak256 hash)
+        - `parameters`: Decoded event parameters with names, types, values, and indexing status
+
+        **Address logs JSON:**
+        {{.}}
+        {{- if .next_page_params }}
+
+        ----
+        To get the next page call get_address_logs(<same address>, {{.next_page_params.block_number}}, {{.next_page_params.index}}, {{.next_page_params.items_count}})
+        {{- end }}

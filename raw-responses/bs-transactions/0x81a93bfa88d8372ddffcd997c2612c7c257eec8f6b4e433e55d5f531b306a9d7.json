@@ -1,0 +1,145 @@
+{
+	"priority_fee": "168858000000000",
+	"raw_input": "0x3e5aa08200000000000000000000000000000000000000000000000000000000000dba9d00000000000000000000000000000000000000000000000000000000001e50a0000000000000000000000000e64a54e2533fd126c2e452c5fab544d80e2e4eb50000000000000000000000000000000000000000000000000000000012fa217b0000000000000000000000000000000000000000000000000000000012fa2306",
+	"max_fee_per_blob_gas": "10",
+	"result": "success",
+	"hash": "0x81a93bfa88d8372ddffcd997c2612c7c257eec8f6b4e433e55d5f531b306a9d7",
+	"max_fee_per_gas": "14045689810",
+	"revert_reason": null,
+	"confirmation_duration": [
+		0,
+		12000
+	],
+	"transaction_burnt_fee": "77444277987024",
+	"type": 3,
+	"token_transfers_overflow": false,
+	"confirmations": 5,
+	"position": 185,
+	"max_priority_fee_per_gas": "1000000000",
+	"transaction_tag": null,
+	"created_contract": null,
+	"value": "0",
+	"from": {
+		"ens_domain_name": null,
+		"hash": "0xC1b634853Cb333D3aD8663715b08f41A3Aec47cc",
+		"implementations": [],
+		"is_contract": false,
+		"is_scam": false,
+		"is_verified": false,
+		"metadata": {
+			"tags": [
+				{
+					"meta": {},
+					"name": "Arbitrum",
+					"ordinal": 0,
+					"slug": "arbitrum",
+					"tagType": "protocol"
+				},
+				{
+					"meta": {},
+					"name": "Arbitrum: Batch Submitter",
+					"ordinal": 10,
+					"slug": "arbitrum-batch-submitter",
+					"tagType": "name"
+				}
+			]
+		},
+		"name": null,
+		"private_tags": [],
+		"proxy_type": null,
+		"public_tags": [],
+		"watchlist_names": []
+	},
+	"gas_used": "168858",
+	"status": "ok",
+	"blob_gas_price": "1",
+	"to": {
+		"ens_domain_name": null,
+		"hash": "0x1c479675ad559DC151F6Ec7ed3FbF8ceE79582B6",
+		"implementations": [
+			{
+				"address": "0x98a58ADAb0f8A66A1BF4544d804bc0475dff32c7",
+				"address_hash": "0x98a58ADAb0f8A66A1BF4544d804bc0475dff32c7",
+				"name": "SequencerInbox"
+			}
+		],
+		"is_contract": true,
+		"is_scam": false,
+		"is_verified": true,
+		"metadata": {
+			"tags": [
+				{
+					"meta": {},
+					"name": "Arbitrum: Sequencer Inbox",
+					"ordinal": 10,
+					"slug": "arbitrum-sequencer-inbox",
+					"tagType": "name"
+				}
+			]
+		},
+		"name": "TransparentUpgradeableProxy",
+		"private_tags": [],
+		"proxy_type": "eip1967",
+		"public_tags": [],
+		"watchlist_names": []
+	},
+	"authorization_list": [],
+	"method": "addSequencerL2BatchFromBlobs",
+	"fee": {
+		"type": "actual",
+		"value": "246302277987024"
+	},
+	"actions": [],
+	"gas_limit": "213673",
+	"gas_price": "1458635528",
+	"decoded_input": {
+		"method_call": "addSequencerL2BatchFromBlobs(uint256 sequenceNumber, uint256 afterDelayedMessagesRead, address gasRefunder, uint256 prevMessageCount, uint256 newMessageCount)",
+		"method_id": "3e5aa082",
+		"parameters": [
+			{
+				"name": "sequenceNumber",
+				"type": "uint256",
+				"value": "899741"
+			},
+			{
+				"name": "afterDelayedMessagesRead",
+				"type": "uint256",
+				"value": "1986720"
+			},
+			{
+				"name": "gasRefunder",
+				"type": "address",
+				"value": "0xe64a54E2533Fd126C2E452c5fAb544d80E2E4eb5"
+			},
+			{
+				"name": "prevMessageCount",
+				"type": "uint256",
+				"value": "318382459"
+			},
+			{
+				"name": "newMessageCount",
+				"type": "uint256",
+				"value": "318382854"
+			}
+		]
+	},
+	"blob_versioned_hashes": [
+		"0x010171a236ba56c26a0a398efd6ba8e3f6fa5cdf13bc7ca0a4f61617f09bed29",
+		"0x0156d52858863b00c6a60fea81c4ff5c8f2f7443ed611780f52261c39fbf7be7",
+		"0x019bcaef1bbdb32bf626717f3ea84dbde83cbde140ebd5c7280d6e112b308ac4"
+	],
+	"token_transfers": [],
+	"base_fee_per_gas": "458635528",
+	"timestamp": "2025-05-26T03:21:23.000000Z",
+	"nonce": 848527,
+	"historic_exchange_rate": "2556.59",
+	"transaction_types": [
+		"contract_call",
+		"blob_transaction"
+	],
+	"exchange_rate": "2552.32",
+	"burnt_blob_fee": "393216",
+	"blob_gas_used": "393216",
+	"block_number": 22564261,
+	"has_error_in_internal_transactions": false
+}

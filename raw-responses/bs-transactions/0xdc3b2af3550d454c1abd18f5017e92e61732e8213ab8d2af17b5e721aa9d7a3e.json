@@ -1,0 +1,375 @@
+{
+	"priority_fee": "5226752483576",
+	"raw_input": "0x000000000102000000000000011e1e0000000000000000000000000000b522c57337954d03c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48767fe9edc9e0df98e07454847909b5e959d7ca0ec02aaa39b223fe8d0a0e5c4f27ead9083c756cc2e0554a476a092703abdb3ef35c80e0d76d32939f0000000000000000000000000000001e0000003c6a091a3406e0073c3cd6340122143009adac0eda",
+	"result": "success",
+	"hash": "0xdc3b2af3550d454c1abd18f5017e92e61732e8213ab8d2af17b5e721aa9d7a3e",
+	"max_fee_per_gas": "431617841",
+	"revert_reason": null,
+	"confirmation_duration": [
+		0,
+		12242
+	],
+	"transaction_burnt_fee": "90761170794255",
+	"type": 2,
+	"token_transfers_overflow": false,
+	"confirmations": 5,
+	"position": 126,
+	"max_priority_fee_per_gas": "431617841",
+	"transaction_tag": null,
+	"created_contract": null,
+	"value": "233361",
+	"from": {
+		"ens_domain_name": null,
+		"hash": "0x979159f671779A9BE573C8a1217dDbe9990e24F9",
+		"implementations": [],
+		"is_contract": false,
+		"is_scam": false,
+		"is_verified": false,
+		"metadata": null,
+		"name": null,
+		"private_tags": [],
+		"proxy_type": null,
+		"public_tags": [],
+		"watchlist_names": []
+	},
+	"gas_used": "222391",
+	"status": "ok",
+	"to": {
+		"ens_domain_name": null,
+		"hash": "0x5EDDE29bBCE5FCEdFEE74A6f57B1C361C5b1e18f",
+		"implementations": [],
+		"is_contract": true,
+		"is_scam": false,
+		"is_verified": false,
+		"metadata": null,
+		"name": null,
+		"private_tags": [],
+		"proxy_type": "unknown",
+		"public_tags": [],
+		"watchlist_names": []
+	},
+	"authorization_list": [],
+	"method": "0x00000000",
+	"fee": {
+		"type": "actual",
+		"value": "95987923277831"
+	},
+	"actions": [],
+	"gas_limit": "280033",
+	"gas_price": "431617841",
+	"decoded_input": null,
+	"token_transfers": [
+		{
+			"block_hash": "0x808651a1c8d980a02321b3d2931001e813685696947b3bafc03d423708c2cdcb",
+			"block_number": 22563557,
+			"from": {
+				"ens_domain_name": null,
+				"hash": "0xE0554a476A092703abdB3Ef35c80e0D76d32939F",
+				"implementations": [],
+				"is_contract": true,
+				"is_scam": false,
+				"is_verified": true,
+				"metadata": null,
+				"name": "UniswapV3Pool",
+				"private_tags": [],
+				"proxy_type": "unknown",
+				"public_tags": [],
+				"watchlist_names": []
+			},
+			"log_index": 518,
+			"method": null,
+			"timestamp": null,
+			"to": {
+				"ens_domain_name": null,
+				"hash": "0x5EDDE29bBCE5FCEdFEE74A6f57B1C361C5b1e18f",
+				"implementations": [],
+				"is_contract": true,
+				"is_scam": false,
+				"is_verified": false,
+				"metadata": null,
+				"name": null,
+				"private_tags": [],
+				"proxy_type": "unknown",
+				"public_tags": [],
+				"watchlist_names": []
+			},
+			"token": {
+				"address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+				"address_hash": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+				"circulating_market_cap": "60895133683.36236",
+				"decimals": "6",
+				"exchange_rate": "0.999953",
+				"holders": "3701719",
+				"holders_count": "3701719",
+				"icon_url": "https://assets.coingecko.com/coins/images/6319/small/usdc.png?1696506694",
+				"name": "USDC",
+				"symbol": "USDC",
+				"total_supply": "40008980908280000",
+				"type": "ERC-20",
+				"volume_24h": "10900684178.633442"
+			},
+			"total": {
+				"decimals": "6",
+				"value": "131096394"
+			},
+			"transaction_hash": "0xdc3b2af3550d454c1abd18f5017e92e61732e8213ab8d2af17b5e721aa9d7a3e",
+			"type": "token_transfer"
+		},
+		{
+			"block_hash": "0x808651a1c8d980a02321b3d2931001e813685696947b3bafc03d423708c2cdcb",
+			"block_number": 22563557,
+			"from": {
+				"ens_domain_name": null,
+				"hash": "0x5EDDE29bBCE5FCEdFEE74A6f57B1C361C5b1e18f",
+				"implementations": [],
+				"is_contract": true,
+				"is_scam": false,
+				"is_verified": false,
+				"metadata": null,
+				"name": null,
+				"private_tags": [],
+				"proxy_type": "unknown",
+				"public_tags": [],
+				"watchlist_names": []
+			},
+			"log_index": 519,
+			"method": null,
+			"timestamp": null,
+			"to": {
+				"ens_domain_name": null,
+				"hash": "0xE0554a476A092703abdB3Ef35c80e0D76d32939F",
+				"implementations": [],
+				"is_contract": true,
+				"is_scam": false,
+				"is_verified": true,
+				"metadata": null,
+				"name": "UniswapV3Pool",
+				"private_tags": [],
+				"proxy_type": "unknown",
+				"public_tags": [],
+				"watchlist_names": []
+			},
+			"token": {
+				"address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+				"address_hash": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+				"circulating_market_cap": "4505984052.43718",
+				"decimals": "18",
+				"exchange_rate": "1623.24",
+				"holders": "1239034",
+				"holders_count": "1239034",
+				"icon_url": "https://assets.coingecko.com/coins/images/2518/small/weth.png?1696503332",
+				"name": "WETH",
+				"symbol": "WETH",
+				"total_supply": "2825290707316388886925546",
+				"type": "ERC-20",
+				"volume_24h": "233812677.03558087"
+			},
+			"total": {
+				"decimals": "18",
+				"value": "50985202221552973"
+			},
+			"transaction_hash": "0xdc3b2af3550d454c1abd18f5017e92e61732e8213ab8d2af17b5e721aa9d7a3e",
+			"type": "token_transfer"
+		},
+		{
+			"block_hash": "0x808651a1c8d980a02321b3d2931001e813685696947b3bafc03d423708c2cdcb",
+			"block_number": 22563557,
+			"from": {
+				"ens_domain_name": null,
+				"hash": "0x5EDDE29bBCE5FCEdFEE74A6f57B1C361C5b1e18f",
+				"implementations": [],
+				"is_contract": true,
+				"is_scam": false,
+				"is_verified": false,
+				"metadata": null,
+				"name": null,
+				"private_tags": [],
+				"proxy_type": "unknown",
+				"public_tags": [],
+				"watchlist_names": []
+			},
+			"log_index": 522,
+			"method": null,
+			"timestamp": null,
+			"to": {
+				"ens_domain_name": null,
+				"hash": "0x000000000004444c5dc75cB358380D2e3dE08A90",
+				"implementations": [],
+				"is_contract": true,
+				"is_scam": false,
+				"is_verified": true,
+				"metadata": null,
+				"name": "PoolManager",
+				"private_tags": [],
+				"proxy_type": "unknown",
+				"public_tags": [],
+				"watchlist_names": []
+			},
+			"token": {
+				"address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+				"address_hash": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+				"circulating_market_cap": "60895133683.36236",
+				"decimals": "6",
+				"exchange_rate": "0.999953",
+				"holders": "3701719",
+				"holders_count": "3701719",
+				"icon_url": "https://assets.coingecko.com/coins/images/6319/small/usdc.png?1696506694",
+				"name": "USDC",
+				"symbol": "USDC",
+				"total_supply": "40008980908280000",
+				"type": "ERC-20",
+				"volume_24h": "10900684178.633442"
+			},
+			"total": {
+				"decimals": "6",
+				"value": "131096394"
+			},
+			"transaction_hash": "0xdc3b2af3550d454c1abd18f5017e92e61732e8213ab8d2af17b5e721aa9d7a3e",
+			"type": "token_transfer"
+		},
+		{
+			"block_hash": "0x808651a1c8d980a02321b3d2931001e813685696947b3bafc03d423708c2cdcb",
+			"block_number": 22563557,
+			"from": {
+				"ens_domain_name": null,
+				"hash": "0x000000000004444c5dc75cB358380D2e3dE08A90",
+				"implementations": [],
+				"is_contract": true,
+				"is_scam": false,
+				"is_verified": true,
+				"metadata": null,
+				"name": "PoolManager",
+				"private_tags": [],
+				"proxy_type": "unknown",
+				"public_tags": [],
+				"watchlist_names": []
+			},
+			"log_index": 524,
+			"method": null,
+			"timestamp": null,
+			"to": {
+				"ens_domain_name": null,
+				"hash": "0x6a091a3406E0073C3CD6340122143009aDac0EDa",
+				"implementations": [],
+				"is_contract": true,
+				"is_scam": false,
+				"is_verified": true,
+				"metadata": {
+					"tags": [
+						{
+							"meta": {},
+							"name": "SushiSwap: ILV",
+							"ordinal": 10,
+							"slug": "sushiswap-ilv",
+							"tagType": "name"
+						}
+					]
+				},
+				"name": "UniswapV2Pair",
+				"private_tags": [],
+				"proxy_type": "unknown",
+				"public_tags": [],
+				"watchlist_names": []
+			},
+			"token": {
+				"address": "0x767FE9EDC9E0dF98E07454847909b5E959D7ca0E",
+				"address_hash": "0x767FE9EDC9E0dF98E07454847909b5E959D7ca0E",
+				"circulating_market_cap": "99578724.76401836",
+				"decimals": "18",
+				"exchange_rate": "13.22",
+				"holders": "54870",
+				"holders_count": "54870",
+				"icon_url": "https://assets.coingecko.com/coins/images/14468/small/logo-200x200.png?1696514154",
+				"name": "Illuvium",
+				"symbol": "ILV",
+				"total_supply": "9018733740003655602588481",
+				"type": "ERC-20",
+				"volume_24h": "23505241.633709908"
+			},
+			"total": {
+				"decimals": "18",
+				"value": "9055724157526870357"
+			},
+			"transaction_hash": "0xdc3b2af3550d454c1abd18f5017e92e61732e8213ab8d2af17b5e721aa9d7a3e",
+			"type": "token_transfer"
+		},
+		{
+			"block_hash": "0x808651a1c8d980a02321b3d2931001e813685696947b3bafc03d423708c2cdcb",
+			"block_number": 22563557,
+			"from": {
+				"ens_domain_name": null,
+				"hash": "0x6a091a3406E0073C3CD6340122143009aDac0EDa",
+				"implementations": [],
+				"is_contract": true,
+				"is_scam": false,
+				"is_verified": true,
+				"metadata": {
+					"tags": [
+						{
+							"meta": {},
+							"name": "SushiSwap: ILV",
+							"ordinal": 10,
+							"slug": "sushiswap-ilv",
+							"tagType": "name"
+						}
+					]
+				},
+				"name": "UniswapV2Pair",
+				"private_tags": [],
+				"proxy_type": "unknown",
+				"public_tags": [],
+				"watchlist_names": []
+			},
+			"log_index": 525,
+			"method": null,
+			"timestamp": null,
+			"to": {
+				"ens_domain_name": null,
+				"hash": "0x5EDDE29bBCE5FCEdFEE74A6f57B1C361C5b1e18f",
+				"implementations": [],
+				"is_contract": true,
+				"is_scam": false,
+				"is_verified": false,
+				"metadata": null,
+				"name": null,
+				"private_tags": [],
+				"proxy_type": "unknown",
+				"public_tags": [],
+				"watchlist_names": []
+			},
+			"token": {
+				"address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+				"address_hash": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+				"circulating_market_cap": "4505984052.43718",
+				"decimals": "18",
+				"exchange_rate": "1623.24",
+				"holders": "1239034",
+				"holders_count": "1239034",
+				"icon_url": "https://assets.coingecko.com/coins/images/2518/small/weth.png?1696503332",
+				"name": "WETH",
+				"symbol": "WETH",
+				"total_supply": "2825290707316388886925546",
+				"type": "ERC-20",
+				"volume_24h": "233812677.03558087"
+			},
+			"total": {
+				"decimals": "18",
+				"value": "51136382951629802"
+			},
+			"transaction_hash": "0xdc3b2af3550d454c1abd18f5017e92e61732e8213ab8d2af17b5e721aa9d7a3e",
+			"type": "token_transfer"
+		}
+	],
+	"base_fee_per_gas": "408115305",
+	"timestamp": "2025-05-26T00:58:59.000000Z",
+	"nonce": 2417,
+	"historic_exchange_rate": "2556.59",
+	"transaction_types": [
+		"coin_transfer",
+		"contract_call",
+		"token_transfer"
+	],
+	"exchange_rate": "2554.65",
+	"block_number": 22563557,
+	"has_error_in_internal_transactions": false
+}

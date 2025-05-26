@@ -1,0 +1,125 @@
+{
+	"items": [
+		{
+			"address": {
+				"ens_domain_name": null,
+				"hash": "0x0B9857ae2D4A3DBe74ffE1d7DF045bb7F96E4840",
+				"implementations": [
+					{
+						"address": "0x3FFf9BdC3ce99d3D587b0d06Aa7C4a10075193b4",
+						"address_hash": "0x3FFf9BdC3ce99d3D587b0d06Aa7C4a10075193b4",
+						"name": "Outbox"
+					}
+				],
+				"is_contract": true,
+				"is_scam": false,
+				"is_verified": true,
+				"metadata": {
+					"tags": [
+						{
+							"meta": {},
+							"name": "Arbitrum: Outbox 4",
+							"ordinal": 10,
+							"slug": "arbitrum-outbox-4",
+							"tagType": "name"
+						}
+					]
+				},
+				"name": "TransparentUpgradeableProxy",
+				"private_tags": [],
+				"proxy_type": "eip1967",
+				"public_tags": [],
+				"watchlist_names": []
+			},
+			"block_hash": "0x4288bc0ddbfcf3f762d60b2948f5417a7f41eaedabbe3dfd4b17a8451b1f195a",
+			"block_number": 22391131,
+			"data": "0x",
+			"decoded": {
+				"method_call": "SendRootUpdated(bytes32 indexed outputRoot, bytes32 indexed l2BlockHash)",
+				"method_id": "b4df3847",
+				"parameters": [
+					{
+						"indexed": true,
+						"name": "outputRoot",
+						"type": "bytes32",
+						"value": "0xca2646239fb37c9a9af5edd49e95fc306bdaf67c1b9069fa9cd9a81878289896"
+					},
+					{
+						"indexed": true,
+						"name": "l2BlockHash",
+						"type": "bytes32",
+						"value": "0xf56dcf06f924aa0f647a65036925a746d9c93d7c53f269e67e0c40cd04770814"
+					}
+				]
+			},
+			"index": 559,
+			"smart_contract": null,
+			"topics": [
+				"0xb4df3847300f076a369cd76d2314b470a1194d9e8a6bb97f1860aee88a5f6748",
+				"0xca2646239fb37c9a9af5edd49e95fc306bdaf67c1b9069fa9cd9a81878289896",
+				"0xf56dcf06f924aa0f647a65036925a746d9c93d7c53f269e67e0c40cd04770814",
+				null
+			],
+			"transaction_hash": "0xf1ad28f8d821b07cffe8d3f6adb737875e5e018b0eb9e7c0774bf3d60c747241"
+		},
+		{
+			"address": {
+				"ens_domain_name": null,
+				"hash": "0x4DCeB440657f21083db8aDd07665f8ddBe1DCfc0",
+				"implementations": [
+					{
+						"address": "0x7FC126FF51183a78C5E0437467f325f661D8Df17",
+						"address_hash": "0x7FC126FF51183a78C5E0437467f325f661D8Df17",
+						"name": "RollupAdminLogic"
+					}
+				],
+				"is_contract": true,
+				"is_scam": false,
+				"is_verified": true,
+				"metadata": null,
+				"name": "RollupProxy",
+				"private_tags": [],
+				"proxy_type": "eip1967",
+				"public_tags": [],
+				"watchlist_names": []
+			},
+			"block_hash": "0x4288bc0ddbfcf3f762d60b2948f5417a7f41eaedabbe3dfd4b17a8451b1f195a",
+			"block_number": 22391131,
+			"data": "0xf56dcf06f924aa0f647a65036925a746d9c93d7c53f269e67e0c40cd04770814ca2646239fb37c9a9af5edd49e95fc306bdaf67c1b9069fa9cd9a81878289896",
+			"decoded": {
+				"method_call": "AssertionConfirmed(bytes32 indexed assertionHash, bytes32 blockHash, bytes32 sendRoot)",
+				"method_id": "fc42829b",
+				"parameters": [
+					{
+						"indexed": true,
+						"name": "assertionHash",
+						"type": "bytes32",
+						"value": "0x3e3704d192a14c156e4b41e00f1676b53b0914cd36ed9fa3d00452ecffeb2e16"
+					},
+					{
+						"indexed": false,
+						"name": "blockHash",
+						"type": "bytes32",
+						"value": "0xf56dcf06f924aa0f647a65036925a746d9c93d7c53f269e67e0c40cd04770814"
+					},
+					{
+						"indexed": false,
+						"name": "sendRoot",
+						"type": "bytes32",
+						"value": "0xca2646239fb37c9a9af5edd49e95fc306bdaf67c1b9069fa9cd9a81878289896"
+					}
+				]
+			},
+			"index": 560,
+			"smart_contract": null,
+			"topics": [
+				"0xfc42829b29c259a7370ab56c8f69fce23b5f351a9ce151da453281993ec0090c",
+				"0x3e3704d192a14c156e4b41e00f1676b53b0914cd36ed9fa3d00452ecffeb2e16",
+				null,
+				null
+			],
+			"transaction_hash": "0xf1ad28f8d821b07cffe8d3f6adb737875e5e018b0eb9e7c0774bf3d60c747241"
+		}
+	],
+	"next_page_params": null
+}

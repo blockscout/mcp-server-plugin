@@ -1,0 +1,109 @@
+{
+	"priority_fee": "0",
+	"raw_input": "0x",
+	"result": "success",
+	"hash": "0x7efd8d81b170d9195217c0380c2ffa7b451dcc0dd83ccdc142579e78ca65b0b2",
+	"max_fee_per_gas": "408115305",
+	"revert_reason": null,
+	"confirmation_duration": [
+		0,
+		12242
+	],
+	"transaction_burnt_fee": "9023837508855",
+	"type": 2,
+	"token_transfers_overflow": false,
+	"confirmations": 10,
+	"position": 130,
+	"max_priority_fee_per_gas": "0",
+	"transaction_tag": null,
+	"created_contract": null,
+	"value": "29062407268900144",
+	"from": {
+		"ens_domain_name": "buildernet.eth",
+		"hash": "0xdadB0d80178819F2319190D340ce9A924f783711",
+		"implementations": [],
+		"is_contract": false,
+		"is_scam": false,
+		"is_verified": false,
+		"metadata": null,
+		"name": null,
+		"private_tags": [],
+		"proxy_type": null,
+		"public_tags": [],
+		"watchlist_names": []
+	},
+	"gas_used": "22111",
+	"status": "ok",
+	"to": {
+		"ens_domain_name": null,
+		"hash": "0x388C818CA8B9251b393131C08a736A67ccB19297",
+		"implementations": [],
+		"is_contract": true,
+		"is_scam": false,
+		"is_verified": true,
+		"metadata": {
+			"tags": [
+				{
+					"meta": {},
+					"name": "Proposer Fee Recipient",
+					"ordinal": 0,
+					"slug": "proposer-fee-recipient",
+					"tagType": "generic"
+				},
+				{
+					"meta": {},
+					"name": "Lido",
+					"ordinal": 0,
+					"slug": "lido",
+					"tagType": "protocol"
+				},
+				{
+					"meta": {
+						"tooltipUrl": "https://lido.fi/"
+					},
+					"name": "Lido: Execution Layer Rewards Vault",
+					"ordinal": 10,
+					"slug": "lido-execution-layer-rewards-vault",
+					"tagType": "name"
+				},
+				{
+					"meta": {
+						"alertStatus": "info",
+						"data": "Lido asks node operators and builders working with them to send priority fees and MEV rewards to this address."
+					},
+					"name": "note_0",
+					"ordinal": 0,
+					"slug": "note0",
+					"tagType": "note"
+				}
+			]
+		},
+		"name": "LidoExecutionLayerRewardsVault",
+		"private_tags": [],
+		"proxy_type": "unknown",
+		"public_tags": [],
+		"watchlist_names": []
+	},
+	"authorization_list": [],
+	"method": null,
+	"fee": {
+		"type": "actual",
+		"value": "9023837508855"
+	},
+	"actions": [],
+	"gas_limit": "22111",
+	"gas_price": "408115305",
+	"decoded_input": null,
+	"token_transfers": [],
+	"base_fee_per_gas": "408115305",
+	"timestamp": "2025-05-26T00:58:59.000000Z",
+	"nonce": 42059,
+	"historic_exchange_rate": "2556.59",
+	"transaction_types": [
+		"coin_transfer",
+		"contract_call"
+	],
+	"exchange_rate": "2554.65",
+	"block_number": 22563557,
+	"has_error_in_internal_transactions": false
+}
