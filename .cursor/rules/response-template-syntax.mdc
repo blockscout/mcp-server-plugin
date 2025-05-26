@@ -1,7 +1,89 @@
 ---
-description: functions and syntax to be used in responseTemplate of MCP server plugin configuration
+description: Guidance for working with the `responseTemplate` field in MCP server plugin configuration
 globs: 
 alwaysApply: false
 ---
-1. Read [gjson-path-syntax.md](mdc:references/gjson-path-syntax.md) to get maximum details of GJSON Path Syntax
-2. Read [template-function-list.md](mdc:references/template-function-list.md) to get more details of Template Functions that can be used in `responseTemplate`
+## Overview
+The `responseTemplate` field transforms API responses before they're returned to the AI assistant. It supports:
+- Go template syntax for conditional logic and iteration
+- GJSON path syntax for accessing JSON response data
+- Template functions for formatting and manipulating data
+
+## Key Documentation
+When working with `responseTemplate` fields, ALWAYS read these reference documents:
+1. [gjson-path-syntax.md](mdc:references/gjson-path-syntax.md) - For accessing nested JSON data
+2. [template-function-list.md](mdc:references/template-function-list.md) - For template functions and operations
+
+## Common Patterns
+
+### Basic Value Access
+```yaml
+responseTemplate:
+  body: |
+    {"resolved_address": "{{.resolved_address.hash}}"}
+```
+
+### Using Full Response
+```yaml
+responseTemplate:
+  body: |
+    {{.}}
+```
+
+### Array Indexing
+```yaml
+responseTemplate:
+  body: |
+    {
+      "block_number": {{(index . 0).height}},
+      "timestamp": "{{(index . 0).timestamp}}"
+    }
+```
+
+### Iterating Collections
+```yaml
+responseTemplate:
+  body: |
+    [
+      {{- range $index, $item := .items }}
+      {{- if $index}},{{end}}
+      {
+        "address": "{{$item.token.address_hash}}",
+        "name": "{{$item.token.name}}",
+        "symbol": "{{$item.token.symbol}}"
+      }
+      {{- end }}
+    ]
+```
+
+### Conditional Output
+```yaml
+responseTemplate:
+  body: |
+    [
+      {{- range $index, $item := .items }}
+      {{- if $index}},{{end}}
+      {
+        "address": "{{$item.token.address_hash}}"
+      }
+      {{- end }}
+    ]
+    {{- if .next_page_params }}
+
+    ----
+    To geget_tokens_by_address(<same address>, "alue}}", {{.next_page_params.id}}, "{{.next_page_params.value}}")
+    {{- end }}
+```
+
+### Prepend and Append Body
+```yaml
+responseTemplate:
+  prependBody: |
+    # Transaction Information
+    
+    Below is the detailed information for this transaction:
+    
+  appendBody: |
+    
+    This data provides comprehensive details about the transaction, including its inputs, outputs, and execution results.
+```
