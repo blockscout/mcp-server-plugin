@@ -106,7 +106,10 @@ tools:
 
   - name: get_tokens_by_address
     description: |
-      Get ERC20 tokens owned by an address.
+      Get comprehensive ERC20 token holdings for an address with enriched metadata and market data.
+      Returns detailed token information including contract details (name, symbol, decimals), market metrics (exchange rate, market cap, volume), holders count, and actual balance.
+      Supports pagination.
+      Essential for portfolio analysis, wallet auditing, and DeFi position tracking.
     args:
       - name: address
         description: "Wallet address"
