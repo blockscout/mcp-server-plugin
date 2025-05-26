@@ -1,0 +1,120 @@
+{
+	"data": {
+		"debug_data": {
+			"model_classification_type": "basicEthTransfer",
+			"summary_template": {
+				"basicEthTransfer": {
+					"template_name": "Generic-basicEthTransfer",
+					"template_vars": {
+						"etherValue": "0.0117291046001548",
+						"fromHash": "0xd5FBDa4C79F38920159fE5f22DF9655FDe292d47",
+						"isFromBinance": false,
+						"isToBinance": false,
+						"lastSet": "Transfer",
+						"toAddress": {
+							"ens_domain_name": null,
+							"hash": "0x2A5430f0ee7dbB566495Df81e3E7f391f1650c21",
+							"implementations": [],
+							"is_contract": false,
+							"is_scam": false,
+							"is_verified": false,
+							"metadata": {
+								"tags": [
+									{
+										"meta": {},
+										"name": "DEPOSIT ADDRESS",
+										"ordinal": 0,
+										"slug": "deposit-address",
+										"tagType": "generic"
+									},
+									{
+										"meta": {
+											"main_entity": "CoinSpot"
+										},
+										"name": "CoinSpot: Deposit Address",
+										"ordinal": 0,
+										"slug": "coinspot-deposit-address",
+										"tagType": "name"
+									},
+									{
+										"meta": {},
+										"name": "CoinSpot",
+										"ordinal": 0,
+										"slug": "coinspot",
+										"tagType": "protocol"
+									}
+								]
+							},
+							"name": null,
+							"private_tags": [],
+							"proxy_type": null,
+							"public_tags": [],
+							"watchlist_names": []
+						},
+						"toHash": "0x2A5430f0ee7dbB566495Df81e3E7f391f1650c21"
+					}
+				}
+			},
+			"transaction_hash": "0x0429b6f85b59131c5b405433e498bfb543382b9e93efee0729477eca13fac458"
+		},
+		"summaries": [
+			{
+				"summary_template": "{action_type} {amount} {native} to {to_address}",
+				"summary_template_variables": {
+					"action_type": {
+						"type": "string",
+						"value": "Transfer"
+					},
+					"amount": {
+						"type": "currency",
+						"value": "0.0117291046001548"
+					},
+					"to_address": {
+						"type": "address",
+						"value": {
+							"ens_domain_name": null,
+							"hash": "0x2A5430f0ee7dbB566495Df81e3E7f391f1650c21",
+							"implementations": [],
+							"is_contract": false,
+							"is_scam": false,
+							"is_verified": false,
+							"metadata": {
+								"tags": [
+									{
+										"meta": {},
+										"name": "DEPOSIT ADDRESS",
+										"ordinal": 0,
+										"slug": "deposit-address",
+										"tagType": "generic"
+									},
+									{
+										"meta": {
+											"main_entity": "CoinSpot"
+										},
+										"name": "CoinSpot: Deposit Address",
+										"ordinal": 0,
+										"slug": "coinspot-deposit-address",
+										"tagType": "name"
+									},
+									{
+										"meta": {},
+										"name": "CoinSpot",
+										"ordinal": 0,
+										"slug": "coinspot",
+										"tagType": "protocol"
+									}
+								]
+							},
+							"name": null,
+							"private_tags": [],
+							"proxy_type": null,
+							"public_tags": [],
+							"watchlist_names": []
+						}
+					}
+				}
+			}
+		]
+	},
+	"success": true
+}

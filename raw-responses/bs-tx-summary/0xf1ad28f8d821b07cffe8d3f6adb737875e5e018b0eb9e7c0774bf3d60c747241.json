@@ -1,0 +1,18 @@
+{
+	"data": {
+		"debug_data": {
+			"is_prompt_truncated": false,
+			"model_classification_type": "transfer",
+			"post_llm_classification_type": "transfer",
+			"summary_template": {
+				"transfer": {
+					"stopped_processing_for_var": "tokenTransfers",
+					"template_name": "Generic-Transfer"
+				}
+			},
+			"transaction_hash": "0xf1ad28f8d821b07cffe8d3f6adb737875e5e018b0eb9e7c0774bf3d60c747241"
+		},
+		"summaries": []
+	},
+	"success": true
+}

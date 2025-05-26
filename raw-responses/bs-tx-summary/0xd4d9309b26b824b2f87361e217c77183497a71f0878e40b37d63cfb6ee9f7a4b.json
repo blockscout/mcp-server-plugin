@@ -1,0 +1,426 @@
+{
+	"data": {
+		"debug_data": {
+			"is_prompt_truncated": false,
+			"model_classification_type": "transfer",
+			"post_llm_classification_type": "transfer",
+			"summary_template": {
+				"transfer": {
+					"template_name": "Generic-Transfer",
+					"template_vars": {
+						"decodedInput": "����/I&�-�\r�\f͕͍UK��;?��",
+						"erc20Amount": "650.405887",
+						"isErc20Transfer": true,
+						"isNftTransfer": false,
+						"isUserOpsTransfer": false,
+						"nftAmount": null,
+						"strippedInput": "a9059cbb0000000000000000000000009f132f4926d42dea0d9e0ccd95cd8d554ba1ff3b000000000000000000000000000000000000000000000000000002053fc18c10",
+						"toAddress": {
+							"ens_domain_name": null,
+							"hash": "0xA5c091b8da7930f4e62001c816B39144B4a292a4",
+							"implementations": [],
+							"is_contract": false,
+							"is_scam": false,
+							"is_verified": false,
+							"metadata": null,
+							"name": null,
+							"private_tags": [],
+							"proxy_type": null,
+							"public_tags": [],
+							"watchlist_names": []
+						},
+						"token": {
+							"address": "0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a",
+							"address_hash": "0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a",
+							"circulating_market_cap": "0.0",
+							"decimals": "6",
+							"exchange_rate": "0.999996",
+							"holders": "6168",
+							"holders_count": "6168",
+							"icon_url": "https://assets.coingecko.com/coins/images/32884/small/USDT.PNG?1699768611",
+							"name": "Aave v3 USDT",
+							"symbol": "AUSDT",
+							"total_supply": "4156306099320659",
+							"type": "ERC-20",
+							"volume_24h": "203.2021782736839"
+						},
+						"tokenTransfers": [
+							{
+								"block_hash": "0x902ef01c7a20d6359fa424290d30b033eb9b3646ecae3709538cd98fb8d58cf2",
+								"block_number": 22564080,
+								"from": {
+									"ens_domain_name": null,
+									"hash": "0x0000000000000000000000000000000000000000",
+									"implementations": [],
+									"is_contract": false,
+									"is_scam": false,
+									"is_verified": false,
+									"metadata": {
+										"tags": [
+											{
+												"meta": {},
+												"name": "Null: 0x000...000",
+												"ordinal": 10,
+												"slug": "null-0x000000",
+												"tagType": "name"
+											},
+											{
+												"meta": {},
+												"name": "BLOCKED",
+												"ordinal": 0,
+												"slug": "blocked",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Miner",
+												"ordinal": 0,
+												"slug": "miner",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Null",
+												"ordinal": 0,
+												"slug": "null",
+												"tagType": "protocol"
+											},
+											{
+												"meta": {},
+												"name": "Null Address",
+												"ordinal": 10,
+												"slug": "null-address",
+												"tagType": "name"
+											},
+											{
+												"meta": {
+													"alertStatus": "info",
+													"data": "This address is not owned by any user, is often associated with token burn &amp; mint/genesis events and used as a generic null address"
+												},
+												"name": "note_0",
+												"ordinal": 0,
+												"slug": "note0",
+												"tagType": "note"
+											},
+											{
+												"meta": {},
+												"name": "Imtoken User",
+												"ordinal": 0,
+												"slug": "imtoken-user",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Genesis",
+												"ordinal": 0,
+												"slug": "genesis",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Burn",
+												"ordinal": 0,
+												"slug": "burn",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Metamask User",
+												"ordinal": 0,
+												"slug": "metamask-user",
+												"tagType": "generic"
+											}
+										]
+									},
+									"name": null,
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"log_index": 221,
+								"method": "transfer",
+								"timestamp": null,
+								"to": {
+									"ens_domain_name": null,
+									"hash": "0xA5c091b8da7930f4e62001c816B39144B4a292a4",
+									"implementations": [],
+									"is_contract": false,
+									"is_scam": false,
+									"is_verified": false,
+									"metadata": null,
+									"name": null,
+									"private_tags": [],
+									"proxy_type": null,
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"token": {
+									"address": "0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a",
+									"address_hash": "0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a",
+									"circulating_market_cap": "0.0",
+									"decimals": "6",
+									"exchange_rate": "0.999996",
+									"holders": "6168",
+									"holders_count": "6168",
+									"icon_url": "https://assets.coingecko.com/coins/images/32884/small/USDT.PNG?1699768611",
+									"name": "Aave v3 USDT",
+									"symbol": "AUSDT",
+									"total_supply": "4156306099320659",
+									"type": "ERC-20",
+									"volume_24h": "203.2021782736839"
+								},
+								"total": {
+									"decimals": "6",
+									"value": "650405887"
+								},
+								"transaction_hash": "0xd4d9309b26b824b2f87361e217c77183497a71f0878e40b37d63cfb6ee9f7a4b",
+								"type": "token_minting"
+							},
+							{
+								"block_hash": "0x902ef01c7a20d6359fa424290d30b033eb9b3646ecae3709538cd98fb8d58cf2",
+								"block_number": 22564080,
+								"from": {
+									"ens_domain_name": null,
+									"hash": "0x0000000000000000000000000000000000000000",
+									"implementations": [],
+									"is_contract": false,
+									"is_scam": false,
+									"is_verified": false,
+									"metadata": {
+										"tags": [
+											{
+												"meta": {},
+												"name": "Null: 0x000...000",
+												"ordinal": 10,
+												"slug": "null-0x000000",
+												"tagType": "name"
+											},
+											{
+												"meta": {},
+												"name": "BLOCKED",
+												"ordinal": 0,
+												"slug": "blocked",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Miner",
+												"ordinal": 0,
+												"slug": "miner",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Null",
+												"ordinal": 0,
+												"slug": "null",
+												"tagType": "protocol"
+											},
+											{
+												"meta": {},
+												"name": "Null Address",
+												"ordinal": 10,
+												"slug": "null-address",
+												"tagType": "name"
+											},
+											{
+												"meta": {
+													"alertStatus": "info",
+													"data": "This address is not owned by any user, is often associated with token burn &amp; mint/genesis events and used as a generic null address"
+												},
+												"name": "note_0",
+												"ordinal": 0,
+												"slug": "note0",
+												"tagType": "note"
+											},
+											{
+												"meta": {},
+												"name": "Imtoken User",
+												"ordinal": 0,
+												"slug": "imtoken-user",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Genesis",
+												"ordinal": 0,
+												"slug": "genesis",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Burn",
+												"ordinal": 0,
+												"slug": "burn",
+												"tagType": "generic"
+											},
+											{
+												"meta": {},
+												"name": "Metamask User",
+												"ordinal": 0,
+												"slug": "metamask-user",
+												"tagType": "generic"
+											}
+										]
+									},
+									"name": null,
+									"private_tags": [],
+									"proxy_type": "unknown",
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"log_index": 223,
+								"method": "transfer",
+								"timestamp": null,
+								"to": {
+									"ens_domain_name": null,
+									"hash": "0x9f132F4926D42deA0D9e0CCd95cD8d554ba1Ff3b",
+									"implementations": [],
+									"is_contract": false,
+									"is_scam": false,
+									"is_verified": false,
+									"metadata": null,
+									"name": null,
+									"private_tags": [],
+									"proxy_type": null,
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"token": {
+									"address": "0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a",
+									"address_hash": "0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a",
+									"circulating_market_cap": "0.0",
+									"decimals": "6",
+									"exchange_rate": "0.999996",
+									"holders": "6168",
+									"holders_count": "6168",
+									"icon_url": "https://assets.coingecko.com/coins/images/32884/small/USDT.PNG?1699768611",
+									"name": "Aave v3 USDT",
+									"symbol": "AUSDT",
+									"total_supply": "4156306099320659",
+									"type": "ERC-20",
+									"volume_24h": "203.2021782736839"
+								},
+								"total": {
+									"decimals": "6",
+									"value": "38"
+								},
+								"transaction_hash": "0xd4d9309b26b824b2f87361e217c77183497a71f0878e40b37d63cfb6ee9f7a4b",
+								"type": "token_minting"
+							},
+							{
+								"block_hash": "0x902ef01c7a20d6359fa424290d30b033eb9b3646ecae3709538cd98fb8d58cf2",
+								"block_number": 22564080,
+								"from": {
+									"ens_domain_name": null,
+									"hash": "0xA5c091b8da7930f4e62001c816B39144B4a292a4",
+									"implementations": [],
+									"is_contract": false,
+									"is_scam": false,
+									"is_verified": false,
+									"metadata": null,
+									"name": null,
+									"private_tags": [],
+									"proxy_type": null,
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"log_index": 225,
+								"method": "transfer",
+								"timestamp": null,
+								"to": {
+									"ens_domain_name": null,
+									"hash": "0x9f132F4926D42deA0D9e0CCd95cD8d554ba1Ff3b",
+									"implementations": [],
+									"is_contract": false,
+									"is_scam": false,
+									"is_verified": false,
+									"metadata": null,
+									"name": null,
+									"private_tags": [],
+									"proxy_type": null,
+									"public_tags": [],
+									"watchlist_names": []
+								},
+								"token": {
+									"address": "0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a",
+									"address_hash": "0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a",
+									"circulating_market_cap": "0.0",
+									"decimals": "6",
+									"exchange_rate": "0.999996",
+									"holders": "6168",
+									"holders_count": "6168",
+									"icon_url": "https://assets.coingecko.com/coins/images/32884/small/USDT.PNG?1699768611",
+									"name": "Aave v3 USDT",
+									"symbol": "AUSDT",
+									"total_supply": "4156306099320659",
+									"type": "ERC-20",
+									"volume_24h": "203.2021782736839"
+								},
+								"total": {
+									"decimals": "6",
+									"value": "2221567740944"
+								},
+								"transaction_hash": "0xd4d9309b26b824b2f87361e217c77183497a71f0878e40b37d63cfb6ee9f7a4b",
+								"type": "token_transfer"
+							}
+						]
+					}
+				}
+			},
+			"transaction_hash": "0xd4d9309b26b824b2f87361e217c77183497a71f0878e40b37d63cfb6ee9f7a4b"
+		},
+		"summaries": [
+			{
+				"summary_template": "{action_type} {amount} {token} to {to_address}",
+				"summary_template_variables": {
+					"action_type": {
+						"type": "string",
+						"value": "Transfer"
+					},
+					"amount": {
+						"type": "currency",
+						"value": "650.405887"
+					},
+					"to_address": {
+						"type": "address",
+						"value": {
+							"ens_domain_name": null,
+							"hash": "0xA5c091b8da7930f4e62001c816B39144B4a292a4",
+							"implementations": [],
+							"is_contract": false,
+							"is_scam": false,
+							"is_verified": false,
+							"metadata": null,
+							"name": null,
+							"private_tags": [],
+							"proxy_type": null,
+							"public_tags": [],
+							"watchlist_names": []
+						}
+					},
+					"token": {
+						"type": "token",
+						"value": {
+							"address": "0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a",
+							"address_hash": "0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a",
+							"circulating_market_cap": "0.0",
+							"decimals": "6",
+							"exchange_rate": "0.999996",
+							"holders": "6168",
+							"holders_count": "6168",
+							"icon_url": "https://assets.coingecko.com/coins/images/32884/small/USDT.PNG?1699768611",
+							"name": "Aave v3 USDT",
+							"symbol": "AUSDT",
+							"total_supply": "4156306099320659",
+							"type": "ERC-20",
+							"volume_24h": "203.2021782736839"
+						}
+					}
+				}
+			}
+		]
+	},
+	"success": true
+}

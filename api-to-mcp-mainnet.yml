@@ -251,9 +251,10 @@ tools:
 
   - name: transaction_summary
     description: |
-      Useful to get initial summary of the transaction before its deep analysis.
-      It is not guaranteed that the summary is 100% accurate.
-      Not all transactions can be summarized.
+      Get human-readable transaction summaries from Blockscout Transaction Interpreter.
+      Automatically classifies transactions into natural language descriptions (transfers, swaps, NFT sales, DeFi operations)
+      Essential for rapid transaction comprehension, dashboard displays, and initial analysis.
+      Note: Not all transactions can be summarized and accuracy is not guaranteed for complex patterns.
     args:
       - name: hash
         description: "Transaction hash"
@@ -261,7 +262,7 @@ tools:
         required: true
         position: path
     requestTemplate:
-      url: "{{.config.bsUrl}}/api/v2/transactions/{{.args.hash}}/summary"
+      url: "{{.config.bsUrl}}/api/v2/transactions/{{.args.hash}}/summary&apikey={{.config.bsApiKey}}"
       method: GET
     responseTemplate:
       body: |

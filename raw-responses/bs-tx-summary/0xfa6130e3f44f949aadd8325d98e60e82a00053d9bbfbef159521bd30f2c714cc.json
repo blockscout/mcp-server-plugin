@@ -1,0 +1,98 @@
+{
+	"data": {
+		"debug_data": {
+			"is_prompt_truncated": false,
+			"model_classification_type": "sale",
+			"post_llm_classification_type": "sale",
+			"summary_template": {
+				"sale": {
+					"template_name": "Generic-Sale",
+					"template_vars": {
+						"erc20TokenValueInArray": [],
+						"etherValue": "0.259697",
+						"nftsTransferToAddressesArray": [
+							"0xA94b3E48215c72266f5006bcA6EE67Fff7122307",
+							"0xA94b3E48215c72266f5006bcA6EE67Fff7122307"
+						],
+						"nfttokenTransfersCount": 2,
+						"protocol": {
+							"ens_domain_name": null,
+							"hash": "0x39da41747a83aeE658334415666f3EF92DD0D541",
+							"implementations": [],
+							"is_contract": true,
+							"is_scam": false,
+							"is_verified": true,
+							"metadata": {
+								"tags": [
+									{
+										"meta": {},
+										"name": "Blur.io: Marketplace 2",
+										"ordinal": 10,
+										"slug": "blurio-marketplace-2",
+										"tagType": "name"
+									}
+								]
+							},
+							"name": "BlurSwap",
+							"private_tags": [],
+							"proxy_type": "unknown",
+							"public_tags": [],
+							"watchlist_names": []
+						},
+						"totalErc1155Count": 0,
+						"totalErc20TokenValue": "0",
+						"totalErc721Count": 2
+					}
+				}
+			},
+			"transaction_hash": "0xfa6130e3f44f949aadd8325d98e60e82a00053d9bbfbef159521bd30f2c714cc"
+		},
+		"summaries": [
+			{
+				"summary_template": "{action_type}: {outgoing_amount} NFT for {incoming_amount} {native}",
+				"summary_template_variables": {
+					"action_type": {
+						"type": "string",
+						"value": "Sale"
+					},
+					"incoming_amount": {
+						"type": "currency",
+						"value": "0.259697"
+					},
+					"outgoing_amount": {
+						"type": "currency",
+						"value": 2
+					},
+					"protocol": {
+						"type": "address",
+						"value": {
+							"ens_domain_name": null,
+							"hash": "0x39da41747a83aeE658334415666f3EF92DD0D541",
+							"implementations": [],
+							"is_contract": true,
+							"is_scam": false,
+							"is_verified": true,
+							"metadata": {
+								"tags": [
+									{
+										"meta": {},
+										"name": "Blur.io: Marketplace 2",
+										"ordinal": 10,
+										"slug": "blurio-marketplace-2",
+										"tagType": "name"
+									}
+								]
+							},
+							"name": "BlurSwap",
+							"private_tags": [],
+							"proxy_type": "unknown",
+							"public_tags": [],
+							"watchlist_names": []
+						}
+					}
+				}
+			}
+		]
+	},
+	"success": true
+}
