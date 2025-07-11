@@ -1,0 +1,13 @@
+{
+  "contextFileName": ["README.md", "references/MCP-plugin-configuration-manual.md"],
+  "checkpointing": {
+    "enabled": true
+  },
+  "theme": "ANSI",
+  "mcpServers": {
+    "blockscout": {
+      "httpUrl": "https://mcp.blockscout.com/mcp/",
+      "timeout": 180000
+    }
+  }
+}
